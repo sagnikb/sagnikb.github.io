@@ -1,0 +1,118 @@
+---
+layout: single
+title: "Binary Search, the Ulam game and Coding Theory"
+date: 2018-05-07 14:00:00 +0530
+excerpt: Binary search with lies allowed and adaptive block codes
+tags: technical algorithms game-theory coding-theory
+comments: true
+toc: true
+---
+Binary search allows us to search for an entry in a sorted list in $$\log(n)$$ time. In this post, I shall talk about a more general version, where the answers to some of the queries used during the binary search may be false (which is the Ulam game) and how that is related to adaptive block codes in coding theory and how these ideas help us.
+
+Much of this is based on [David desJardin's PhD thesis](http://www.desjardins.org/david/thesis/thesis.pdf) which gives a general solution to Ulam's game. I am writing about it because I had heard of the Ulam game where only one lie is allowed from a friend and was surprised to see the same crop up when learning about coding theory. It is not a very difficult topic while also being an interesting extension of something well known, so I thought I could give an overview of the same in a post such as this. 
+
+## The Ulam Game
+
+The game 20 questions is a specific formulation of the problem of searching for a marked element in an ordered list of elements and is easily solved by binary search. The game itself is the following: 
+
+> Alice thinks of a number between one and one million. Bob can ask up to 20 yes/no questions to Alice, each of which Alice answers truthfully. Bob wins if he can determine which number Alice had thought of by asking just the 20 questions.
+
+Note that $$2^{20}$$ is 1048576, which is just more than a million. Bob always wins because he can do a simple binary search for the number which will give him the answer in $$\log_2(2^{20}) = 20$$ steps. The questions, in this case, could be of the form:
+
+* is the number greater than 500,000? If the answer is no, 
+* is the number greater than 250,000?
+
+and so on, halving the range every time.
+
+We can formalize this process of questioning in the following way - we can think of each question as a subset of the positive integers below one million, and Alice's answer is yes if her chosen number belongs to the set and 0 otherwise.
+
+It is interesting to note that Alice need not decide on her number at the beginning - if all her answers are merely consistent with some number that she chooses at the end, Bob still wins.
+
+Stanislaw Ulam proposed a more interesting version of the above in his autobiography, called the Ulam game.
+
+> Someone thinks of a number between one and one million (which is just less than $$2^{20}$$). Another person is allowed to ask up to twenty questions, to each of which the first person is supposed to answer only yes or no. Obviously, the number can be guessed by asking first, "Is the number in the first half million?" then again reduce the reservoir of numbers in the next question by one-half, and so on. Now suppose one were allowed to lie once or twice, then how many questions would one need to get the right answer? One clearly needs more than **n** questions for guessing one of $$2^n$$ objects because one does not know when the lie was told. This problem is not solved in general.
+
+When I first came across this problem via a friend, the question was to find some lower bound on the number of questions needed. One possible lower bound is 
+
+$$\log(n) + \log(\log(n))$$
+
+where all logarithms are to the base-2. The reason is the following: let us perform the binary search again. In the worst case, we will need **log(n)** questions before we get a contradiction. Then we need to find the questions to which the answers were wrong, and since there are **log(n)** total questions, we need at least **log(log(n))** steps to find such questions.
+
+It turns out that the Ulam game is equivalent to the problem of showing the existence of adaptive block codes of certain parameters, and this will occupy us for the rest of this post.
+
+## Adaptive Block Codes
+
+Coding theory deals with reliable communication across a noisy channel. Alice and Bob are communicating over a channel that corrupts some of what Alice sends, and the idea is that Alice encodes the data in such a way that Bob can correctly decode it given some reasonable assumptions about the level of noise in the channel. 
+
+We can possible classification of channels is into two categories - with feedback and without feedback. **Coding without feedback** depends only on the input, and the transmitter is assumed to have no information about what is happening at the receiver. In the **feedback** case, the encoder is also considered to have access to the information about whether the previously sent information was received in error or not, and can use this information while sending the rest of the data. In our case, this information is assumed to reach the encoder immediately and noiselessly.
+
+**Block coding** is a coding technique where the information to be sent is broken up into blocks. Each of these blocks is mapped to chunks of appropriately chosen transmitted bits to reduce the probability of error. This is in contrast to **convolutional** codes where the data to be sent is encoded into the transmitted bits continuously (without breaking into chunks).
+
+Claude Shannon in his landmark 1948 papers showed that associated with every channel, there is a certain rate of communication called the capacity which characterizes it. He demonstrated that codes exist that guarantee nearly error-free communication at rates below channel capacity. He also showed in 1956 that feedback does not increase the theoretical capacity of the forward channel. However, the use of feedback in coding can give us better encoding and decoding strategies; therefore the question of the existence of adaptive block codes is an interesting question.
+
+## Equivalence of the Ulam Game and the existence of Adaptive Block Codes problem
+
+The proof of this equivalence is in the PhD thesis mentioned above. Instead of redoing the proof, let's see why the equivalence intuitively makes sense. 
+
+Let us consider what we are actually doing when we say we want an adaptive block code to exist. The message to be sent has been mapped to a chunk of bits to be transmitted, and these bits are transmitted one-by-one. Once each bit is sent the transmitter receives a signal from the receiver informing whether the bit was in error or not. What we want is that after all the bits have been sent, the receiver must be able to figure out which message was sent. The relation with the Ulam game is now clear - think of the bits being sent as being the yes/no questions in the Ulam game and the response from the receiver being the received answer. If in Ulam's game a number can be pinpointed using **N** questions, we can say that a message **M** among $$2^N$$ possibilities can also be obtained with certainty after the whole process is over. In both cases, the number of errors/lies is assumed to be less than some number **E**.
+
+The formal statement of the above is the following.
+
+> There exists a winning strategy for Ulam's game with parameters **N**, **E**, **M** if and only if there exists an adaptive block code with the same parameters.
+
+Here **N** is the number of questions in Ulam's game and the number of transmitted bits in the block code, **E** is the number of lies in Ulam's game and the number of errors during transmission and **M** $$= 2^N$$ is the number of possible numbers/messages.
+
+## Solving the Ulam Problem
+
+Next, let's quickly take a look at how to tackle the Ulam game.
+
+First, state space is constructed using tuples of non-negative integers, and a game is defined on it. The game starts with an **(E+1)**-tuple of non-negative integers, called $$s_0$$. There is a translation operator **T** defined on the tuples that drops the first number in the tuple and retains the rest, taking an **(E+1)**-tuple to an **E**-tuple. Bob partitions $$s_0$$ into $$a_0$$ and $$b_0$$ such that 
+
+$$
+    a_0, b_0 \in \mathbb{N}^{E+1}
+$$ 
+
+and 
+
+$$
+    s_0 = a_0 + b_0
+$$
+
+Alice can choose either one of $$(T \cdot a_0 + b_0)$$ or $$(a_0 + T \cdot b_0)$$, her choice becomes $$s_1$$ and the process is repeated. Bob wins if and only if sum of elements of $$s_N$$ is 0 or 1, and a state for which Bob wins is called a winning **N**-state. If $$s_0$$ is the **(E+1)**-tuple 
+
+$$    
+    (0,0,...,0,M)
+$$ 
+
+then this game is shown to be equivalent to Ulam's game with parameters **N**, **E**, and **M** defined above.
+
+Using this state space representation, certain states are shown to be winning **N**-states (for suitable **N**) in the state space, which are called:
+
+* **singlets:** those tuples for which sum of all entries is 1.
+* **doublets:** those tuples for which sum of all entries is 2.
+* **zero-error states:** these are states where **E=0** (that is, there are no lies). Then the tuple $$s=(s_0)$$ and such a state is winning **N**-state iff $$s_0 \leq 2^N$$.
+* **Fibonacci states:** these are explicitly constructed states that are part of a winning sequence of states. A sequence of states is called a winning **N**-state sequence if $$s_n$$ is winning **(N+3n)**-state for all **n**.
+
+The volume of an **N**-state, defined as
+
+$$
+    \text{Vol}_N(s) = \sum_{J = 0}^{E}s_J\sum_{J'=0}^{J} \binom{N}{J'}
+$$
+
+is shown to be at most $$2^N$$ for winning **N**-states. This is called the **volume bound**.
+
+Winning **N**-states that meet the volume bound are either singlets or can be shown not to be winning **(N-1)**-states and are therefore called borderline winning **N**-states.
+
+Another result called the **translation bound** shows that if **s** is winning **N**-state, $$N \geq 3$$ and sum of all entries in **s** is at least 3, then $$T \cdot s$$ (the translation operator **T** acting on **s**) is a winning **(N-3)**-state.
+
+A final result called the **summation rule for states** gives a condition on states **s** that can be shown to be winning **N**-states based only on the knowledge that certain states **c** and **d** are winning **N**-states. 
+
+We can prove certain states are winning **N**-states using the above results, in the following way. We start with certain states from the four categories that are known to be **N**-winning, and put them together using the summation rule to find a **(N+1)**-winning state. This lets us form a binary tree, with the parent being an **N**-winning state and the children being **(N-1)** winning states.
+
+All these results allow us to find winning states. There are also some results that allow us to do the opposite, that is, show that some state is a losing state. This is easy if the state violates the volume bound or the translation bound, and in other cases, we can show results of the following form: if a tree rooted at a particular state is of depth **x** then the volume of the state is less than **v**. Thus, in some cases, looking at a state we can predict how deep the subtree at that state is.
+
+Of course, because all three of the starting problems are equivalent, each of the winning **N**-states we find also gives us a solution to the Ulam problem and shows the existence of an adaptive block code with the same parameters. Killing three birds with one stone.
+
+The rest of the thesis uses all of these results to computationally find optimal codes given the parameters **N**, **E**, **M**. Optimal in this case means that an adaptive block code ceases to exist if the value of **M** is increased by one. The thesis includes parameters for all optimal block codes up to $$M = 2^{20}$$, please check that out if you are interested.
+
+As mentioned above, this whole post is based on [David desJardin's PhD thesis](http://www.desjardins.org/david/thesis/thesis.pdf). Please look at it for further details.
