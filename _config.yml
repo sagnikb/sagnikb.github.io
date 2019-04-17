@@ -117,7 +117,7 @@ author:
       url: mailto:sagnikb@iitk.ac.in
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://sagnikb.github.io"
+      # url: "https://sagnikb.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/TheSag66"

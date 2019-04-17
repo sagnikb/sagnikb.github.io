@@ -5,10 +5,10 @@ author_profile: true
 
 I am a fourth-year Electrical Engineering undergrad at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/), broadly interested in Information Theory and Quantum Computing. I am also interested in Boolean functions and the intersection of statistical physics, theoretical computer science and coding theory.
 
-My [CV](./assets/cv.pdf).
+---
 
-My most recent research has been on classical coding theory bounds under the guidance of <a href="https://home.iitk.ac.in/~adrish">Prof Adrish Banerjee</a>. We were able to extend some well-known bounds in the Hamming metric to the Lee metric. Our <a href="./assets/pdfs/Lee_metric.pdf">paper</a> will appear in <a href="https://2019.ieee-isit.org/">ISIT 2019</a>. We have also <a href="./assets/pdfs/Adversarial_Channels.pdf">worked</a> on generalizing the Fourier analytic proof of the MRRW bound.
+[CV](/assets/cv.pdf){: .btn .btn--success} [Research](#link){: .btn .btn--primary} [Publications](#link){: .btn .btn--success} [Projects](#link){: .btn .btn--primary} [Talks](#link){: .btn .btn--success}
 
-I spent the summer of 2018 in Hong Kong, have also working with <a href="https://staff.ie.cuhk.edu.hk/~sjaggi/"> Prof Sidharth Jaggi </a> of <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a> on communication using common randomness in the presence of an adversary. Our <a href="./assets/pdfs/Shared_randomness.pdf">paper</a> will appear in <a href="https://2019.ieee-isit.org/">ISIT 2019</a>.
+---
 
-I have also worked with with <a href="https://www.cse.iitk.ac.in/users/rmittal/">Prof Rajat Mittal</a> on lower bounds on the quantum query complexity of 'interesting' functions.
+I happen to have several non-academic interests. Open [The Trove](/trove) to find out more about them.
