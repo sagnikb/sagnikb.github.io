@@ -3,7 +3,8 @@ layout: single
 title:  "The Blub Paradox"
 date:   2017-03-16 00:22:20 +0530
 excerpt: On why we underestimate powerful tools and techniques
-tags: general random-thoughts paradoxes
+categories: general 
+tags: paradoxes
 comments: true
 ---
 A friend and I were talking about paradoxes, and due to some reason I mixed up Fermi's Paradox with Graham's Number, and started talking about Graham's Paradox. This weird invention of mine forced the friend to look up Graham's Paradox, and it turns out that there is actually a paradox suggested by [Paul Graham](http://paulgraham.com) called the Blub Paradox. To quote one of the [blog posts](http://paulgraham.com/avg.html) in which he talks about it,

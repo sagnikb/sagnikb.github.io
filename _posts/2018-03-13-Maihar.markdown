@@ -3,7 +3,8 @@ layout: single
 title: "Musical Excursions: the Maihar Band"
 date: 2018-03-13 14:00:00 +0530
 excerpt: The beautiful music of the dying notes of the Maihar band
-tags: general music Indian-classical
+categories: music
+tags: Indian-classical-music
 ---
 
 I first heard of Maihar in high school while reading the information booklet that came along with one of the beautiful releases in the All India Radio 'Fond Memories' series featuring Pt Nikhil Banerjee, a sitarist I grew to love over time. Born in Calcutta, the booklet noted that the child-prodigy in him was grown and nurtured by the attention of Ustad 'Baba' Alauddin Khan of the Maihar Gharana. 
@@ -16,11 +17,7 @@ According to [legend](http://www.omenad.net/page.php?goPage=http%3A%2F%2Fwww.ome
 
 The following is a video of the band at work, unfortunately one of the very few examples I could find.
 
-<div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9fWwnu7Wo4Q" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-</div>
-
-<br>
+{% include video id="9fWwnu7Wo4Q" provider="youtube" %}
 
 The lead instrumentalist in that video is playing what is known as the 'Nal tarang', a variant of the jaltarang conceptualized by the Ustad himself, that uses gun barrels of varying types and lengths to produce different notes of music.
 

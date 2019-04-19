@@ -2,9 +2,9 @@
 layout: single
 title:  "Conway's Game of life"
 date:   2017-06-19 00:19:20 +0530
-categories: ramblings
 excerpt: Interesting things about a cellular automaton
-tags: technical conway's-game-of-life 
+tags: game-of-life 
+categories: academic
 comments: true
 ---
 I read Richard Dawkins' amazing book called 'The Greatest Show on Earth'

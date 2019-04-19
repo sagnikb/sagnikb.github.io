@@ -1,7 +1,7 @@
 main:
-  - title: "About"
-    url: /about
-  - title: "Posts"
+  - title: "Blog"
+    url: /blog
+  - title: "All Posts"
     url: /posts
-  - title: "Tags"
-    url: /tags
+  - title: "Categories"
+    url: /categories

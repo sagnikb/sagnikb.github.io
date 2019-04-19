@@ -3,7 +3,8 @@ layout: single
 title:  "Welcome!"
 date:   2017-03-14 00:12:24 +0530
 excerpt: My second attempt at having a blog.
-tags: general first-post
+tags: first-post
+categories: general
 comments: true
 ---
 Hello world!

@@ -3,7 +3,8 @@ layout: single
 title: April Puzzles
 date: 2018-05-05 12:00:00 +0530
 excerpt: Science Coffeehouse - special puzzles to celebrate April Fools Day
-tags: puzzles science-coffee-house
+tags: science-coffeehouse April-puzzles
+categories: puzzles
 comments: true
 ---
 

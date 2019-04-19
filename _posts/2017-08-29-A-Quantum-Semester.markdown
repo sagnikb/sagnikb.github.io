@@ -2,9 +2,9 @@
 layout: single
 title: "A Quantum Semester"
 date: 2017-08-29 23:27:30 +0530
-categories: ramblings
 excerpt: ... in which I did three courses with 'Quantum' in the title.
-tags: general quantum academics
+tags: quantum IITK
+categories: general
 comments: true
 ---
 I have not written anything in a long, long time, and I shall claim that

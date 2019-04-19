@@ -2,9 +2,9 @@
 layout: single
 title:  "Why Quantum, man?"
 date:   2017-04-30 00:22:20 +0530
-categories: ramblings
+categories: general
 excerpt: Why an EE undergrad ended up studying quantum mechanics
-tags: general quantum academics
+tags: quantum IITK
 comments: true
 ---
 I am majoring in Electrical Engineering, but currently, my primary interests lie almost entirely in Physics topics like Quantum Mechanics, Quantum Optics and Quantum Computation. I am somewhat lucky in the sense that Quantum Optics is something that EE people also do, so I at least have some excuse for filling up a seat in the EE department. Many of my friends have asked me how I got interested in the world of Quantum. Some of my juniors have asked me how to identify a field which they find interesting, and I find it difficult to answer either of the two questions. So one day I got thinking about the course of events that led to me straying so far from my major curriculum to study Physics. 

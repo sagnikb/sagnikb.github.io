@@ -3,7 +3,8 @@ layout: single
 title:  "Real time updation in gnuplot"
 date:   2017-03-15 00:23:20 +0530
 excerpt: Plotting data generated in real time using gnuplot
-tags: technical gnu-plot data-visualisation
+tags: gnu-plot data-visualisation
+categories: technical
 comments: true
 ---
 Last summer, two of my friends and I did a project under [Programming Club, IITK](http://pclub.in). The topic of the project was N-Body Simulation, and we had to write parallelised code to simulate the motion of a specified number of bodies (~30) with specified 'masses' under a 'gravitational force' acting between each of them. For this purpose we had to have something that could plot the data obtained in real time.  We gave a lot of importance to this real time updation because otherwise we were generating text files in the gigabyte range which then took ages to plot. We tried various options, including Matlab, the matplotlib and scipy libraries in Python, but didn't get the speed required for our work in any of them. Finally we stumbled upon a solution to this problem, in which we used gnuplot with a pause/reread instruction, and that solved our problem perfectly.The required commands in gnuplot are 
