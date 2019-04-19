@@ -6,6 +6,8 @@ excerpt: Science Coffeehouse - special puzzles to celebrate April Fools Day
 tags: science-coffeehouse April-puzzles
 categories: puzzles
 comments: true
+header:
+  teaser: /assets/xnor.png
 ---
 
 I made these puzzles for Science Coffeehouse and were released on April Fools Day. Needless to say there will be some relation between the day and the puzzles. Don't look at the solutions before trying though, they are not very difficult! I received some input for puzzle number three from [Prannay Khosla](http://prannay.com/).

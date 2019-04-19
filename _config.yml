@@ -23,7 +23,7 @@ description              : "Homepage for Sagnik Bhattacharya, Electrical Enginee
 url                      : "https://sagnikb.github.io"
 baseurl                  : ""
 repository               : "sagnikb/sagnikb.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/touch-icon-1.png"
 logo                     : "/assets/favicon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -98,9 +98,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : UA-93691622-1
     anonymize_ip         : # true, false (default)
 
 
