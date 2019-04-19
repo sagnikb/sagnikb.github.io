@@ -7,7 +7,7 @@ tags: science-coffeehouse
 categories: puzzles
 comments: true
 header:
-    teaser: /assets/photos/SNT2.PNG
+    teaser: /assets/images/SNT2.PNG
 ---
 A few days back, SnT Code, one of the biggest events of Takneek 2017, was organised. For the uninitialized, Takneek is the intra-college technical festival of IIT Kanpur. All the clubs under the Science and Technology (SnT) Council have to make questions that the rest of the campus can then try and solve. I participated in Takneek in both my first and second years and this time I made the questions for the hobby group I co-lead, Science Coffeehouse. 
 
@@ -21,7 +21,7 @@ Another disclaimer seems relevant here. The questions here may not exactly match
 
 **"Refer to the fitting resource you can find on the biggest encyclopaedia"**
 
-![Question 1](/assets/photos/SnT_Code_Q1.JPG)
+![Question 1](/assets/images/SnT_Code_Q1.JPG)
 
 ## Question 2
 
@@ -52,17 +52,17 @@ Now, someone might go down the Harry Potter route and get totally lost, but I th
 
 The question now is how to find the magic square. We require a 12 x 12 magic square, and the only thing that can help us now is the Wikipedia reference. If you visit the Wikipedia page for magic squares, you will find two 12 x 12 magic squares. In the worst case, you will need to try both. The encryption proceeded thus: I wrote a message in a  12 x 12 matrix, and numbered each square from 1 to 144, like this.
 
-![original](/assets/photos/SNT1.PNG)
+![original](/assets/images/SNT1.PNG)
 
 The magic square I chose had numbers from 1 to 144. If the entry at the position i, j of the magic square is k, then the letter at square k of the message square goes to the square i,j in the cryptogram. To decrypt, one has to simply reverse this process. Before shuffling, I also Caesar shifted each letter in the yellow boxes by 1 and converted to ASCII, so one has to reverse that too to finally solve it. I had to do this because otherwise, people could have tried to unjumble the yellow boxes only and guess what message they contain.
 
 The magic square used is this
 
-![magic square](/assets/photos/SNT2.PNG)
+![magic square](/assets/images/SNT2.PNG)
 
 Once the decryption is complete, this is the result. The answer, Srinivas Ramanujan, should be obvious now. Also, the Queen in 'Cryptograph of the Queen' refers to Number Theory, which Gauss called the 'queen of Mathematics' and which Ramanujan worked on extensively.
 
-![solution](/assets/photos/SNT3.PNG)
+![solution](/assets/images/SNT3.PNG)
 
 ## Question 2
 

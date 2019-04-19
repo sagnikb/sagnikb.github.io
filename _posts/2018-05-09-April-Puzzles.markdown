@@ -7,23 +7,23 @@ tags: science-coffeehouse April-puzzles
 categories: puzzles
 comments: true
 header:
-  teaser: /assets/xnor.png
+  teaser: /assets/images/xnor.png
 ---
 
 I made these puzzles for Science Coffeehouse and were released on April Fools Day. Needless to say there will be some relation between the day and the puzzles. Don't look at the solutions before trying though, they are not very difficult! I received some input for puzzle number three from [Prannay Khosla](http://prannay.com/).
 
 ## Puzzle 1 
 
-![](/assets/welcome.png)
+![](/assets/images/welcome.png)
 
 ## Puzzle 2
 You have an important homework to hand over tomorrow, but because you are stuck here at SCH, you can’t write it out. So you explain the ideas to your friend and ask him to type it out and you come here to hang out with the cool guys. After a week, when in true IITK style you will have completely forgotten what the homework is all about, you enbe handed it back with a note to see the instructor. There will be gibberish on the paper:
 
-![](/assets/text.png)
+![](/assets/images/text.png)
 
 You will recall your friend saying that he is a lousy typist, but you didn’t think he could be so bad! You will quickly figure out that he pressed one key among the intended key and its immediate neighbours. The spaces are correct, for he didn’t miss that gigantic key, and so are the numbers, for he loves math. You will need to quickly decipher what you wanted to say, for your marks will depend on you telling your professor what you wanted to say.
 
-![](/assets/keyboard.png)
+![](/assets/images/keyboard.png)
 
 ## Puzzle 3 
 You are chilling on a long weekend, and because you are hungry you
@@ -33,7 +33,7 @@ before had the privilege of coming across. Before you can introduce
 yourself, the Xnorlaxian challenges to a duel of wits. Needless to say,
 you (being very proud of your wits) agree.
 
-![](/assets/xnor.png)
+![](/assets/images/xnor.png)
 
 The Xnorlaxian claims that xe (the only pronoun Xnorlaxians accept)
 has a better calculator than yours. You disagree, and you immediately
@@ -53,7 +53,7 @@ to figure out what the calculation below should give?
 
 $$ 22 + 33 << 1 + 50 >> 1 + 130 << 1 + 9 = ???? $$
 
-![](/assets/calc.png)
+![](/assets/images/calc.png)
 
 ## Puzzle 4
 You are an assistant to the brilliant spy Eleanor Shadymiss and you are
@@ -65,7 +65,7 @@ herself) must glean some information from it. You can clearly see that
 some squares are important, but you need to figure out which one is the
 secret location!
 
-![](/assets/map.png)
+![](/assets/images/map.png)
 
 ## Puzzle 5
 

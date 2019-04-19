@@ -8,7 +8,7 @@ categories: academic
 comments: true
 toc: true
 ---
-Recently I co-authored a [paper]({{ site.baseurl }}/assets/pdfs/Lee_metric.pdf) with [Prof Adrish Banerjee](#), which we submitted to [ISIT 2019](https://2019.ieee-isit.org/), and I thought I would go over the key ideas in the paper as a blog post. Our main concern was to find out the volume of spheres in discrete metrics, and applications of the method to the Lee metric.
+Recently I co-authored a [paper](/assets/pdfs/Lee_metric.pdf) with [Prof Adrish Banerjee](#), which we submitted to [ISIT 2019](https://2019.ieee-isit.org/), and I thought I would go over the key ideas in the paper as a blog post. Our main concern was to find out the volume of spheres in discrete metrics, and applications of the method to the Lee metric.
 
 # Background
 
@@ -16,7 +16,7 @@ In this section I start by talking about why we thought it would be an interesti
 
 ## Why is any of this important? 
 
-Well, a bound on the volume of a sphere in a discrete metric is used to find bounds on the limits of reliable communication over a channel (more on that later). We actually see this in the paper itself - the moment we obtain an upper bound on the volume of a sphere in the Lee metric, we could use known results to immediately find analogoues of the binary Hamming, Elias-Bassalygo and Gilbert-Varshamov bounds in the case of the Lee metric (more on all of these later). The basic utility of bounds on the limits of reliable communication over a channel should be clear - it gives people who design communication protocols something to aim at, and if such a design hits the upper bound, we know that one cannot do better, at least from the rate point of view (one could still improve things like encoding-decoding efficiency etc). There are other examples too - consider the result of [another paper]({{ site.baseurl }}/assets/pdfs/Shared_randomness.pdf) that I was a co-author on that was also accepted to ISIT, where we showed that if the capacity under vanishing average error of a channel does not equal the zero-error capacity (both of these terms will also be talked about later in slightly more detail) of the channel, we need at least $$\log(n)$$ bits of common randomness, where $$n$$ is the blocklength of the code, to communicate reliably at capacity over the channel. Common randomness being a valuable resource (it being hard to generate and distribute such randomness), such a bound is good to know. How to show such a gap exists? We need an upper bound on the capacity of the kind that our results help us find.
+Well, a bound on the volume of a sphere in a discrete metric is used to find bounds on the limits of reliable communication over a channel (more on that later). We actually see this in the paper itself - the moment we obtain an upper bound on the volume of a sphere in the Lee metric, we could use known results to immediately find analogoues of the binary Hamming, Elias-Bassalygo and Gilbert-Varshamov bounds in the case of the Lee metric (more on all of these later). The basic utility of bounds on the limits of reliable communication over a channel should be clear - it gives people who design communication protocols something to aim at, and if such a design hits the upper bound, we know that one cannot do better, at least from the rate point of view (one could still improve things like encoding-decoding efficiency etc). There are other examples too - consider the result of [another paper](/assets/pdfs/Shared_randomness.pdf) that I was a co-author on that was also accepted to ISIT, where we showed that if the capacity under vanishing average error of a channel does not equal the zero-error capacity (both of these terms will also be talked about later in slightly more detail) of the channel, we need at least $$\log(n)$$ bits of common randomness, where $$n$$ is the blocklength of the code, to communicate reliably at capacity over the channel. Common randomness being a valuable resource (it being hard to generate and distribute such randomness), such a bound is good to know. How to show such a gap exists? We need an upper bound on the capacity of the kind that our results help us find.
 
 This is actually the thing that brought our attention to this problem in the first place. We already knew the common randomness result, and we knew that the gap exists for the Hamming metric, but we thought it will be interesting to show that the gap exists for a more general channel - enter the Lee metric.
 
@@ -39,7 +39,7 @@ Another interesting concept is that of a rate-distance trade-off. It again makes
 In the rest of this post, we will be concerned with only zero-error information theory, the second error criteria used above. In this case, we know a lot for the Hamming metric - given a particular rate, we know that a particular rate is achievable (that is, we can construct a code that achieves that rate), and we know that some rates are not achievable. The achievability result is via the Gilbert-Varshamov bound, while there are several upper bounds known (like the Hamming, singleton and Elias-Bassalygo bounds). Unfortunately, these do not match, and a gap exists [^2] which has been an open problem for quite some time now. 
 
 <figure>
-  <img src='/assets/bounds.svg' width="100%" alt='Binary Hamming metric'/><br>
+  <img src='/assets/images/bounds.svg' width="100%" alt='Binary Hamming metric'/><br>
   <div class="divider"></div>
   <figcaption> What the bounds look like for the Hamming metric. The Gilbert-Varshamov bound is the achievability result. The rest are upper bounds. Note the gap between them. </figcaption>
   <div class="divider"></div>
@@ -81,14 +81,14 @@ By the duality properties of convex optimisation it was clear that any positive 
 Once we obtained the formula for the size of the Lee ball, all that remained to do was to substitute the result in the formulae from Berlekamp's book and plot the results. The results for $$q = 6$$ are shown below. We also verified that $$q = 2$$ with our method gives the same results as the binary Hamming case pointed out above - one way in which we were able to be somewhat sure that the method works. 
 
 <figure>
-  <img src='/assets/Leebounds.svg' width="100%" alt='Lee metric for q=6'/><br>
+  <img src='/assets/images/Leebounds.svg' width="100%" alt='Lee metric for q=6'/><br>
   <div class="divider"></div>
   <figcaption> What the bounds look like for the Lee metric with alphabet size of \(6\). Note a few similarities with the Hamming case. The GV and EB bounds agree on where the rate is zero (\(\delta = 1.5\)). There is again a gap between the upper and lower bounds, and the EB is again the tightest upper bound.</figcaption>
   <div class="divider"></div>
 </figure>
 
 <figure>
-  <img src='/assets/comparisonbounds.svg' width="100%" alt='Comparison with the Hamming case'/><br>
+  <img src='/assets/images/comparisonbounds.svg' width="100%" alt='Comparison with the Hamming case'/><br>
   <div class="divider"></div>
   <figcaption> Our technique (markers) compared with the known results for the Hamming metric case (lines). </figcaption>
   <div class="divider"></div>
