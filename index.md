@@ -1,7 +1,7 @@
 ---
 layout: single
 author_profile: true
-title: ""
+title: "Sagnik"
 ---
 
 I am a fourth-year Electrical Engineering undergraduate at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/), broadly interested in Information Theory and Quantum Computing. I am also interested in Boolean functions and the intersection of statistical physics, theoretical computer science and coding theory.
