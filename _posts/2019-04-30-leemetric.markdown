@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Volumes of spheres in discrete metrics
-date: 2019-01-25 14:00:00 +0530
+date: 2019-04-30 14:00:00 +0530
 excerpt: On a recent paper that I co-authored
 tags: coding-theory information-theory
 categories: academic
