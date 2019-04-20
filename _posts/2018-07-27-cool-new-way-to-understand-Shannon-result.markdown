@@ -8,7 +8,7 @@ categories: academic
 comments: true
 ---
 
-Let me start with some quick praise of MIT and its educational outreach programs, mainly via [MIT-OCW](https://ocw.mit.edu/index.htm) and MITx courses on [edX](https://www.edx.org/). These have been an integral part of my college life and as noted [here](/Why-quantum), are one of the reasons I am studying the things that I do. [^1]  
+Let me start with some quick praise of MIT and its educational outreach programs, mainly via [MIT-OCW](https://ocw.mit.edu/index.htm) and MITx courses on [edX](https://www.edx.org/). These have been an integral part of my college life and as noted [here](/blogposts/Why-quantum), are one of the reasons I am studying the things that I do. [^1]  
 
 Coming to the point - I was going through a course on Quantum Error Correction, Complexity and Fault Tolerance offered by MIT on edX. Even though I wasn't able to complete it on time because I discovered it very late, I learned a lot from that course, one of which I will talk about in this post. 
 
