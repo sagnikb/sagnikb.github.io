@@ -1,7 +1,7 @@
 main:
   - title: "Blog"
     url: /blog
-  - title: "All Posts"
-    url: /posts
-  - title: "Categories"
+  # - title: "All Posts"
+    # url: /posts
+  - title: "Categorised Posts"
     url: /categories

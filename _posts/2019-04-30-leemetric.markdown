@@ -72,7 +72,7 @@ Sanov's theorem requires us to find the type in the set that has the minimum rel
 
 By the duality properties of convex optimisation it was clear that any positive value of the single parameter that the dual was over would work, so what remained was to choose what the positive value would be as a function of the expected value that was used to define the type class. I plotted out what the optimal value looked like, and it seemed an odd kind of curve. Now the first thing that entered my head was that the negative of the curve looked like a $$q$$-th root function, appropriately scaled and shifted. Now, using `curve_fit` from `scipy.optimize` in Python, I was able to fit it to other functions, like polynomials or exponentials, but either they were very sensitive to parameters or were not very good fits - something that can be quantified using the output of the `curve_fit` function. Anyway, it turned out that the best fit among all the functions I tested was indeed given by that weird function, and that's what found its way into the paper. We also found that perturbing the optimal values for the constants in this fit did not affect the final result much - so this fit was robust in some sense. If you look at the curve and some other functional form comes to your mind, I would love to know it!
 
-## Final thoughts
+# Final thoughts
 
 Once we obtained the formula for the size of the Lee ball, all that remained to do was to substitute the result in the formulae from Berlekamp's book and plot the results. The results for $$q = 6$$ are shown below. We also verified that $$q = 2$$ with our method gives the same results as the binary Hamming case pointed out above - one way in which we were able to be somewhat sure that the method works. 
 

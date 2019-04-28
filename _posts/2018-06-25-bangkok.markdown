@@ -1,0 +1,66 @@
+---
+title: "Travelogue – Old Bangkok"
+date: 2018-06-25 14:00:00 +0530
+header:
+  overlay_image: https://lh3.googleusercontent.com/r-L6poumybRYs_LwlvPhIb-fUGLHNesCXOC2n8kAaZOR3_biaffKmjGooylTFY_RX_iBvQ7j8NTCtQLu2GCMf57zQ6ryN7FLhrtXNQapeQV6E7AffU05zqU_f1KeYgxixzvrKfDmgnM=w2400
+  caption: "Reclining Buddha, Wat Arun"
+  teaser: https://lh3.googleusercontent.com/r-L6poumybRYs_LwlvPhIb-fUGLHNesCXOC2n8kAaZOR3_biaffKmjGooylTFY_RX_iBvQ7j8NTCtQLu2GCMf57zQ6ryN7FLhrtXNQapeQV6E7AffU05zqU_f1KeYgxixzvrKfDmgnM=w2400
+categories:
+  - travel
+tags:
+  - Bangkok
+  - Thailand
+excerpt: "Adventures in the old city of Bangkok"
+gallery:
+  - image_path: https://lh3.googleusercontent.com/lnbeOSvCYyd3gU6OHRk0M-ROM84Xtllkf2oXzMt0-pY-Iv4_8cYb3cjwmmwpw9IK9Ztx67SpJHcNGQzKIvmKhJK3vu7doJ3GBshIpP_GnPuIMq922f3qjGWYV-crkrN83i6G88kpNIs=w2400
+    alt: "One of the more Indian looking Buddha idols"
+    title: "One of the more Indian looking Buddha idols"
+  - image_path: https://lh3.googleusercontent.com/NdpeVjDoHXj7YRdKEvsiIq5ezO4KNRc1H0nSvYHVyoBT4N8Ti6dpfXw3kd46Z189IweRM54T4ERv5oSOEBiyxy-l2A8eL1N1h9oWOR68VdEnghoDpYi8T30BRMcxCMDDbAh7f_Ap63s=w2400
+    alt: "A series of Buddha idols in one of the temple complexes"
+    title: "A series of Buddha idols in one of the temple complexes"
+---
+The whiff of Sanskrit and by extension my homeland of India that I got as our flight touched down at the Suvarnabhumi International Airport of Bangkok would only get stronger as we saw the sights in the city. If the decorations in the airport seemed vaguely similar to certain temple decorations in India, the paintings depicting scenes from the Ramayana on some of the walls of the temples of old Bangkok almost made me believe I was in India. Such is Bangkok and Thailand – a country with a culture that is at once very similar to and very different from the familiar surroundings of India.
+
+{% include figure image_path="https://lh3.googleusercontent.com/GIUX5iYPB9_n5c_u8lAgxdY-ofNle5fPanHcyrCkNN35bwSi84EA8jwjsJWR1C2vf7SgcHqG_wuGe1yuWtMbqi898RHzMCrhSC17tsbKsH6t5dvHJX9HwQEVSP5Z46lkkoTdKtxiL1s=w2400" alt="A temple complex" %}
+
+On second thoughts, I should not have been surprised to know that King Rama still reigns in Thailand and that the old capital of Thailand is called Ayutthaya after Ayodhya, the birthplace of Lord Rama in Hindu mythology – after all, the largest Hindu temple in the world is not in India, but is the Angkor Wat temple in modern day Cambodia. It is a pity that the history of the golden age of the south Indian empires like the Cholas is not taught much in Indian history at the school level, for it is partly because of them and their empires that stretched across southeast Asia that many countries in this part of the world still contain strong imprints of medieval Indian culture. Thailand is one of these countries – even though the dominant religion now is Buddhism, there are fingerprints of Hinduism all over the country. Apart from the Sanskrit place names and the wall paintings, this is also somewhat visible in the art styles and traditional clothes of the country. Analysis of the art forms and other historical evidence suggests that even Theravada Buddhism was introduced to Thailand via the Gupta empire.
+
+{% include figure image_path="https://lh3.googleusercontent.com/r-L6poumybRYs_LwlvPhIb-fUGLHNesCXOC2n8kAaZOR3_biaffKmjGooylTFY_RX_iBvQ7j8NTCtQLu2GCMf57zQ6ryN7FLhrtXNQapeQV6E7AffU05zqU_f1KeYgxixzvrKfDmgnM=w2400" alt="Wat Pho Reclining Buddha" caption="The Reclining Buddha of the Wat Pho Temple Complex, Bangkok. The people in the frame can give you an idea of how big the statue is. ‘Architecture as power’ was nowhere more apparent than in front of the gigantic reclining Buddha in the Wat Pho temple complex." %}
+
+The old part of the city of Bangkok is where these similarities could be seen the most. Apart from the paintings from the Ramayana on the temple walls as mentioned earlier, it was interesting to note that the Buddha statues and the style that they were painted in. Unlike the Chinese style, these idols had faces that looked familiar from several places in India, like the Ajanta and Ellora caves. Of course, the ornamentation and the use of gold was something that is not seen in the Ajanta and Ellora caves, and neither is the elaborate decoration seen in some of the Buddha statues.
+
+{% include gallery caption="One of the more Indian looking Buddha idols along with a series of Buddha idols in one of the temple complexes" %}
+
+The Grand Palace itself has a curious mixture of Asian and European styles that I hadn’t before – in particular, the facade is in European style, while the roof decorations are from South-East Asia. They reminded me of the design of the Khmer civilization buildings in the Age of Empires II Asian Dynasties expansion.
+
+{% include figure image_path="https://lh3.googleusercontent.com/r9xmxY-v8-jl5wlm36bpgmaGyhaUUbrmryOXX5dx1PXXqxmjzUHZcxsmot9yNklRNNtLTeItCsUppH_VGrBPFJ-CK7DLGXMRtvHAhhM9B-QB0nSjqJ2LALinmO56kZS8DwH2ivt6Odc=w2400" alt="The Grand Palace, Bangkok" caption="The Grand Palace, Bangkok" %}
+
+Much of my knowledge of the history of Thailand comes due to a particular tourist attraction that is strongly recommended that you visit if you are going to Bangkok – Jim Thompson’s house. Jim Thompson was an American businessman and architect, who built his house in central Bangkok by putting together six traditional Thai houses and interconnecting them. It is now a museum, housing the substantial collection of art that Mr. Thompson accumulated before his disappearance in 1967. One can find paintings and sculptures from all over southeast Asia in that house, and even if you’re not interested in art or history, you can always check out the tropical garden within the compound. It is here that I found some official source to confirm that Theravada Buddhism was introduced to Thailand via the Gupta Empire of India, which goes a long way to explain why their Buddha statues have faces resembling Buddha faces in the Indian style.
+
+{% include figure image_path="https://lh3.googleusercontent.com/3Esh3e5zkd_gGbfMewkdNg4vMLVg_e-VrVosqNKa7xa2cN-zzDzR7lgUYzVQPt8IL4Di3MbrLWSQ2oNyISxIySHUBw4ylCMMtXja8AOPZCSMjDtteLLdzLe0XU1Cxb5zM-1Lg3s-mK0=w2400" alt="A small part of Jim Thompson’s substantial art collection" caption="A small part of Jim Thompson’s substantial art collection" %}
+
+Something else that I tried during our stay in Bangkok was some interesting food. The most interesting was a serving of traditional pineapple rice, served in an actual pineapple, and I am pleased to say that it tasted delicious! I also had a santol fruit juice – one of the first times that I needed to Google a fruit’s name before actually having it.
+
+<figure>
+  <img src="https://lh3.googleusercontent.com/U-oUwNz566HOp28TJkywRbWLIHrYrS_tnmGaWYzXhMeNA4RolqRuFA2KZCd_W0AjRlwqiGzbBbZvbMe7vwsoLHeGwLwlQY7BjV-xMNsiU7FMefPzuLGbm6zxVFgPJEtlVKkxo6u7aEg=w2400" alt="santol fruit juice"/>
+  <figcaption>Santol fruit juice</figcaption>
+</figure>
+
+
+{% include figure image_path="https://lh3.googleusercontent.com/3vndJwsgRV1ws_SJlLJi9b6vseSltDxnLXdMubME1BwH5Foukr5jKL9152DtUm6nCUda1UeXYLyB3ZlnDx8qIZKvEaqdqiAC8I-90XnMMTeMyZK3hzxMrXoXOGtP3SMVmPco1p30bEY=w2400" alt="pineapple rice" caption="Pineapple on pizza may be an abomination, but pineapple rice, Thailand style, is definitely not!" %}
+
+The coolest memento I have from my time in Bangkok is a croaking wooden frog – the croaks really are realistic!
+
+{% include figure image_path="https://lh3.googleusercontent.com/NxSBBI_DA2Pv1ZhLRwhJSYKY-34clJJy_r0Nl9yUvc2HBA6JFvrWzSKPNg6tdJ628FlIzNWl-qyG4RQVlSh3ZxwmQ0KWOtaPEEkkGTZnDNGTDJkOr85SbL5aeydHTOVSNgTZH2gYDTA=w2400" alt="wooden frog" caption="I now own this funny little wooden frog that can make pretty realistic croaking sounds. It seems these things are pretty popular in Thailand!" %}
+
+I had this idea before going to Bangkok that the experience of the city was limited to glitzy shopping malls, spas, and parties, but even though we visited a couple of those places too, easily the most surprising part of the trip was the day, or so we spent exploring the old city. This part of the ‘Bangkok experience’ isn’t emphasized much in the stories that people tell of the city, but it’s certainly worth checking out.
+
+***
+
+[^1]: Brief side note here. One might wonder about the metric that describes the situation where 'closeness' is defined by arranging on a line and not a circle. In this case, it can be shown that there are no channels that are matched to this metric, and so, even though the metric is mathematically interesting. it doesn't concern us that much here (it's not just mathematically interesting, but a situation where it would be of interest to an information/communication theorist would be too big a detour for this blog post.)
+
+[^2]: In the Hamming case the gap exists for alphabet sizes less than $$49$$, above which there is a construction based on algebraic geometry that closes the gap.
+
+[^3]: Point to note - for 'nice' metrics, one can always translate in this way to calculate the size of the neighbourhood around zero.
+
+[^4]: One of the cool properties of types is that all members of the type class have the same probability. 
