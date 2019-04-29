@@ -7,6 +7,8 @@ tags: coding-theory information-theory
 categories: academic
 comments: true
 toc: true
+header:
+  teaser: '/assets/images/comparisonbounds.svg'
 ---
 Recently I co-authored a [paper](/assets/pdfs/Lee_metric.pdf) with [Prof Adrish Banerjee](#), which we submitted to [ISIT 2019](https://2019.ieee-isit.org/), and I thought I would go over the key ideas in the paper as a blog post. Our main concern was to find out the volume of spheres in discrete metrics, and applications of the method to the Lee metric.
 
