@@ -23,7 +23,7 @@ description              : "Homepage for Sagnik Bhattacharya, Electrical Enginee
 url                      : "https://sagnikb.github.io"
 baseurl                  : ""
 repository               : "sagnikb/sagnikb.github.io"
-teaser                   : "/assets/touch-icon-1.png"
+teaser                   : "/assets/images/teaser.jpg"
 logo                     : "/assets/favicon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -219,7 +219,7 @@ sass:
 
 # Outputting
 permalink: /blogposts/:title/
-paginate: 4 # amount of posts to show
+paginate: 10 # amount of posts to show
 paginate_path: /page:num
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 

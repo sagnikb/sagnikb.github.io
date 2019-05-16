@@ -76,11 +76,3 @@ It is therefore ironic that one of the most important spots in the film – the 
 Satyajit Ray is known to the outside world as one of the greatest film directors of his generation, but in Bengal and particularly among kids too young to appreciate his more mature films, he’s more well-known as an author. For most Bengali children growing up, even today, the first detective fiction and science fiction that they are introduced to are his creations – Feluda and Professor Shonku. My trip to Rajasthan and the above following of the Feluda trail gave me renewed appreciation of Ray’s genius and range as a storyteller and film-maker, and how he was able to take the colour of the fort at a time when it was not very well known at all, and wove a whole travelogue and detective story around it. That is just the result of an absolute master at work.
 
 ***
-
-[^1]: Brief side note here. One might wonder about the metric that describes the situation where 'closeness' is defined by arranging on a line and not a circle. In this case, it can be shown that there are no channels that are matched to this metric, and so, even though the metric is mathematically interesting. it doesn't concern us that much here (it's not just mathematically interesting, but a situation where it would be of interest to an information/communication theorist would be too big a detour for this blog post.)
-
-[^2]: In the Hamming case the gap exists for alphabet sizes less than $$49$$, above which there is a construction based on algebraic geometry that closes the gap.
-
-[^3]: Point to note - for 'nice' metrics, one can always translate in this way to calculate the size of the neighbourhood around zero.
-
-[^4]: One of the cool properties of types is that all members of the type class have the same probability. 
