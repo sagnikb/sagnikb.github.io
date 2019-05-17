@@ -7,6 +7,7 @@ tags: game-theory coding-theory
 categories: academic
 comments: true
 toc: true
+toc_sticky: true
 ---
 Binary search allows us to search for an entry in a sorted list in $$\log(n)$$ time. In this post, I shall talk about a more general version, where the answers to some of the queries used during the binary search may be false (which is the Ulam game) and how that is related to adaptive block codes in coding theory and how these ideas help us.
 

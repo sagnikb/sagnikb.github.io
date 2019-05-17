@@ -7,6 +7,7 @@ tags: coding-theory information-theory
 categories: academic research
 comments: true
 toc: true
+toc_sticky: true
 header:
   teaser: '/assets/images/comparisonbounds.svg'
 ---
