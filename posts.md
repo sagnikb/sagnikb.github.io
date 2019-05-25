@@ -1,3 +1,4 @@
 ---
 layout: posts
+comments: false
 ---

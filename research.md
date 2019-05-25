@@ -1,7 +1,8 @@
 ---
-layout: single
+layout: 1single
 title: Research
 author_profile: true
+comments: false
 ---
 My most recent research has been on classical coding theory bounds under the guidance of <a href="https://home.iitk.ac.in/~adrish">Prof Adrish Banerjee</a>. We were able to extend some well-known bounds in the Hamming metric to the Lee metric. Our <a href="/assets/pdfs/Lee_metric.pdf">paper</a> will appear in <a href="https://2019.ieee-isit.org/">ISIT 2019</a>. We have also <a href="/assets/pdfs/Adversarial_Channels.pdf">worked</a> on generalizing the Fourier analytic proof of the MRRW bound.
 

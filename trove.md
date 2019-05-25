@@ -1,8 +1,9 @@
 ---
-layout: single
+layout: 1single
 title: The Trove
 author_profile: true
 toc: true
+toc_sticky: true
 ---
 ## Music
 
