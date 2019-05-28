@@ -88,7 +88,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : "/assets/images/profilepic.jpg" # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Sagnik Bhattacharya"
-  avatar           : "/assets/images/profile_picture.jpg"
+  avatar           : "/assets/images/profilepic.jpg"
   bio              : "Electrical Engineering undergrad, IIT Kanpur"
   location         : "Kanpur, India"
   email            :  sagnikb@iitk.ac.in
@@ -117,7 +117,7 @@ author:
       url: mailto:sagnikb@iitk.ac.in
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://sagnikb.github.io"
+      url: "https://sagnikb.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/TheSag66"
@@ -129,7 +129,7 @@ author:
       url: "https://github.com/sagnikb/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/thesag66/"
+      # url: "https://www.instagram.com/thesag66/"
 
 # Site Footer
 footer:
