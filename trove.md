@@ -5,6 +5,11 @@ author_profile: true
 toc: true
 toc_sticky: true
 ---
+
+[Home](/)
+
+This page contains many of my non-academic interests. There are a fair few!
+
 ## Music
 
 I can play the tabla, an Indian classical percussion instrument.
@@ -60,3 +65,5 @@ In my random procrastination spells on the Internet, I have often discovered som
 * <a href="http://www.waitbutwhy.com">Wait But Why</a>: I couldn’t find a better place to start. Long, insightful, extremely well researched posts that make you see the subjects from angles you might not have considered before. All accompanied by cool stick figures. I couldn’t recommend any one particular post because they are all so good, but do check them out.
 
 * <a href="http://radio.garden/">Radio-Garden</a>: Allows you to listen to radio stations from around the world. The only thing you require is a working Internet connection.
+
+[Home](/)

@@ -114,7 +114,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:sagnikb@iitk.ac.in
+      # url: mailto:sagnikb@iitk.ac.in
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://sagnikb.github.io"

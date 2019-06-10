@@ -10,7 +10,7 @@ My [CV](/assets/cv.pdf).
 
 ### News
 
-* **April 2019** Two of my papers got accepted to [ISIT 2019]() to be held in Paris
+* **April 2019** Two of my papers got accepted to [ISIT 2019](https://2019.ieee-isit.org/) to be held in Paris
 * **March 2019** I have accepted a PhD position at the University of Maryland, starting Fall 2019
 
 ### Blog

@@ -9,3 +9,5 @@ My most recent research has been on classical coding theory bounds under the gui
 I spent the summer of 2018 in Hong Kong, have also working with <a href="https://staff.ie.cuhk.edu.hk/~sjaggi/"> Prof Sidharth Jaggi </a> of <a href="http://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a> on communication using common randomness in the presence of an adversary. Our <a href="/assets/pdfs/Shared_randomness.pdf">paper</a> will appear in <a href="https://2019.ieee-isit.org/">ISIT 2019</a>.
 
 I have also worked with with <a href="https://www.cse.iitk.ac.in/users/rmittal/">Prof Rajat Mittal</a> on lower bounds on the quantum query complexity of 'interesting' functions.
+
+[Home](/)
