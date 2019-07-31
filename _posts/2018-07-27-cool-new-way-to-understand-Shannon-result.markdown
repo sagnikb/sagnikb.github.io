@@ -6,6 +6,8 @@ excerpt: The (highly) non-trivial content of Shannon's Channel Coding theorem
 tags: coding-theory information-theory
 categories: academic
 comments: true
+header:
+  teaser: '/assets/images/shannon-teaser.svg'
 ---
 
 Let me start with some quick praise of MIT and its educational outreach programs, mainly via [MIT-OCW](https://ocw.mit.edu/index.htm) and MITx courses on [edX](https://www.edx.org/). These have been an integral part of my college life and as noted [here](/blogposts/Why-quantum), are one of the reasons I am studying the things that I do. [^1]  

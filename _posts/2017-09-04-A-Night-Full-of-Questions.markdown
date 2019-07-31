@@ -7,7 +7,7 @@ tags: science-coffeehouse
 categories: puzzles
 comments: true
 header:
-    teaser: /assets/images/SNT2.PNG
+    teaser: /assets/images/night-full-of-questions-teaser.svg
 ---
 A few days back, SnT Code, one of the biggest events of Takneek 2017, was organised. For the uninitialized, Takneek is the intra-college technical festival of IIT Kanpur. All the clubs under the Science and Technology (SnT) Council have to make questions that the rest of the campus can then try and solve. I participated in Takneek in both my first and second years and this time I made the questions for the hobby group I co-lead, Science Coffeehouse. 
 
