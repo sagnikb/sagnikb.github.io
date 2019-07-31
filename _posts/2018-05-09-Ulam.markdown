@@ -9,11 +9,13 @@ comments: true
 toc: true
 toc_sticky: true
 ---
+## Introduction
+
 Binary search allows us to search for an entry in a sorted list in $$\log(n)$$ time. In this post, I shall talk about a more general version, where the answers to some of the queries used during the binary search may be false (which is the Ulam game) and how that is related to adaptive block codes in coding theory and how these ideas help us.
 
 Much of this is based on [David desJardin's PhD thesis](http://www.desjardins.org/david/thesis/thesis.pdf) which gives a general solution to Ulam's game. I am writing about it because I had heard of the Ulam game where only one lie is allowed from a friend and was surprised to see the same crop up when learning about coding theory. It is not a very difficult topic while also being an interesting extension of something well known, so I thought I could give an overview of the same in a post such as this. 
 
-## The Ulam Game
+### The Ulam Game
 
 The game 20 questions is a specific formulation of the problem of searching for a marked element in an ordered list of elements and is easily solved by binary search. The game itself is the following: 
 
@@ -42,7 +44,7 @@ where all logarithms are to the base-2. The reason is the following: let us perf
 
 It turns out that the Ulam game is equivalent to the problem of showing the existence of adaptive block codes of certain parameters, and this will occupy us for the rest of this post.
 
-## Adaptive Block Codes
+### Adaptive Block Codes
 
 Coding theory deals with reliable communication across a noisy channel. Alice and Bob are communicating over a channel that corrupts some of what Alice sends, and the idea is that Alice encodes the data in such a way that Bob can correctly decode it given some reasonable assumptions about the level of noise in the channel. 
 
@@ -52,7 +54,7 @@ We can possible classification of channels is into two categories - with feedbac
 
 Claude Shannon in his landmark 1948 papers showed that associated with every channel, there is a certain rate of communication called the capacity which characterizes it. He demonstrated that codes exist that guarantee nearly error-free communication at rates below channel capacity. He also showed in 1956 that feedback does not increase the theoretical capacity of the forward channel. However, the use of feedback in coding can give us better encoding and decoding strategies; therefore the question of the existence of adaptive block codes is an interesting question.
 
-## Equivalence of the Ulam Game and the existence of Adaptive Block Codes problem
+## The equivalence between the two problems
 
 The proof of this equivalence is in the PhD thesis mentioned above. Instead of redoing the proof, let's see why the equivalence intuitively makes sense. 
 

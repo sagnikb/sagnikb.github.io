@@ -7,7 +7,7 @@ tags: science-coffeehouse April-puzzles
 categories: puzzles
 comments: true
 header:
-  teaser: /assets/images/xnor.png
+  teaser: /assets/images/april-2018-teaser.svg
 ---
 
 I made these puzzles for Science Coffeehouse and were released on April Fools Day. Needless to say there will be some relation between the day and the puzzles. Don't look at the solutions before trying though, they are not very difficult! I received some input for puzzle number three from [Prannay Khosla](http://prannay.com/).

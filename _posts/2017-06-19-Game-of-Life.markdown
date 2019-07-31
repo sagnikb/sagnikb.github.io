@@ -6,6 +6,8 @@ excerpt: Interesting things about a cellular automaton
 tags: game-of-life 
 categories: academic
 comments: true
+header:
+  teaser: /assets/images/conway-teaser.svg
 ---
 I read Richard Dawkins' amazing book called 'The Greatest Show on Earth'
 some time back. Recently, while doing a course in Linguistics, I came
