@@ -6,6 +6,8 @@ excerpt: ... in which I did three courses with 'Quantum' in the title.
 tags: quantum IITK
 categories: general
 comments: true
+header:
+  teaser: '/assets/images/quantum-semester-teaser.svg'
 ---
 I have not written anything in a long, long time, and I shall claim that
 it is just because I was trying to make this blog live up to its

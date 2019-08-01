@@ -8,6 +8,8 @@ categories: academic
 comments: true
 toc: true
 toc_sticky: true
+header:
+  teaser: '/assets/images/ulam-teaser.svg'
 ---
 ## Introduction
 
@@ -34,7 +36,9 @@ It is interesting to note that Alice need not decide on her number at the beginn
 
 Stanislaw Ulam proposed a more interesting version of the above in his autobiography, called the Ulam game.
 
-> Someone thinks of a number between one and one million (which is just less than $$2^{20}$$). Another person is allowed to ask up to twenty questions, to each of which the first person is supposed to answer only yes or no. Obviously, the number can be guessed by asking first, "Is the number in the first half million?" then again reduce the reservoir of numbers in the next question by one-half, and so on. Now suppose one were allowed to lie once or twice, then how many questions would one need to get the right answer? One clearly needs more than $$n$$ questions for guessing one of $$2^n$$ objects because one does not know when the lie was told. This problem is not solved in general.
+> Someone thinks of a number between one and one million (which is just less than $$2^{20}$$). Another person is allowed to ask up to twenty questions, to each of which the first person is supposed to answer only yes or no. Obviously, the number can be guessed by asking first, "Is the number in the first half million?" then again reduce the reservoir of numbers in the next question by one-half, and so on. Now suppose one were allowed to lie once or twice, then how many questions would one need to get the right answer? 
+
+One clearly needs more than $$n$$ questions for guessing one of $$2^n$$ objects because one does not know when the lie was told. This problem is not solved in general.
 
 When I first came across this problem via a friend, the question was to find some lower bound on the number of questions needed. One possible lower bound is 
 

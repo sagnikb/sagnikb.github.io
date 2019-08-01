@@ -6,6 +6,8 @@ excerpt: A short(ish) introduction to quantum complexity
 tags: quantum quantum-computation
 categories: academic
 comments: true
+header:
+  teaser: '/assets/images/quantum-comp-teaser.svg'
 ---
 I am currently working on quantum complexity, with a working title of 'adversarial and polynomial methods in quantum query complexity'. If I come across something interesting, I plan to write on it as I guess it will sharpen my understanding of things, and maybe you, the reader, will find it cool too. This is meant as an introduction to the field itself.
 
