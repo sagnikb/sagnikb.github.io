@@ -4,14 +4,11 @@ author_profile: true
 comments: false
 title: Sagnik Bhattacharya
 ---
-I am a fourth-year Electrical Engineering undergrad at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/), broadly interested in Information Theory and Quantum Computing. I am also interested in Boolean functions and the intersection of statistical physics, theoretical computer science and coding theory.
+# সাগ্নিক ভট্টাচার্য্য
+
+I am a first-year Electrical and Computer Engineering PhD student at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). I am broadly interested in Information Theory and Quantum Computing. I am also interested in Boolean functions and the intersection of statistical physics, theoretical computer science and coding theory. I did my BTech in Electrical Engineering during four wonderful years at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/).
 
 My [CV](/assets/cv.pdf).
-
-### News
-
-* **April 2019** Two of my papers got accepted to [ISIT 2019](https://2019.ieee-isit.org/) to be held in Paris
-* **March 2019** I have accepted a PhD position at the University of Maryland, starting Fall 2019
 
 ### Blog
 

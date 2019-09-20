@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Thoughts, Quantized"
 title_separator          : "|"
 name                     : "Sagnik Bhattacharya"
-description              : "Homepage for Sagnik Bhattacharya, Electrical Engineering undergrad at IITK"
+description              : "Homepage for Sagnik Bhattacharya, Electrical Engineering PhD Student at UMD"
 url                      : "https://sagnikb.github.io"
 baseurl                  : ""
 repository               : "sagnikb/sagnikb.github.io"
@@ -108,9 +108,9 @@ analytics:
 author:
   name             : "Sagnik Bhattacharya"
   avatar           : "/assets/images/profilepic.jpg"
-  bio              : "Electrical Engineering undergrad, IIT Kanpur"
-  location         : "Kanpur, India"
-  email            :  sagnikb@iitk.ac.in
+  bio              : "Electrical Engineering PhD Student, UMD"
+  location         : "College Park, Maryland, USA"
+  email            :  sagnikb@umd.edu
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
