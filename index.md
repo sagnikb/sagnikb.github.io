@@ -21,7 +21,7 @@ I have worked on
 * *adversarial channels*, finding bounds on the amount of common randomness required to communicate in the presence of an adversary
 * *quantum query complexity*, finding lower bounds on the query complexity of interesting functions.
 
-Read more [here](/research). My list of publications is available [here](#). A list of talks I have given can be found [here](/talks).
+Read more [here](/research). My list of publications is available [here](/publications). A list of talks I have given can be found [here](/talks).
 
 ### Personal
 
