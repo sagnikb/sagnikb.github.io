@@ -10,6 +10,8 @@ header:
   overlay_filter: "0.5"
   overlay_image: '/assets/images/20190414_183537.jpg'
   caption: "In front of the PK Kelkar Library, April 2019"
+header:
+  teaser: '/assets/images/four-year-teaser.svg'
 ---
 
 > **Quick note** - This [first appeared](http://voxiitk.com/as-we-leave-9/) on Vox Populi, the campus journalism body of IIT Kanpur. They deserve credit for getting me to beat my procrastination and write what follows (no mean feat), and for editing this and stopping me from rambling. In particular, credit for that last bit goes to Ayush Agarwal.
