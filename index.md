@@ -6,29 +6,12 @@ title: Sagnik Bhattacharya
 classes: wide
 ---
 <h1 style="font-family:'Atma'"> সাগ্নিক ভট্টাচার্য্য </h1>
-I am a first-year Electrical and Computer Engineering PhD student at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). I am broadly interested in Information Theory and Quantum Computing. I am also interested in Boolean functions and the intersection of statistical physics, theoretical computer science and coding theory. I did my BTech in Electrical Engineering during four wonderful years at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/).
+I am a first-year Electrical and Computer Engineering PhD student at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). I am broadly interested in Information Theory and Quantum Computing. I did my BTech in Electrical Engineering during four wonderful years at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/).
+
+I spent the summer of 2018 at [CUHK](http://www.cuhk.edu.hk/english/index.html) in Hong Kong, working with [Prof Sidharth Jaggi](https://staff.ie.cuhk.edu.hk/~sjaggi/) on [communication using common randomness in the presence of an adversary](https://ieeexplore.ieee.org/document/8849801).
+
+I have worked with [Prof Adrish Banerjee](https://home.iitk.ac.in/~adrish) on finding [bounds on codes in the Lee metric](https://ieeexplore.ieee.org/abstract/document/8849817) and with <a href="https://www.cse.iitk.ac.in/users/rmittal/">Prof Rajat Mittal</a> on quantum query complexity lower bounds.
 
 My [CV](/assets/cv.pdf).
 
-### Blog
-
-I have a blog called [Thoughts, Quantized](/blog), which contains posts about my research, life, music, puzzles and personal travel stories. I also sometimes write on [Medium](#link), when I think more people might be interested in the topic.
-
-### Research
-
-I have worked on 
-* *algebraic coding theory*, finding bounds on the sizes of spheres in the Lee metric
-* *adversarial channels*, finding bounds on the amount of common randomness required to communicate in the presence of an adversary
-* *quantum query complexity*, finding lower bounds on the query complexity of interesting functions.
-
-Read more [here](/research). My list of publications is available [here](/publications). A list of talks I have given can be found [here](/talks).
-
-### Personal
-
-Some of my non-academic interests can be found in [The Trove](/trove).
-
-I wrote an essay about some memories and life-lessons that I accumulated in my four years at IIT Kanpur which [got published by Vox Populi](http://voxiitk.com/as-we-leave-9/), the campus journalism body. 
-
-### Contact
-
-Send me an [email](mailto:sagnik6696@gmail.com)!
+I have a blog called [Thoughts, Quantized](/blog).
