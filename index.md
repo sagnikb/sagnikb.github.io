@@ -5,13 +5,22 @@ comments: false
 title: Sagnik Bhattacharya
 classes: wide
 ---
-<h1 style="font-family:'Atma'"> সাগ্নিক ভট্টাচার্য্য </h1>
-I am a first-year Electrical and Computer Engineering PhD student at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). I am broadly interested in Information Theory and Quantum Computing. I did my BTech in Electrical Engineering during four wonderful years at the [Indian Institute of Technology, Kanpur](http://www.iitk.ac.in/).
+<h1 style="font-family:'Atma'"> সাগ্নিক ভট্টাচার্য্য </h1> 
 
-I spent the summer of 2018 at [CUHK](http://www.cuhk.edu.hk/english/index.html) in Hong Kong, working with [Prof Sidharth Jaggi](https://staff.ie.cuhk.edu.hk/~sjaggi/) on [communication using common randomness in the presence of an adversary](https://ieeexplore.ieee.org/document/8849801).
+<div style="font-family:'Lato'">
+<p> ECE PhD student at <b>University of Maryland, College Park</b></p>
 
-I have worked with [Prof Adrish Banerjee](https://home.iitk.ac.in/~adrish) on finding [bounds on codes in the Lee metric](https://ieeexplore.ieee.org/abstract/document/8849817) and with <a href="https://www.cse.iitk.ac.in/users/rmittal/">Prof Rajat Mittal</a> on quantum query complexity lower bounds.
+<p> Advised by <a href="https://user.eng.umd.edu/~prakash/index.html"><b>Prof Prakash Narayan</b></a>
 
-My [CV](/assets/cv.pdf).
+<p> Broadly interested in <b>Information Theory</b> and <b>Quantum Computing</b> </p>
 
-I have a blog called [Thoughts, Quantized](/blog).
+<p> BTech in Electrical Engineering from <b>IIT Kanpur</b>. Worked on <b>algebraic coding theory</b> with <a href="http://home.iitk.ac.in/~adrish/"><b> Prof Adrish Banerjee </b></a> and quantum query complexity with <a href="https://www.cse.iitk.ac.in/users/rmittal/"><b> Prof Rajat Mittal </b></a></p>
+
+<p> Former summer intern (2018) at <b> CUHK </b> working on <b>adversarial channels</b> with <a href="https://staff.ie.cuhk.edu.hk/~sjaggi/"><b> Prof Sidharth Jaggi </b></a>
+
+<p> <a href="/assets/cv.pdf"> <b>CV</b> </a> </p>
+
+<p> I have a blog called <a href="/blog"><b>Thoughts, Quantized</b></a></p>
+
+
+
