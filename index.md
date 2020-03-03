@@ -7,20 +7,19 @@ classes: wide
 ---
 <h1 style="font-family:'Atma'"> সাগ্নিক ভট্টাচার্য্য </h1> 
 
-<div style="font-family:'Lato'">
-<p> ECE PhD student at <b>University of Maryland, College Park</b></p>
+ECE PhD student at **University of Maryland, College Park**
 
-<p> Advised by <a href="https://user.eng.umd.edu/~prakash/index.html"><b>Prof Prakash Narayan</b></a>
+Advised by <a href="https://user.eng.umd.edu/~prakash/index.html">**Prof Prakash Narayan**</a>
 
-<p> Broadly interested in <b>Information Theory</b> and <b>Quantum Computing</b> </p>
+Broadly interested in **Information Theory** and **Quantum Computing** 
 
-<p> BTech in Electrical Engineering from <b>IIT Kanpur</b>. Worked on <b>algebraic coding theory</b> with <a href="http://home.iitk.ac.in/~adrish/"><b> Prof Adrish Banerjee </b></a> and quantum query complexity with <a href="https://www.cse.iitk.ac.in/users/rmittal/"><b> Prof Rajat Mittal </b></a></p>
+BTech in Electrical Engineering from **IIT Kanpur**. Worked on **algebraic coding theory** with <a href="http://home.iitk.ac.in/~adrish/">**Prof Adrish Banerjee**</a> and quantum query complexity with <a href="https://www.cse.iitk.ac.in/users/rmittal/">**Prof Rajat Mittal**</a>
 
-<p> Former summer intern (2018) at <b> CUHK </b> working on <b>adversarial channels</b> with <a href="https://staff.ie.cuhk.edu.hk/~sjaggi/"><b> Prof Sidharth Jaggi </b></a>
+Former summer intern (2018) at **CUHK** working on **adversarial channels** with <a href="https://staff.ie.cuhk.edu.hk/~sjaggi/">**Prof Sidharth Jaggi**</a>
 
-<p> <a href="/assets/cv.pdf"> <b>CV</b> </a> </p>
+<a href="/assets/cv.pdf"> **CV** </a> 
 
-<p> I have a blog called <a href="/blog"><b>Thoughts, Quantized</b></a></p>
+I have a blog called <a href="/blog">**Thoughts, Quantized**</a>
 
 
 
