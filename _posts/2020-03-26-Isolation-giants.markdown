@@ -9,6 +9,7 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: https://lh3.googleusercontent.com/d3ZjTRJy9kmA4b9wjvlsoroFQzaH_lSTBR1ShOayC-5cG4DNCvLls7ZBuelyE_n8n-ow6EVwEy8xnolXnQ1tkhCVnHWNfcpkcAikToJZSvLg9d9s_UPfmyV0SyY4AG2NakWbH8tAORc=w2400
+excerpt: "Another person was once isolated. This is a day in his life."
 ---
 Scratch… scratch… scratch…
 
