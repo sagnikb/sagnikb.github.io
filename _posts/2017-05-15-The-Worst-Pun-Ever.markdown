@@ -3,7 +3,7 @@ layout: single
 title:  "The Worst Pun Ever?"
 date:   2017-05-15 00:22:20 +0530
 categories: humour
-excerpt: You have been warned.
+excerpt: Pythagoras would have been proud
 tags: puns
 comments: true
 ---

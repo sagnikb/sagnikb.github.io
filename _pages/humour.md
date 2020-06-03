@@ -7,9 +7,9 @@ taxonomy: humour
 View other categories: 
 <br>
 <br>
-<a href="\categories\general"><b>General/</b></a>
-<a href="\categories\academic"><b>Academic/</b></a>
-<a href="\categories\puzzles"><b>Puzzles/</b></a>
-<a href="\categories\humour"><b>Humour/</b></a>
-<a href="\categories\travel"><b>Travel/</b></a>
-<a href="\categories\writing"><b>Writing/</b></a>
+<a href="\categories\general"><b>General</b></a> &middot;
+<a href="\categories\academic"><b>Academic</b></a> &middot;
+<a href="\categories\puzzles"><b>Puzzles</b></a> &middot;
+<a href="\categories\travel"><b>Travel</b></a> &middot;
+<a href="\categories\writing"><b>Writing</b></a> &middot;
+<a href="\blog"><b>All</b></a>
