@@ -4,7 +4,7 @@ title:  "Welcome!"
 date:   2017-03-14 00:12:24 +0530
 excerpt: My second attempt at having a blog.
 tags: first-post
-categories: general
+categories:
 comments: true
 ---
 Hello world!
