@@ -62,5 +62,3 @@ He couldn’t even be angry at the voice that came from far away.
 He took one last look at the apple, before walking slowly towards the cowshed. 
 
 He had his answer. The clockwork did extend further. 
-
-{% include figure image_path="https://lh3.googleusercontent.com/SFuz9guq24cTnNM0Y_3YaJAkr_SRSw5R6Vi1iicQBV5f0DBs3NV969DoX5zhZL-3k_-dKKZeZrAPVvF1CTiDHtyMLFquMh8kGd_sM1i4SXjPCDQTNxdZOJ9BWxhfKMtkg1vU6QOfA0o=w2400" alt="apple" %}

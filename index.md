@@ -6,17 +6,10 @@ title: Sagnik Bhattacharya
 classes: wide
 ---
 <h1 style="font-family:'Atma'"> সাগ্নিক ভট্টাচার্য্য </h1> 
-ECE PhD student at **University of Maryland, College Park**
+ECE PhD student at **University of Maryland, College Park**, working on sampling/rate-distortion problems, advised by <a href="https://user.eng.umd.edu/~prakash/index.html">**Prof Prakash Narayan**</a>
 
-Advised by <a href="https://user.eng.umd.edu/~prakash/index.html">**Prof Prakash Narayan**</a>
+Broadly interested in **classical and quantum information theory** 
 
-Broadly interested in **Information Theory** and **Quantum Computing** 
+BTech in Electrical Engineering from **IIT Kanpur**. Previously worked on and maintain an interest in **algebraic coding theory**, **adversarial channels** and **quantum query complexity**
 
-BTech in Electrical Engineering from **IIT Kanpur**. Worked on **algebraic coding theory** with <a href="http://home.iitk.ac.in/~adrish/">**Prof Adrish Banerjee**</a> and quantum query complexity with <a href="https://www.cse.iitk.ac.in/users/rmittal/">**Prof Rajat Mittal**</a>. Awarded a **Proficiency Medal** for best undergraduate project in the Electrical Engineering deparment
-
-Worked on  **adversarial channels** with <a href="https://staff.ie.cuhk.edu.hk/~sjaggi/">**Prof Sidharth Jaggi**</a> at **CUHK** 
-
-Blog called <a href="/blog">**Thoughts, Quantized**</a>
-
-
-
+I like <a href="/blog">**blogging**</a>, <a href="/categories/writing">**writing**</a>, <a href="/categories/travel">**travelling**</a>
