@@ -4,7 +4,7 @@ title: "A Quantum Semester"
 date: 2017-08-29 23:27:30 +0530
 excerpt: ... in which I did three courses with 'Quantum' in the title.
 tags: quantum IITK
-categories: general
+categories: thoughts
 comments: true
 header:
   teaser: '/assets/images/quantum-semester-teaser.svg'

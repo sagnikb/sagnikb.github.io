@@ -3,7 +3,7 @@ layout: single
 title: "Musical Excursions: the Maihar Band"
 date: 2018-03-13 14:00:00 +0530
 excerpt: The beautiful music of the dying notes of the Maihar band
-categories: general
+categories: thoughts
 tags: Indian-classical-music
 ---
 

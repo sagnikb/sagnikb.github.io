@@ -2,7 +2,7 @@
 layout: single
 title:  "Why Quantum, man?"
 date:   2017-04-30 00:22:20 +0530
-categories: general
+categories: thoughts
 excerpt: Why an EE undergrad ended up studying quantum mechanics
 tags: quantum IITK
 comments: true

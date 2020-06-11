@@ -3,7 +3,7 @@ title: The Four Year Transform
 date: 2019-12-31 20:00:00 +0530
 excerpt: An essay with random fundae on college life packaged in a giant pun
 tags: life-fundae IITK
-categories: general
+categories: essays
 comments: true
 header:
   overlay_color: "#000"
