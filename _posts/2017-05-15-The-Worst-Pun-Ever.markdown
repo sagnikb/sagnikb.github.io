@@ -5,6 +5,7 @@ date:   2017-05-15 00:22:20 +0530
 categories: humour
 excerpt: Pythagoras would have been proud
 tags: puns
+classes: wide
 comments: true
 ---
 I once came upon a question on Quora asking for the worst pun ever written. Right up my alley! So I dug out an old post that I remembered one of my good friends had tagged me in on Facebook, and posted it as my [answer](https://www.quora.com/What-is-the-worst-pun-ever-written/answer/Sagnik-Bhattacharya-1). The amount of thought someone put into this piece of utter viciousness is amazing! I really really wish to meet the one *brilliant* guy (or girl) who came up with this!
@@ -24,4 +25,4 @@ The fateful day came and all the squires came out to the battlefield. (The knigh
 
 **The squire of the high pot and noose is equal to the sum of the squires of the other two sides.**
 
-[Apparently this deathly pun first appeared in the 'The Simpsons and Their Mathematical Secrets' written by Simon Singh and published by Bloomsbury.]
+**Update:** *Apparently this deathly pun first appeared in the 'The Simpsons and Their Mathematical Secrets' written by Simon Singh and published by Bloomsbury.*

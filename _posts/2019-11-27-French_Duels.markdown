@@ -5,6 +5,7 @@ excerpt: Mathematics, aliens, history, time-travel rolled into one story based o
 tags: writing science-fiction 
 categories: writing
 comments: true
+classes: wide
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"

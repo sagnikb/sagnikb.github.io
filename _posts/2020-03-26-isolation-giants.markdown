@@ -4,6 +4,7 @@ date: 2020-03-26 10:00:00 -0400
 excerpt: Lol
 tags: historical-fiction science
 categories: writing
+classes: wide
 comments: true
 header:
   overlay_color: "#000"

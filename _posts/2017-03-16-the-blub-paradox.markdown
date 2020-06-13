@@ -4,6 +4,7 @@ title:  "The Blub Paradox"
 date:   2017-03-16 00:22:20 +0530
 excerpt: On why we underestimate powerful tools and techniques
 categories: thoughts
+classes: wide
 tags: paradoxes
 comments: true
 ---

@@ -4,17 +4,16 @@ date: 2019-12-31 20:00:00 +0530
 excerpt: An essay with random fundae on college life packaged in a giant pun
 tags: life-fundae IITK
 categories: essays
+classes: wide
 comments: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: '/assets/images/20190414_183537.jpg'
   caption: "In front of the PK Kelkar Library, April 2019"
-header:
-  teaser: '/assets/images/four-year-teaser.svg'
 ---
 
-> **Quick note** - This [first appeared](http://voxiitk.com/as-we-leave-9/) on Vox Populi, the campus journalism body of IIT Kanpur. They deserve credit for getting me to beat my procrastination and write what follows (no mean feat), and for editing this and stopping me from rambling. In particular, credit for that last bit goes to Ayush Agarwal.
+*This [first appeared](http://voxiitk.com/as-we-leave-9/) on Vox Populi, the campus journalism body of IIT Kanpur. They deserve credit for getting me to beat my procrastination and write what follows (no mean feat), and for editing this and stopping me from rambling. In particular, credit for that last bit goes to Ayush Agarwal.*
 
 I remember the first time I went to the PK Kelkar Library and looked at the vast collection of books, and the goosebumps I had when I first roamed about in the Physics section. It was a few days into my first year, and when I called home later that night, I excitedly declared to my mother that if I read one of those many, many books per month, I’ll have learned a lot before it was time to graduate. Needless to say, like most of the plans I had made in the first few weeks that I had spent on campus, this did not work out. It did not work out to such an extent that the only time in the past year that I have stepped into the library (apart from graduation formalities) has been to get print-outs and one other time to roam in the physics section, trying to recapture the naïve awe from my first year. What happened in between is something I will call the **Four-year transform** and will try and spend the rest of this essay trying to elucidate the properties of this strange beast.
 
