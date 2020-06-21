@@ -28,3 +28,5 @@ Several stories have continued to come out about him and the lives he had touche
 This and many other unfinished stories that he left behind should be reminders for us to take mental health seriously and for our society, as a whole, to have more empathy than it does right now.
 
 ‘Kai Po Che!’, like the book it is based on, is set in Gujarat. The title is a Gujarati phrase meaning ‘I have cut’, used when a competitor uses their kite thread to cut off another competitor’s kite thread during the Makar Sankranti celebrations. The life-thread of the lead actor in the film is now cut, and no one is saying “Kai po che!” 
+
+*Directly inspired by an Instagram story by [Parul Pawaskar](https://www.instagram.com/parul1997/)*
