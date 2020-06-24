@@ -1,0 +1,572 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <!-- start custom head snippets -->
+<link rel="icon" type="image/ico" href="/assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Atma:300&display=swap" rel="stylesheet"> 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Shannon’s Channel Coding Theorem | Thoughts, Quantized</title>
+<meta name="description" content="The (highly) non-trivial content of Shannon’s Channel Coding theorem">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Thoughts, Quantized">
+<meta property="og:title" content="Shannon’s Channel Coding Theorem">
+<meta property="og:url" content="http://localhost:4000/blogposts/cool-new-way-to-understand-Shannon-result/">
+
+
+  <meta property="og:description" content="The (highly) non-trivial content of Shannon’s Channel Coding theorem">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/shannon-teaser.svg">
+
+
+
+
+
+  <meta property="article:published_time" content="2018-07-27T04:30:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blogposts/cool-new-way-to-understand-Shannon-result/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/teaser.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sagnik Bhattacharya",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Thoughts, Quantized Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/blog"><img src="/assets/favicon.png" alt=""></a>
+        
+        <a class="site-title" href="/blog">Thoughts, Quantized</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories" >Categorised Posts</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Shannon’s Channel Coding Theorem">
+    <meta itemprop="description" content="The (highly) non-trivial content of Shannon’s Channel Coding theorem">
+    <meta itemprop="datePublished" content="July 27, 2018">
+    
+    <div class="post-categories">
+      
+      <span style= "font-variant: small-caps;">category: </span>
+      
+      <a style=" font-variant: small-caps;" href="/categories/#academic"><b>academic</b></a>
+      
+      
+    </div>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Shannon’s Channel Coding Theorem
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <img src="/assets/images/shannon-teaser.svg">
+            </nav>
+          </aside>
+        
+        
+
+        <p>Let me start with some quick praise of MIT and its educational outreach programs, mainly via <a href="https://ocw.mit.edu/index.htm">MIT-OCW</a> and MITx courses on <a href="https://www.edx.org/">edX</a>. These have been an integral part of my college life and as noted <a href="/blogposts/Why-quantum">here</a>, are one of the reasons I am studying the things that I do. <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>Coming to the point - I was going through a course on Quantum Error Correction, Complexity and Fault Tolerance offered by MIT on edX. Even though I wasn’t able to complete it on time because I discovered it very late, I learned a lot from that course, one of which I will talk about in this post.</p>
+
+<p>So Prof Isaac Chuang wanted to quickly explain the point of Shannon’s Channel Coding theorem in order to draw connections with von Neumann’s pioneering observations in fault tolerant computing, and he came up with an interesting way to put it that I hadn’t explicitly thought about before.</p>
+
+<p>A quick description of the setting of the channel coding problem: suppose Alice and Bob are trying to talk to eachother and they have to do so over a noisy channel (which may simply be the air from Alice’s mouth to Bob’s ear in a noisy marketplace). Somehow, Alice and Bob must ensure that they are able to communicate with low rate of error even over such a channel. Shannon’s channel coding theorem tells us something non-trivial about the rates at which it is possible to communicate and the probability of error involved, but to understand why it is so cool let’s spend some time imagining that we don’t know what Shannon’s result is and think about what we might intuitively expect to happen.</p>
+
+<p>Imagine a professor lecturing in a noisy classroom. We might expect that if he speaks faster and faster, then it will become more and more difficult to understand what he’s saying, that is, the probability of error will increase. He might need to repeat what he said, but that would only reduce the rate. Therefore, it is reasonable to expect that as the rate increases, the communication becomes more and more error-prone. If we plot the probability of error versus the rate of speaking, intuitively we might expect to see something like this…</p>
+
+<figure>
+  <img src="https://lh3.googleusercontent.com/NhANZjrNhLam1Sz4DaGCtKQVTOsJg5KCB_JI47W0RU_ECyYF99csfK2R0P82f1rGlmZ2MikhUJLYT6U5vjQZf1d_RjmefLnpc3v5fyPwxWMOfitteGD_QrTXO2yqfvx1X6aTEh2Y-NY=w2400" width="70%" alt="Intuition says..." /><br />
+</figure>
+
+<p>However, Shannon showed that this is not the case. His result basically showed that there is a rate C, called the capacity, associated with a channel which precisely characterises what rates are possible and what are not. Every rate below C can be achieved with negligible probability of error (in the limit of large block-lengths, a subtlety that, along with several others, I will ignore to make in order to illustrate the point here) and every rate higher than C will result in error probability bounded away from zero (that is, always greater than some number which is greater than zero). In fact, it was shown later that when the rate is higher than C, the probability is actually very close to one, and if we re-draw the graph, we get something like this…</p>
+
+<figure>
+  <img src="https://lh3.googleusercontent.com/2RJYbUwSOYv2_yUYnaNxmyQt6ZiFYQMoLn9bY1DzFPzKkwLN3WvN6PxeXb2ON8WoaS-4vHTw0RaFVmP_x6Yko55HCpIsD8f9yvljW1676NphcTI_MtBfEejRO2-iXgDXEUdRdpaJLgM=w2400" width="70%" alt="Intuition says..." /><br />
+</figure>
+
+<p>This is precisely the non-intuitive content of Shannon’s channel coding theorem. A similar result was derived by von Neumann where he showed that as long as the basic gates used in constructing a computer are more reliable than a certain threshold, one could make a highly precise computer. What prompted him to think in this direction and why that result is hugely important today is an interesting tale in its own right, and one that I won’t be attempting here.</p>
+
+<p>The impact of Shannon’s results can hardly be overstated - one could argue that his highly original ideas ultimately kickstarted the communication revolution that has ended up giving us mobile phones, the Internet etc. This way of looking at it gives us a way to appreciate Shannon’s result without going into any math whatsoever.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Quick side note: that link is a bit backdated at this point. Information and coding theory have gained a good amount of real estate since then as far as my interests are concerned, but that is another story for another day. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#coding-theory" class="page__taxonomy-item" rel="tag">coding-theory</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#information-theory" class="page__taxonomy-item" rel="tag">information-theory</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academic" class="page__taxonomy-item" rel="tag">academic</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-07-27T04:30:00-04:00">July 27, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Shannon%27s+Channel+Coding+Theorem%20http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2Fcool-new-way-to-understand-Shannon-result%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2Fcool-new-way-to-understand-Shannon-result%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <!--<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2Fcool-new-way-to-understand-Shannon-result%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>-->
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blogposts/bangkok/" class="pagination--pager" title="Travelogue – Old Bangkok
+">Previous</a>
+    
+    
+      <a href="/blogposts/One-More-April-Puzzle/" class="pagination--pager" title="One More April Puzzle
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/ishaan-kon/" rel="permalink">Ishaan Kon
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Coming to terms with the Sushant Singh Rajput story
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/isolation-giants/" rel="permalink">Isolation on the shoulders of giants
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Another person was once isolated. This is a day in his life.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/hong-kong-teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Hong_Kong/" rel="permalink">Travelogue - To the bit of my heart I left in Hong Kong
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">My stay in the city, more than a year on
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Fourier/" rel="permalink">The Four Year Transform
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An essay with random fundae on college life packaged in a giant pun
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/TheSag66" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Sagnik Bhattacharya. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/blogposts/cool-new-way-to-understand-Shannon-result/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/blogposts/cool-new-way-to-understand-Shannon-result"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sagnikb.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

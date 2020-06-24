@@ -1,0 +1,665 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <!-- start custom head snippets -->
+<link rel="icon" type="image/ico" href="/assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Atma:300&display=swap" rel="stylesheet"> 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Volumes of spheres in discrete metrics | Thoughts, Quantized</title>
+<meta name="description" content="On the paper ‘A method to find the volume of a sphere in the Lee metric, and its applications’">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Thoughts, Quantized">
+<meta property="og:title" content="Volumes of spheres in discrete metrics">
+<meta property="og:url" content="http://localhost:4000/blogposts/leemetric/">
+
+
+  <meta property="og:description" content="On the paper ‘A method to find the volume of a sphere in the Lee metric, and its applications’">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/lee-teaser.svg">
+
+
+
+
+
+  <meta property="article:published_time" content="2019-04-20T04:30:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blogposts/leemetric/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/teaser.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sagnik Bhattacharya",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Thoughts, Quantized Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/blog"><img src="/assets/favicon.png" alt=""></a>
+        
+        <a class="site-title" href="/blog">Thoughts, Quantized</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories" >Categorised Posts</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Volumes of spheres in discrete metrics">
+    <meta itemprop="description" content="On the paper ‘A method to find the volume of a sphere in the Lee metric, and its applications’">
+    <meta itemprop="datePublished" content="April 20, 2019">
+    
+    <div class="post-categories">
+      
+      <span style= "font-variant: small-caps;">category: </span>
+      
+      <a style=" font-variant: small-caps;" href="/categories/#academic"><b>academic</b></a>
+      
+      
+    </div>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Volumes of spheres in discrete metrics
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  15 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <img src="/assets/images/lee-teaser.svg">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#background">Background</a>
+    <ul>
+      <li><a href="#why-is-a-metric-important">Why is a metric important?</a></li>
+      <li><a href="#the-hamming-and-the-lee-metrics">The Hamming and the Lee metrics</a></li>
+      <li><a href="#rate-distance-trade-offs">Rate-Distance Trade-offs</a></li>
+    </ul>
+  </li>
+  <li><a href="#our-approach">Our approach</a>
+    <ul>
+      <li><a href="#first-steps">First steps</a></li>
+      <li><a href="#a-question">A question</a></li>
+      <li><a href="#large-deviations-and-sanovs-theorem">Large Deviations and Sanov’s theorem</a></li>
+      <li><a href="#convex-optimisation">Convex Optimisation</a></li>
+      <li><a href="#a-weird-function">A weird function</a></li>
+    </ul>
+  </li>
+  <li><a href="#final-thoughts">Final thoughts</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+
+        <p>Recently I co-authored a <a href="/assets/pdfs/Lee_metric.pdf">paper</a> with <a href="#">Prof Adrish Banerjee</a>, which we submitted to <a href="https://2019.ieee-isit.org/">ISIT 2019</a>, and I thought I would go over the key ideas in the paper as a blog post. Our main concern was to find out the volume of spheres in discrete metrics, and applications of the method to the Lee metric.</p>
+
+<h1 id="background">Background</h1>
+
+<p>Why would it be an interesting problem to talk about the Lee metric and bounds of the kind that we were looking for? It turns out that there are quite a few applications for results of this sort.</p>
+
+<p>A bound on the volume of a sphere in a discrete metric is used to find bounds on the limits of reliable communication over a channel (more on that later). We actually see this in the paper itself - the moment we obtain an upper bound on the volume of a sphere in the Lee metric, we could use known results to immediately find analogues of the binary Hamming, Elias-Bassalygo and Gilbert-Varshamov bounds in the case of the Lee metric (more on all of these later). The basic utility of bounds on the limits of reliable communication over a channel should be clear - it gives people who design communication protocols something to aim at, and if such a design hits the upper bound, we know that one cannot do better, at least from the rate point of view (one could still improve things like encoding-decoding efficiency etc.). There are other examples too - consider the result of <a href="/assets/pdfs/Shared_randomness.pdf">another paper</a> that I was a co-author on that was also accepted to ISIT, where we showed that if the capacity under vanishing average error of a channel does not equal the zero-error capacity (both of these terms will also be talked about later in slightly more detail) of the channel, we need at least <script type="math/tex">\log(n)</script> bits of common randomness, where <script type="math/tex">n</script> is the blocklength of the code, to communicate reliably at capacity over the channel. Common randomness being a valuable resource (it is hard to generate and distribute such randomness), such a bound is good to know. How to show such a gap exists? We need an upper bound on the capacity of the kind that our results help us find.</p>
+
+<p>This is the thing that brought our attention to this problem in the first place. We already knew the common randomness result, and we knew that the gap exists for the Hamming metric, but we thought it would be interesting to show that the gap exists for a more general channel - enter the Lee metric.</p>
+
+<h2 id="why-is-a-metric-important">Why is a metric important?</h2>
+
+<p>Before proceeding further, let me quickly talk about metrics and why they are useful in information and coding theory. So a major subfield of information theory involves finding the limits of reliable communication over a particular channel. Now <em>reliable</em> can be defined in various ways - two of which are</p>
+<ul>
+  <li>we want the <em>average</em> error to go down to zero when we use the channel multiple times</li>
+  <li>we want the error to be <em>exactly</em> zero for all channel uses</li>
+</ul>
+
+<p>In most cases, the maximum rate at which we can transmit information in the first case will be higher than the maximum rate for the second case. Now, any transmission is done using an <em>encoder-transmitter</em> pair and a <em>receiver-decoder</em> pair, with a (possibly noisy) channel in between. In recovering the transmitted data from the noisy data at the receiver, it makes intuitive sense that the decoder should choose the most probable transmitted codeword given the model of the channel noise and the received data, an idea called <strong>M</strong>aximum <strong>L</strong>ikelihood (ML) decoding. This is where the metric comes in. If the channel noise model is sufficiently ‘nice’ we can replace the ML decoding at the decoder by using a metric (which is just a measure of distance) such that choosing the nearest neighbour in the set of all possible transmitted codewords to the received data, we get the same result as what we would get if we were to use ML decoding. When this happens, we say that the metric is <em>matched</em> to the channel under consideration. Note that the metric that will be used depends crucially on the encoder, noise model of the channel, and the decoder. This idea will become clearer in the next section.</p>
+
+<h2 id="the-hamming-and-the-lee-metrics">The Hamming and the Lee metrics</h2>
+
+<p>Two metrics that have been studied relatively deeply in the literature are the Hamming metric and the Lee metric. The Hamming metric is a very simple metric - given two <script type="math/tex">n</script>-length words <script type="math/tex">a</script> and <script type="math/tex">b</script>, it counts the number of differences between them. It is useful in cases where, given any two distinct <em>symbols</em> (not words) <script type="math/tex">a</script> and <script type="math/tex">b</script>, the probability that the channel corrupts <script type="math/tex">a</script> to <script type="math/tex">b</script> is the same, and this probability remains the same if the pair <script type="math/tex">(a, b)</script> is replaced by any other distinct pair <script type="math/tex">(a',b')</script>. Even though this metric is really simple, it can be used to describe a large class of encoder, decoder and channel combinations, and thus has been the most well-studied metrics in information and coding theory. The Lee metric is useful whenever symbols closer together are more probable to corruption than symbols further apart, and the decision of the ‘closeness’ of two symbols is made by arranging the symbols in a circle (for example, the first symbol and the last symbol are considered adjacent, which wouldn’t be the case if they were on a line).<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<h2 id="rate-distance-trade-offs">Rate-Distance Trade-offs</h2>
+
+<p>Another interesting concept is that of a rate-distance trade-off. It again makes intuitive sense to say that if two codewords are far apart in a suitable metric, then the probability that the channel will confuse the two is low. So, to protect against as many errors as possible, we want our codewords to be as far off from each other as possible. However, in a finite space, we can only pack so many codewords that are all pair-wise more than a given distance away. So, given the number of errors a code can handle, we get a bound on the number of codewords we can use. If we use <script type="math/tex">n</script>-length code, the number of such codewords grows exponentially in <script type="math/tex">n</script>, and therefore it makes sense to define the rate as <script type="math/tex">\log \mathcal{M}(n)/n</script>, where <script type="math/tex">\mathcal{M}(n)</script> is the number of possible <script type="math/tex">n</script>-length messages. In the case of the error being exactly zero, we want there to be no codewords in a sphere around a given codeword. For average error going to zero, we can allow small intersections between the spheres. Note that this means that finding how many <script type="math/tex">n</script>-letter words are there in a neighbourhood of a given radius around a point is going to be important because we have to ensure that none of these is part of the code that we are going to use.</p>
+
+<p>In the rest of this post, we will be concerned with only zero-error information theory, the second error criteria used above. In this case, we know a lot for the Hamming metric - given a particular rate, we know that a particular rate is achievable (that is, we can construct a code that achieves that rate), and we know that some rates are not achievable. The achievability result is via the Gilbert-Varshamov bound, while there are several upper bounds known (like the Hamming, singleton and Elias-Bassalygo bounds). Unfortunately, these do not match, and a gap exists <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> which has been an open problem for quite some time now.</p>
+
+<figure>
+  <img src="/assets/images/bounds.svg" width="100%" alt="Binary Hamming metric" /><br />
+  <div class="divider"></div>
+  <figcaption> What the bounds look like for the Hamming metric. The Gilbert-Varshamov bound is the achievability result. The rest are upper bounds. Note the gap between them. </figcaption>
+  <div class="divider"></div>
+</figure>
+
+<p>In the case of the Lee metric, far less is known. We saw above why it is important to bound the number of words that are within a given distance away from a point, a quantity that we will call the size of a ball in the metric. The main difficulty in the case of the Lee metric is that it is much harder to find the size of a ball in the Lee metric than it is in the Hamming metric. Assuming we know the size of the ball in the Lee metric, a formula for each of the rate-distance bounds mentioned above appears in a wonderful book - <em>Algebraic Coding Theory</em> by Elwyn Berlekamp.</p>
+
+<p>So now, the issue is to figure out what the size of a ball in the Lee metric is. This is the main content of our paper. Once we had this result, we were able to use Berlekamp’s work to immediately obtain the above-mentioned bounds for the Lee metric.</p>
+
+<h1 id="our-approach">Our approach</h1>
+
+<h2 id="first-steps">First steps</h2>
+
+<p>The first step was essentially a rediscovery of results that were known when Berlekamp wrote his book in the 60s. The idea is that one can think of this problem as estimating a particular coefficient in the expansion of a particular generating polynomial for the metric. To gain some intuition for this, consider the simple case of the binary Hamming metric, and suppose we need to find all the <script type="math/tex">n</script>-letter words that are a Hamming distance <script type="math/tex">d</script> away from the word <script type="math/tex">(0, \ldots, 0)</script><sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup>. The Hamming metric just says that if there are <script type="math/tex">d</script> locations where two equal length words differ, the Hamming distance is <script type="math/tex">d</script>. The required number of words is given by the number of choices of <script type="math/tex">d</script> positions out of <script type="math/tex">n</script> that will have <script type="math/tex">1</script>’s, which is simply <script type="math/tex">\binom{n}{d}</script>. This is also the coefficient of <script type="math/tex">x^d</script> in the polynomial <script type="math/tex">(1+x)^d</script>. One simple way to understand the equivalence is that this coefficient also involves the choice of <script type="math/tex">d</script> <script type="math/tex">1</script>’s from <script type="math/tex">n</script> choices.</p>
+
+<p>This idea generalises to the Lee metric. Say the alphabet size in the Lee metric is <script type="math/tex">5</script>. Then the generating polynomial is given by <script type="math/tex">(1 + 2x + 2x^2)</script>, and the problem of finding the size of the Lee ball of radius <script type="math/tex">d</script> reduces to finding the coefficient of <script type="math/tex">x^d</script> in <script type="math/tex">(1 + 2x + 2x^2)^n</script>. Now, this is not an especially easy problem, because no such simple idea as the one in the case of the Hamming metric works in this case. There exist formulae for this (also known from the 60s), but they are a) difficult to use and b) do not give much insight to the problem. I was at this time doing an online course on analytic combinatorics on Coursera, and there they talked about problems of this form and how to find analytic solutions for the same. I learned a lot of interesting new approaches to solving problems like this (in fact the first time I thought about the generating polynomial method of solving the problem was while doing the course), but ultimately in turned out that the techniques in the course weren’t well suited for this particular application (in particular because here we need to fix <script type="math/tex">n</script> to be a particular finite value and there one could take the limit as <script type="math/tex">n \rightarrow \infty</script>, and the forms of the polynomials that we were working with could not be handled very easily via the techniques proposed in the course).</p>
+
+<h2 id="a-question">A question</h2>
+<p>While spending a few weeks trying to use techniques from analytic combinatorics and ruling them out one by one, I noticed that even the Hamming metric calculations are done using assuming that we are finding the coefficient of some <script type="math/tex">x^d</script> where <script type="math/tex">d</script> is then the location of the largest coefficient. I figured it would be a start if we could at least figure out where the maximum coefficient would be, we would at least know the parameter range where we would be working. After a few days wrestling with this problem, I seemed to have guessed a solution to it but was not able to prove it myself. So I posted the following question on the Mathematics StackExchange - <a href="https://math.stackexchange.com/questions/3057144/largest-coefficient-in-the-power-of-a-polynomial">Largest coefficient in the power of a polynomial</a>. A couple of answers could be used to get a proof of the maximum coefficient, and I finally hit upon <em>some</em> path of progress - I could use the central limit theorem to find the required coefficients for large enough <script type="math/tex">n</script>. Using Python’s <code class="language-plaintext highlighter-rouge">numpy.polynomial</code>, I was able to get some graphs that showed me how the coefficients were behaving and how the normal approximation looked. I tried to use the results to obtain the bounds that we want, but the results were rather bad - they didn’t even match the known results for the Hamming case, leave alone the Lee metric. When I went to see what the problem was, it was quite apparent - I had been using the log scale to look at the graphs, and the normal approximation was really good close to the peak but was really bad away from it. The log scale hid the fact that a couple of standard deviations away from the peak, the approximation was giving a value many orders of magnitude more than the actual value (say <script type="math/tex">10^{10}</script> times higher).</p>
+
+<h2 id="large-deviations-and-sanovs-theorem">Large Deviations and Sanov’s theorem</h2>
+
+<p>This was a problem that reeks of large deviation theory - but it took me some time to recognise that because I had not used it before. Large deviation theory, as the name says, gives good bounds when one is working more than a few standard deviations away from the central peak.</p>
+
+<p>One of the basic results in large deviation theory is something called Sanov’s theorem. It gives a powerful bound on the size of a set of type classes drawn from a probability distribution. The idea is as follows - suppose we have a discrete probability distribution, like the one that governs what face of a die comes up when it is thrown. Now, if we sample the probability distribution <script type="math/tex">n</script> times (throw the die <script type="math/tex">n</script> times), the outcomes will probably not be distributed exactly like the underlying distribution, but would be something called the empirical distribution - in the case of a die, this would consist of the number of times each number came up when the die was thrown <script type="math/tex">100</script> times. Empirical distributions are also called types, a powerful concept in information theory, with several very nice properties. A type class is the set of all outcomes which have the same type <sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup>. Now, given a set of types, Sanov’s theorem allows us to bound the size of that set of types - the number of sequences such that their type is in the set. In our case, the class is just the set of all types such that the expected value with that probability distribution is less than <script type="math/tex">d/n</script>. This could be calculated using the normal approximation, but as mentioned earlier, the bounds obtained from it are pretty poor away from the peak.</p>
+
+<h2 id="convex-optimisation">Convex Optimisation</h2>
+
+<p>Sanov’s theorem requires us to find the type in the set that has the minimum relative entropy with the underlying probability distribution. This is a convex optimisation problem, and one could take its dual. The dual problem was just a complicated single variable optimisation that became something that I could handle without any of the sophisticated methods used to solve convex optimisation problems, using some Python code that ran reasonably quickly. This was part of the problem solved - numerically finding this maximising parameter gave some upper bound on the required coefficient. I wanted something better.</p>
+
+<h2 id="a-weird-function">A weird function</h2>
+
+<p>By the duality properties of convex optimisation it was clear that any positive value of the single parameter that the dual was over would work, so what remained was to choose what the positive value would be as a function of the expected value that was used to define the type class. I plotted out what the optimal value looked like, and it seemed an odd kind of curve. Now the first thing that entered my head was that the negative of the curve looked like a <script type="math/tex">q</script>-th root function, appropriately scaled and shifted. Now, using <code class="language-plaintext highlighter-rouge">curve_fit</code> from <code class="language-plaintext highlighter-rouge">scipy.optimize</code> in Python, I was able to fit it to other functions, like polynomials or exponentials, but either they were very sensitive to parameters or were not very good fits - something that can be quantified using the output of the <code class="language-plaintext highlighter-rouge">curve_fit</code> function. Anyway, it turned out that the best fit among all the functions I tested was indeed given by that weird function, and that’s what found its way into the paper. We also found that perturbing the optimal values for the constants in this fit did not affect the final result much - so this fit was robust in some sense. If you look at the curve and some other functional form comes to your mind, I would love to know it!</p>
+
+<h1 id="final-thoughts">Final thoughts</h1>
+
+<p>Once we obtained the formula for the size of the Lee ball, all that remained to do was to substitute the result in the formulae from Berlekamp’s book and plot the results. The results for <script type="math/tex">q = 6</script> are shown below. We also verified that <script type="math/tex">q = 2</script> with our method gives the same results as the binary Hamming case pointed out above - one way in which we were able to be somewhat sure that the method works.</p>
+
+<figure>
+  <img src="/assets/images/Leebounds.svg" width="100%" alt="Lee metric for q=6" /><br />
+  <div class="divider"></div>
+  <figcaption> What the bounds look like for the Lee metric with alphabet size of \(6\). Note a few similarities with the Hamming case. The GV and EB bounds agree on where the rate is zero (\(\delta = 1.5\)). There is again a gap between the upper and lower bounds, and the EB is again the tightest upper bound.</figcaption>
+  <div class="divider"></div>
+</figure>
+
+<figure>
+  <img src="/assets/images/comparisonbounds.svg" width="100%" alt="Comparison with the Hamming case" /><br />
+  <div class="divider"></div>
+  <figcaption> Our technique (markers) compared with the known results for the Hamming metric case (lines). </figcaption>
+  <div class="divider"></div>
+</figure>
+
+<p>If you are wondering what we used to make the graphs, there’s a very nice way of using Latex in <code class="language-plaintext highlighter-rouge">matplotlib</code> in Python, and <code class="language-plaintext highlighter-rouge">matplotlib</code> can also be made to output the graphs in SVG, for the rather good looking graphs that you see both in this post and the paper.</p>
+
+<p>If you are interested in looking at out code, it is all reasonably well documented and <a href="https://github.com/sagnikb/LeeMetric">uploaded on Github</a>. If you have any thoughts about this work, use the comment section below or get in touch via email. Provided things work out, I might be presenting this at <a href="https://2019.ieee-isit.org/">ISIT 2019</a>, so this might not be the last time that this paper is featured on this blog.</p>
+
+<hr />
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Brief side note here. One might wonder about the metric that describes the situation where ‘closeness’ is defined by arranging on a line and not a circle. In this case, it can be shown that there are no channels that are matched to this metric, and so, even though the metric is mathematically interesting. it doesn’t concern us that much here (it’s not just mathematically interesting, but a situation where it would be of interest to an information/communication theorist would be too big a detour for this blog post.) <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>In the Hamming case the gap exists for alphabet sizes less than <script type="math/tex">49</script>, above which there is a construction based on algebraic geometry that closes the gap. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:3">
+      <p>Point to note - for ‘nice’ metrics, one can always translate in this way to calculate the size of the neighbourhood around zero. <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:4">
+      <p>One of the cool properties of types is that all members of the type class have the same probability. <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#coding-theory" class="page__taxonomy-item" rel="tag">coding-theory</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#information-theory" class="page__taxonomy-item" rel="tag">information-theory</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academic" class="page__taxonomy-item" rel="tag">academic</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-04-20T04:30:00-04:00">April 20, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Volumes+of+spheres+in+discrete+metrics%20http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2Fleemetric%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2Fleemetric%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <!--<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2Fleemetric%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>-->
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blogposts/One-More-April-Puzzle/" class="pagination--pager" title="One More April Puzzle
+">Previous</a>
+    
+    
+      <a href="/blogposts/French_Duels/" class="pagination--pager" title="French Duels
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/ishaan-kon/" rel="permalink">Ishaan Kon
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Coming to terms with the Sushant Singh Rajput story
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/isolation-giants/" rel="permalink">Isolation on the shoulders of giants
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Another person was once isolated. This is a day in his life.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/hong-kong-teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Hong_Kong/" rel="permalink">Travelogue - To the bit of my heart I left in Hong Kong
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">My stay in the city, more than a year on
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Fourier/" rel="permalink">The Four Year Transform
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An essay with random fundae on college life packaged in a giant pun
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/TheSag66" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Sagnik Bhattacharya. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/blogposts/leemetric/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/blogposts/leemetric"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sagnikb.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

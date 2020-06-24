@@ -1,0 +1,594 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <!-- start custom head snippets -->
+<link rel="icon" type="image/ico" href="/assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Atma:300&display=swap" rel="stylesheet"> 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Quanta on Quantum Computation | Thoughts, Quantized</title>
+<meta name="description" content="A short(ish) introduction to quantum complexity">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Thoughts, Quantized">
+<meta property="og:title" content="Quanta on Quantum Computation">
+<meta property="og:url" content="http://localhost:4000/blogposts/Quantum_computation_1/">
+
+
+  <meta property="og:description" content="A short(ish) introduction to quantum complexity">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/quantum-comp-teaser.svg">
+
+
+
+
+
+  <meta property="article:published_time" content="2018-01-21T13:52:00-05:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blogposts/Quantum_computation_1/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/teaser.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sagnik Bhattacharya",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Thoughts, Quantized Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/blog"><img src="/assets/favicon.png" alt=""></a>
+        
+        <a class="site-title" href="/blog">Thoughts, Quantized</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories" >Categorised Posts</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Quanta on Quantum Computation">
+    <meta itemprop="description" content="A short(ish) introduction to quantum complexity">
+    <meta itemprop="datePublished" content="January 21, 2018">
+    
+    <div class="post-categories">
+      
+      <span style= "font-variant: small-caps;">category: </span>
+      
+      <a style=" font-variant: small-caps;" href="/categories/#academic"><b>academic</b></a>
+      
+      
+    </div>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Quanta on Quantum Computation
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <img src="/assets/images/quantum-comp-teaser.svg">
+            </nav>
+          </aside>
+        
+        
+
+        <p>I am currently working on quantum complexity, with a working title of ‘adversarial and polynomial methods in quantum query complexity’. If I come across something interesting, I plan to write on it as I guess it will sharpen my understanding of things, and maybe you, the reader, will find it cool too. This is meant as an introduction to the field itself.</p>
+
+<p>Some background, then. Quantum computing can be said to have begun with Feynman thinking about the difficulty of simulating quantum systems on a classical computer, a difficulty arising out of the form of the governing equations. The question is that, if nature can achieve a (classical) computationally difficult task while evolving the world quantum mechanically, <strong>can we harness the power to accomplish some tasks quicker than what we can do with classical computers?</strong></p>
+
+<p>Now, David Deutsch came up with a problem in 1985, that he showed could be solved by quantum computers faster than any classical algorithm, (Deutsch’s problem). This sparked some interest in the field, which increased when in 1992, Deutsch and Richard Jozsa gave a variation of the problem (Deutsch-Jozsa problem) and an algorithm to solve the problem that gave a stronger separation between classical and quantum computers (look at the appendix for more). This provided inspiration for some truly groundbreaking work later in the decade, with Shor’s factoring algorithm and Grover’s unstructured search algorithm, that provided clear separations between classical and quantum algorithms in problems of great practical importance.</p>
+
+<p>The original question, however, has proved a little difficult to answer. Quantum algorithms like Grover’s and Shor’s, have been proposed that are faster than any known classical algorithm but we cannot just yet say that quantum computers are in general ‘better’ than classical computers. There are some questions that need to be answered first.</p>
+
+<p>So, what are these questions?</p>
+
+<p>First, the model. Many of the better known statements about ‘running-time’ of algorithms in classical computing depend on something called the Turing Machine model, but ‘running-time’ of quantum algorithms is different from the classical concept. Then, comparing between the two is like comparing apples and oranges. Not quite, though, because the oracle model can be used to prove certain lower bounds about the same problem in the Turing machine model, but we must at least be careful when making statements like ‘Problem X is easier on a quantum computer than a classical computer’.</p>
+
+<p>There’s another model issue here. The laws of quantum mechanics forbid the perfect copying of an arbitrary quantum state (<em>the no-cloning theorem</em>), which is obviously not true classically (think of where these words came from!<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>). This therefore does place a restriction on the sort of things we are allowed to do. Also, quantum computing must be <em>reversible</em> in the absence of measurements, which is not necessary for classical computation, but this can be shown to not make much of a difference in the conclusions that can be drawn (I am skipping several details here though!).</p>
+
+<blockquote>
+  <p><strong>Aside #1 - The Turing Machine Model -</strong> The Turing Machine model is an abstraction of what we mean by a classical computer running an algorithm. We endow a computer with infinite memory (certainly an abstraction!), in the form of a tape. This tape is segmented into boxes, and initially has the input on it, in the form of symbols in the boxes. It is fed to the Turing Machine, which then moves around on and manipulates symbols on the tape according to certain rules (the algorithm). When it stops, the tape is said to hold the output of the algorithm. This can be taken to be the most basic description of what an algorithm <em>means</em>. This was a revolutionary concept introduced by Alan Turing that changed the way we think about computation, and has wide ranging implications in computer science and mathematics. Running time of algorithms in this model is defined as the number of steps taken for the algorithm to stop. There are simplifications here, of course. For example, what if the algorithm doesn’t stop? Since this isn’t a course, I will pretend I didn’t notice that!</p>
+</blockquote>
+
+<blockquote>
+  <p><strong>Aside #2 - The Oracle Model -</strong> The Query model is a different type of model of computation. Here, we don’t assume the input to be given to the computer. However, the computer has access to an oracle, to which it can query the value of specific bits in the input. For example, if the input is a sequence of <script type="math/tex">100</script> <script type="math/tex">0</script>’s and <script type="math/tex">1</script>’s, the computer may ask the value of the <script type="math/tex">61</script><sup>st</sup> number in the sequence. This is, however, the classical version, and in the quantum version we can use a superposition of queries to ‘query’ multiple bits at the same time. Again, I have ignored subtleties (‘Does that mean we can learn everything about all the input bits at once?’).</p>
+</blockquote>
+
+<p>Treating quantum computing in the Turing Machine model is difficult (proof by authority, bigger people think so!), so for the time being let’s talk about classical computing also in the query model. Now can we compare classical and quantum computers? Let’s first see an example.</p>
+
+<p>Suppose there’s a string of bits (<script type="math/tex">0</script>’s and <script type="math/tex">1</script>’s), of length <script type="math/tex">n</script>. You only know that there are just two possibilities, either all the bits are <script type="math/tex">0</script> or there is just one <script type="math/tex">1</script>. You need to tell which one it is. Classically, we need to look at all the bits in the string, because we don’t know where the <script type="math/tex">1</script> is, which seems intuitively true <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup>. So we require about n queries to the oracle to answer the question (this can be mathematically proven). However, ‘quantumly’ (and this is Grover’s algorithm), we can show that only about <script type="math/tex">O(\sqrt{n})</script> queries are sufficient. In this case, then, we know that the quantum algorithm is better.</p>
+
+<p>Now think of a hypothetical example, where we have an algorithm that does better than any known classical algorithm, but it hasn’t been proven that there cannot exist a classical algorithm that can do better. Here, we cannot conclude that a quantum computer is better! This is an issue with a certain class of problems called the hidden subgroup problem, which is too technical to discuss here.</p>
+
+<p>Another question can now arise : Can a quantum algorithm do better than Grover’s search given the same problem?</p>
+
+<p>These are questions that <strong>quantum complexity theory</strong> basically seeks to answer. For example, given a problem (like the search problem mentioned above), what is a lower bound on the number of queries to an oracle that is required to solve the problem? An answer to a question like this allows us to determine in some sense ‘the best we can do’ to solve a given problem, and I find it pretty interesting! Answering this question for more and more problems is one of the ultimate aims for research in the area and I hope to make some contributions in the effort :D</p>
+
+<h2 id="appendix---deutschs-problem">Appendix - Deutsch’s problem</h2>
+
+<p>The Deutsch’s problem is the following.</p>
+
+<blockquote>
+  <p>Given a function <script type="math/tex">f : \{0,1\} \rightarrow \{0,1\}</script>, and the promise that the function is either constant (same for both <script type="math/tex">0</script> and <script type="math/tex">1</script>) or balanced (<script type="math/tex">0</script> for <script type="math/tex">1</script> and <script type="math/tex">1</script> for <script type="math/tex">0</script> or vice versa), tell which of the two possibilities is actually the case. Since we want the computation to be reversible and without any arbitrary copying, we consider a black-box that takes two inputs, <script type="math/tex">x</script> and <script type="math/tex">y</script>, and outputs <script type="math/tex">x</script> and <script type="math/tex">f(x) \oplus y</script>. Here <script type="math/tex">\oplus</script> is the classical XOR (<script type="math/tex">1</script> if <script type="math/tex">x</script> and <script type="math/tex">y</script> are different, <script type="math/tex">0</script> otherwise). It can easily be checked that this is reversible (given the outputs, we can uniquely arrive at the inputs).</p>
+</blockquote>
+
+<p>What is the quantum and classical solution for this problem? Classically, we need to use the black-box twice, but quantumly we can do it in one use! How? There’s too much background that I need to get into to provide a sensible answer to that here, so I will take the easy way out and refer you <a href="https://www.cse.iitk.ac.in/users/rmittal/prev_course/f17/reports/intro.pdf">here</a> for details. It is a link to the lecture notes from the very first lecture of a course (that I did!) on Quantum Computation by Dr Rajat Mittal (Computer Science and Engineering, IIT-Kanpur), and should be accessible to most readers!</p>
+
+<hr />
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Shamelessly quoting the Bible of Quantum Computation, Nielsen-Chuang! <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>For an example where even classically you do not need to look at everything, consider a problem where you are given a binary string of length n, and you know that it is <em>sorted</em>, ie all zeros appear at the beginning and all 1’s appear at the end. You need to find the position of the first 1. Classically, you only require only <script type="math/tex">O(\log{n})</script>, using binary search. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#quantum" class="page__taxonomy-item" rel="tag">quantum</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#quantum-computation" class="page__taxonomy-item" rel="tag">quantum-computation</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academic" class="page__taxonomy-item" rel="tag">academic</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-21T13:52:00-05:00">January 21, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Quanta+on+Quantum+Computation%20http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FQuantum_computation_1%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FQuantum_computation_1%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <!--<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FQuantum_computation_1%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>-->
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blogposts/rajasthan/" class="pagination--pager" title="Travelogue – Rajasthan, on the Feluda Trail
+">Previous</a>
+    
+    
+      <a href="/blogposts/Maihar/" class="pagination--pager" title="Musical Excursions: the Maihar Band
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/ishaan-kon/" rel="permalink">Ishaan Kon
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Coming to terms with the Sushant Singh Rajput story
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/isolation-giants/" rel="permalink">Isolation on the shoulders of giants
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Another person was once isolated. This is a day in his life.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/hong-kong-teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Hong_Kong/" rel="permalink">Travelogue - To the bit of my heart I left in Hong Kong
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">My stay in the city, more than a year on
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Fourier/" rel="permalink">The Four Year Transform
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An essay with random fundae on college life packaged in a giant pun
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/TheSag66" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Sagnik Bhattacharya. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/blogposts/Quantum_computation_1/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/blogposts/Quantum_computation_1"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sagnikb.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

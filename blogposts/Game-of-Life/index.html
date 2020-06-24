@@ -1,0 +1,796 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <!-- start custom head snippets -->
+<link rel="icon" type="image/ico" href="/assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Atma:300&display=swap" rel="stylesheet"> 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Conway’s Game of life | Thoughts, Quantized</title>
+<meta name="description" content="Interesting things about a cellular automaton">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Thoughts, Quantized">
+<meta property="og:title" content="Conway’s Game of life">
+<meta property="og:url" content="http://localhost:4000/blogposts/Game-of-Life/">
+
+
+  <meta property="og:description" content="Interesting things about a cellular automaton">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/conway-teaser.svg">
+
+
+
+
+
+  <meta property="article:published_time" content="2017-06-18T14:49:20-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blogposts/Game-of-Life/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/teaser.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sagnik Bhattacharya",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Thoughts, Quantized Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/blog"><img src="/assets/favicon.png" alt=""></a>
+        
+        <a class="site-title" href="/blog">Thoughts, Quantized</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories" >Categorised Posts</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Conway’s Game of life">
+    <meta itemprop="description" content="Interesting things about a cellular automaton">
+    <meta itemprop="datePublished" content="June 18, 2017">
+    
+    <div class="post-categories">
+      
+      <span style= "font-variant: small-caps;">category: </span>
+      
+      <a style=" font-variant: small-caps;" href="/categories/#academic"><b>academic</b></a>
+      
+      
+    </div>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Conway’s Game of life
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <img src="/assets/images/conway-teaser.svg">
+            </nav>
+          </aside>
+        
+        
+
+        <p>I read Richard Dawkins’ amazing book called ‘The Greatest Show on Earth’
+some time back. Recently, while doing a course in Linguistics, I came
+across the term ‘generative system’ applied to language, which took me
+back to something called ‘Conway’s Game of Life’, which was also used by
+Dawkins in his book to illustrate a particular point; that (very) simple rules could lead to complex entities, so countering the creationist argument that the simple rules
+governing genetics and molecular biology couldn’t have led to the
+immense diversity seen in the natural world today.
+I am writing this article having just been introduced to the world of
+Conway’s Game of Life, and I hope this is a good introduction. I will
+probably dive into much more detail on this topic in the near future, so
+I am looking forward to that.</p>
+
+<p>‘Conway’s Game of Life’ <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> is a cellular automaton designed by a British
+mathematician, John Horton Conway, in 1970. A cellular automaton consists of:</p>
+
+<ol>
+  <li>A regular grid of cells, each in one of a finite number of states</li>
+  <li>Grid could be in any number of finite dimensions</li>
+  <li>Each cell has a set of neighbours called its neighbourhood, defined relative to the cell</li>
+  <li>An initial state is assigned by assigning a state for each cell, and a new generation is created according to some fixed rule that determines the new state of each cell in terms of the current state of the cell and the cells in the neighbourhood.</li>
+</ol>
+
+<p>The concept of a cellular automaton was first studied by John von Neumann and Stanislaw Ulam at Los Alamos in the 1940s. They were interested in finding a hypothetical machine that could build copies of itself and succeeded. However, the set of rules that they came up with was extremely complicated, and John Conway created the Game of Life in an attempt to simplify those rules.</p>
+
+<p>So the Game of Life is an example of a cellular automaton. It takes place on an infinite two-dimensional grid of
+square cells. Each cell can be in two states, dead or alive. It evolves
+in turns. The state of any cell in the subsequent turn is decided by the
+state of the eight neighbouring cells in the current turn, according to
+certain rules. The rules are:</p>
+
+<ol>
+  <li>Any live cell with less than two live neighbours in the current turn
+dies in the next turn (underpopulation).</li>
+  <li>Any live cell with two or three live neighbours in the current turn
+lives in the next turn.</li>
+  <li>Any live cell with more than three live neighbours in the current
+turn dies in the next turn (overpopulation).</li>
+  <li>Any dead cell with exactly three live neighbours in the current turn
+becomes a live cell in the next turn (reproduction).</li>
+</ol>
+
+<p>Thus, given an initial state (called seed) the grid evolves according to
+the rules and gets to subsequent states. The evolution is completely
+determined by the initial state.</p>
+
+<p>These simple rules lead to an almost bewildering variety of things that
+can happen, only a small fraction of which I will talk here.</p>
+
+<ul>
+  <li>
+    <p>Still life - these do not change at all from turn to turn.
+Examples are…</p>
+
+    <ul>
+      <li>
+        <p>Block <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Game_of_life_block_with_border.svg/66px-Game_of_life_block_with_border.svg.png" alt="Block" /></p>
+      </li>
+      <li>
+        <p>Boat <sup id="fnref:2:1"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Game_of_life_boat.svg/82px-Game_of_life_boat.svg.png" alt="Boat" /></p>
+      </li>
+      <li>
+        <p>Loaf <sup id="fnref:2:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+        <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Game_of_life_loaf.svg/98px-Game_of_life_loaf.svg.png" alt="Loaf" /></p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Oscillators - these evolve from an initial state and come back to
+the original state after a certain number of turns. Examples are…</p>
+
+    <ul>
+      <li>
+        <p>Period 2</p>
+
+        <ul>
+          <li>
+            <p>Blinker <sup id="fnref:2:3"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Game_of_life_blinker.gif" alt="Blinker" /></p>
+          </li>
+          <li>
+            <p>Toad <sup id="fnref:2:4"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Game_of_life_toad.gif" alt="Toad" /></p>
+          </li>
+          <li>
+            <p>Beacon <sup id="fnref:2:5"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Game_of_life_beacon.gif" alt="Beacon" /></p>
+          </li>
+          <li>
+            <p>Traffic light - this consists of 4 blinkers <sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+            <p><img src="http://www.ericweisstein.com/encyclopedias/life/gifs/trafficl.gif" alt="Traffic Light" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Period 3</p>
+
+        <ul>
+          <li>
+            <p>Pulsar <sup id="fnref:2:6"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Game_of_life_pulsar.gif" alt="Pulsar" /></p>
+          </li>
+          <li>
+            <p>Maltese Cross <sup id="fnref:3:1"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+            <p><img src="http://www.ericweisstein.com/encyclopedias/life/gifs/maltescr.gif" alt="Maltese Cross" /></p>
+          </li>
+          <li>
+            <p>Pressure cooker <sup id="fnref:3:2"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+            <p><img src="http://www.ericweisstein.com/encyclopedias/life/gifs/pressure.gif" alt="Pressure Cooker" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Period 15</p>
+
+        <ul>
+          <li>
+            <p>Pentadecathlon <sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/I-Column.gif" alt="Pentadecahethlon" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Period 30</p>
+
+        <ul>
+          <li>
+            <p>Eureka <sup id="fnref:3:3"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+            <p><img src="http://www.ericweisstein.com/encyclopedias/life/gifs/eureka.gif" alt="Eureka" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Period 60</p>
+
+        <ul>
+          <li>
+            <p>Toadsucker - This consists of a Hassler and a toad. A
+Hassler is basically an oscillator that alternatively
+changes a properly placed object, and then changes it back
+to the original state. The object that the Hassler interacts
+with is in this case a toad, which we met in our examples
+for a period 2 oscillator. <sup id="fnref:3:4"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+            <p><img src="http://www.ericweisstein.com/encyclopedias/life/gifs/toadsuck.gif" alt="Toadsucker" /></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Spaceships - these move across the square grid as they evolve. They
+are classified on the basis of their speed. Given the rules, it can
+be shown that the maximum speed achievable by a moving object in
+this world is one tile per second. In analogy with the real world,
+this could be termed as c. It is also known that Life has all
+possible spaceships that can move in any rational direction at an
+arbitrarily slow pace, but until May 2010, only spaceships that move
+in orthogonal or diagonal directions were known. The maximum speed
+for a spaceship is c/2 orthogonally, c/4 diagonally and so on for
+other slope values. For now, the following are examples of
+spaceships based on velocity:</p>
+
+    <ul>
+      <li>
+        <p>c/2</p>
+
+        <ul>
+          <li>
+            <p>Lightweight spaceship <sup id="fnref:2:7"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Game_of_life_animated_LWSS.gif" alt="Lightweight spaceship" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>c/4</p>
+
+        <ul>
+          <li>
+            <p>Glider <sup id="fnref:2:8"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+            <p><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Game_of_life_animated_glider.gif" alt="Glider" /></p>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>c/5</p>
+
+        <ul>
+          <li>
+            <p>Spider <sup id="fnref:3:5"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+            <p><img src="http://www.ericweisstein.com/encyclopedias/life/gifs/spider.gif" alt="Spider" /></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Glider guns - It is a pattern consisting of a main part that repeats
+periodically, and periodically emits a spaceship. The period of the
+gun is a multiple of the period of spaceship production. There is an interesting story about the
+glider gun. Its existence implies that initial patterns with a
+finite number of cells can eventually lead to configurations with an
+infinite number of cells. John Conway conjectured that such a thing
+was impossible but Bill Gosper discovered the Gosper Glider Gun in
+1970, winning $50 from Conway.<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup></p>
+
+    <p><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Gospers_glider_gun.gif" alt="Gosper Glider Gun" /></p>
+  </li>
+</ul>
+
+<p>I guess this qualifies as an introduction to Conway’s Game of Life. If you want to see more such objects, check out <a href="http://www.ericweisstein.com/encyclopedias/life/">Eric Weisstein’s Treasure Trove of the Life Cellular Automaton</a>.
+There are many fascinating details about the Game that I have got a slight
+introduction to and which I shall read and describe in subsequent posts.
+I will probably read about the proofs of certain results that I have
+mentioned above, and also look into the proof that certain cellular automata are Turing complete, which is a result that I find extremely cool!</p>
+
+<p>FUN FACT: If you search for Conway’s Game of Life on Google, you will
+find an Easter egg - the search results page has a simulation of the
+game in the corner. Do check that out! <sup id="fnref:6"><a href="#fn:6" class="footnote">6</a></sup></p>
+
+<hr />
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Almost all information in this article obtained from Wikipedia pages <a href="https://en.wikipedia.org/wiki/Cellular_automaton">Cellular Automaton</a>, <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway’s Game of Life</a> and <a href="http://www.ericweisstein.com/encyclopedias/life/">Eric Weisstein’s Treasure Trove of the Life Cellular Automaton</a>. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Open Source image from Wikimedia Commons. <a href="#fnref:2" class="reversefootnote">&#8617;</a> <a href="#fnref:2:1" class="reversefootnote">&#8617;<sup>2</sup></a> <a href="#fnref:2:2" class="reversefootnote">&#8617;<sup>3</sup></a> <a href="#fnref:2:3" class="reversefootnote">&#8617;<sup>4</sup></a> <a href="#fnref:2:4" class="reversefootnote">&#8617;<sup>5</sup></a> <a href="#fnref:2:5" class="reversefootnote">&#8617;<sup>6</sup></a> <a href="#fnref:2:6" class="reversefootnote">&#8617;<sup>7</sup></a> <a href="#fnref:2:7" class="reversefootnote">&#8617;<sup>8</sup></a> <a href="#fnref:2:8" class="reversefootnote">&#8617;<sup>9</sup></a></p>
+    </li>
+    <li id="fn:3">
+      <p>Image from <a href="http://www.ericweisstein.com/encyclopedias/life/">Eric Weisstein’s Treasure Trove of the Life Cellular Automaton</a> <a href="#fnref:3" class="reversefootnote">&#8617;</a> <a href="#fnref:3:1" class="reversefootnote">&#8617;<sup>2</sup></a> <a href="#fnref:3:2" class="reversefootnote">&#8617;<sup>3</sup></a> <a href="#fnref:3:3" class="reversefootnote">&#8617;<sup>4</sup></a> <a href="#fnref:3:4" class="reversefootnote">&#8617;<sup>5</sup></a> <a href="#fnref:3:5" class="reversefootnote">&#8617;<sup>6</sup></a></p>
+    </li>
+    <li id="fn:4">
+      <p>Image under Creative Commons License from Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:I-Column.gif">Link</a> <a href="#fnref:4" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:5">
+      <p>Image under GNU Free Documentation License from Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Gospers_glider_gun.gif">Link</a> <a href="#fnref:5" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:6">
+      <p>Link <a href="https://www.google.co.in/search?q=conway%27s+game+of+life">here</a> <a href="#fnref:6" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#game-of-life" class="page__taxonomy-item" rel="tag">game-of-life</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#academic" class="page__taxonomy-item" rel="tag">academic</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-06-18T14:49:20-04:00">June 18, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Conway%27s+Game+of+life%20http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FGame-of-Life%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FGame-of-Life%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <!--<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FGame-of-Life%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>-->
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blogposts/The-Worst-Pun-Ever/" class="pagination--pager" title="The Worst Pun Ever?
+">Previous</a>
+    
+    
+      <a href="/blogposts/A-Quantum-Semester/" class="pagination--pager" title="A Quantum Semester
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/ishaan-kon/" rel="permalink">Ishaan Kon
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Coming to terms with the Sushant Singh Rajput story
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/isolation-giants/" rel="permalink">Isolation on the shoulders of giants
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Another person was once isolated. This is a day in his life.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/hong-kong-teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Hong_Kong/" rel="permalink">Travelogue - To the bit of my heart I left in Hong Kong
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">My stay in the city, more than a year on
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Fourier/" rel="permalink">The Four Year Transform
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An essay with random fundae on college life packaged in a giant pun
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/TheSag66" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Sagnik Bhattacharya. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/blogposts/Game-of-Life/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/blogposts/Game-of-Life"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sagnikb.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

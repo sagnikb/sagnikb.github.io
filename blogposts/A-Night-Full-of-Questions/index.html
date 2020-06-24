@@ -1,0 +1,612 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.0 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <!-- start custom head snippets -->
+<link rel="icon" type="image/ico" href="/assets/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Atma:300&display=swap" rel="stylesheet"> 
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>A Night Full of Questions | Thoughts, Quantized</title>
+<meta name="description" content="QnA for SnT Code in Takneek, the technical fest of IIT Kanpur.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Thoughts, Quantized">
+<meta property="og:title" content="A Night Full of Questions">
+<meta property="og:url" content="http://localhost:4000/blogposts/A-Night-Full-of-Questions/">
+
+
+  <meta property="og:description" content="QnA for SnT Code in Takneek, the technical fest of IIT Kanpur.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/night-full-of-questions-teaser.svg">
+
+
+
+
+
+  <meta property="article:published_time" content="2017-09-03T14:52:00-04:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blogposts/A-Night-Full-of-Questions/">
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "url": "http://localhost:4000",
+      "logo": "http://localhost:4000/assets/images/teaser.png"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sagnik Bhattacharya",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Thoughts, Quantized Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/blog"><img src="/assets/favicon.png" alt=""></a>
+        
+        <a class="site-title" href="/blog">Thoughts, Quantized</a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories" >Categorised Posts</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="A Night Full of Questions">
+    <meta itemprop="description" content="QnA for SnT Code in Takneek, the technical fest of IIT Kanpur.">
+    <meta itemprop="datePublished" content="September 03, 2017">
+    
+    <div class="post-categories">
+      
+      <span style= "font-variant: small-caps;">category: </span>
+      
+      <a style=" font-variant: small-caps;" href="/categories/#puzzles"><b>puzzles</b></a>
+      
+      
+    </div>
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">A Night Full of Questions
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  10 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <img src="/assets/images/night-full-of-questions-teaser.svg">
+            </nav>
+          </aside>
+        
+        
+
+        <p>A few days back, SnT Code, one of the biggest events of Takneek 2017, was organised. For the uninitialized, Takneek is the intra-college technical festival of IIT Kanpur. All the clubs under the Science and Technology (SnT) Council have to make questions that the rest of the campus can then try and solve. I participated in Takneek in both my first and second years and this time I made the questions for the hobby group I co-lead, Science Coffeehouse.</p>
+
+<p>Solutions to the questions follow if you scroll down, so if you don’t want spoilers, don’t scroll down before taking whatever tries you want to take. All bouquets and brickbats for the questions to be directed at me, please. If they feel esoteric, they were supposed to be solved by some of the brightest of the campus residents with the full power of Google at their fingertips and (nearly) unlimited time. They are supposed to remain hard to solve in such surroundings. If you are unsure as to what exactly the paragraphs of text want, look deeper, and try and see something more than what is obvious. I have experimented with some of my friends, and some of them did get the answers to the second and third questions without serious trouble. The first question is, in my opinion, the hardest one.</p>
+
+<p>Another disclaimer seems relevant here. The questions here may not exactly match what was asked in the event itself, but the minor changes you might find do not change the answer or the process used to arrive at the answer.</p>
+
+<h1 id="questions">Questions</h1>
+
+<h2 id="question-1">Question 1</h2>
+
+<p><strong>“Refer to the fitting resource you can find on the biggest encyclopaedia”</strong></p>
+
+<p><img src="/assets/images/SnT_Code_Q1.JPG" alt="Question 1" /></p>
+
+<h2 id="question-2">Question 2</h2>
+
+<h3 id="a-theoretical-computer-scientistphysicist-rants">A Theoretical-Computer-Scientist/Physicist Rants…</h3>
+
+<p>Isn’t machine learning too applied? What is it that attracts people to a field like that? Xkcd was correct (https://xkcd.com/1838/), you know. It is just a whole lot of numbers in multidimensional arrays that you keep throwing about here and there. Every time someone tries to explain that stuff to me, I feel like a burnt wick! You might think I am not normal. I agree! I often spend hours thinking I am Spiderman, swinging from building to building and webbing people up. Is webbering even a word? If it is, that is what I would like to call it. Well, I deviated from the topic under discussion. Or, as I would like to put it, I got tangentially away from the things I was planning to say. The stone called machine learning hangs like a heavy load from my neck - because almost everyone around me is doing only that and nothing else! Just go and do some real math, guys! Heat up a metal plate. See how the heat spreads. Heat it up, even more, see how it bends? Can you calculate how all that is going to happen? Even though these problems are years and years old, these are the cool ones! Heated vessels sound boring, right? No, the math is interesting, satisfying! Try doing those calculations quickly though - you don’t want to be stuck on it forever, right?</p>
+
+<p>I shall meander away again. If these people are kind enough, I would love to have a theorem or law named after me. It would be so cool if I could be remembered for a lifetime right? Right, man? That would be awesome! I hear you say, I have heard this before. You kid all the time!. No, no, I love Math! Look at this Cera basin, isn’t the curvature lovely? I am digressing again! Let’s meet again, right?</p>
+
+<p><em>[All views expressed in the above are of a fictional character only. The creator of this question has no animosity towards machine learning of any form whatsoever]</em></p>
+
+<h2 id="question-3">Question 3</h2>
+
+<h3 id="we-are-freaks-oddities-we-drive-the-world-forward-precisely-because-we-are-but-if-we-come-together-we-go-together">‘We are freaks, oddities! We drive the world forward precisely because we are, but if we come together, we go together!’</h3>
+
+<p>So in your quest to look closely at the oddities in the world, you have reached Kolkata, nicknamed the City of Joy or the City of Palaces. The names have varying sources - City of Joy comes from a book by Dominique Lapierre, and City of Palaces comes from the abundance of colonial-era architecture in the city. After all, it was the capital of British India longer than Delhi was, and was also one of the biggest trade centres of the British Empire. It is also the city where Ronald Ross did his Nobel Prize-winning work on malaria, and CV Raman did the majority of his work on light. However, you do not want to keep thinking about Science all the time, so you ask a trusted friend to guide you to the sights in the city. Your guide takes you on a walk down central Kolkata, near an open green area what is called the Maidan, and tells you that you are actually walking in the heart of the old British city. Among the colonial era buildings to be seen in the area, chief are the Victoria Memorial, Fort William, and the St. Pauls Cathedral. Your guide first takes you into the cathedral. It was the first cathedral built in the British Empire outside England itself, and it is currently the seat of the Diocese of Calcutta. Your guide shows you around the main altar and the library, and you are hooked by its Indo-Gothic architecture. You can see the Victoria Memorial outside, and you are a little surprised - why was it built in Calcutta, a provincial city and not the capital in Delhi? Your guide takes a moment, and launches into a long account of the early 19th century when increased nationalism in Bengal forced the British Indian Empire to move the capital to Delhi. Work on the Memorial, he says, started before the shift, so they could not move it. Incidentally, says the guide, the shift occurred just a year after Mark Twain died. You are surprised by the tangential reference - does it have any meaning? The guide assures you that he brought up the name just because Twain is his favourite author. He recommends to you the Twain’s travelogue - Following the Equator - where he has some typical witticisms about things that he saw in the country. You assure him that you will try and read the book, and you part with a spring in your step having just spent an amazing evening. You promise to meet again the following day, where your guide would take you on another quest through the tons of new stuff to see in a new city!</p>
+
+<p>There is, however, something that is bothering you. Why did the guide insist on that particular walk? And, more importantly, who doesn’t find Twain-ish witticisms irritating?</p>
+
+<h1 id="solutions">Solutions</h1>
+
+<h2 id="question-1-1">Question 1</h2>
+
+<p>The first question has a pretty obvious Harry Potter reference in the text to the right of the matrix. It is the message that first appears when someone uses the Marauders’ Map, just with the names and the terms changed. The biggest encyclopaedia is obviously Wikipedia, so we are now in possession of two clues.</p>
+
+<p>Now, someone might go down the Harry Potter route and get totally lost, but I thought that a square with an HP reference would suggest ‘magic square’. Also, if someone reads books, and has ever read Dan Brown’s excellent ‘The Lost Symbol’, they would probably put ‘cryptograph’ and ‘magic square’ together to guess that the decryption has to be done using a magic square.</p>
+
+<p>The question now is how to find the magic square. We require a 12 x 12 magic square, and the only thing that can help us now is the Wikipedia reference. If you visit the Wikipedia page for magic squares, you will find two 12 x 12 magic squares. In the worst case, you will need to try both. The encryption proceeded thus: I wrote a message in a  12 x 12 matrix, and numbered each square from 1 to 144, like this.</p>
+
+<p><img src="/assets/images/SNT1.PNG" alt="original" /></p>
+
+<p>The magic square I chose had numbers from 1 to 144. If the entry at the position i, j of the magic square is k, then the letter at square k of the message square goes to the square i,j in the cryptogram. To decrypt, one has to simply reverse this process. Before shuffling, I also Caesar shifted each letter in the yellow boxes by 1 and converted to ASCII, so one has to reverse that too to finally solve it. I had to do this because otherwise, people could have tried to unjumble the yellow boxes only and guess what message they contain.</p>
+
+<p>The magic square used is this</p>
+
+<p><img src="/assets/images/SNT2.PNG" alt="magic square" /></p>
+
+<p>Once the decryption is complete, this is the result. The answer, Srinivas Ramanujan, should be obvious now. Also, the Queen in ‘Cryptograph of the Queen’ refers to Number Theory, which Gauss called the ‘queen of Mathematics’ and which Ramanujan worked on extensively.</p>
+
+<p><img src="/assets/images/SNT3.PNG" alt="solution" /></p>
+
+<h2 id="question-2-1">Question 2</h2>
+
+<p>One of my friends solved this in about 5 minutes, and it should be trivial to anyone who knows anything about the history of science. The question has nothing to do with machine learning whatsoever, and that was intended simply to throw people off.</p>
+
+<p>Starting from the last paragraph, it should be obvious that we are looking for someone who has something named after them, who probably worked on mathematics, and probably also worked on curvature. Towards the end of the first paragraph, there are hints that heat is also important to this problem.</p>
+
+<p>The answer should now be obvious. Gauss’s Law. Gauss worked on curvature and was the first person to suggest that non-Euclidean geometry is a thing. Historically, the mathematics of heat flow on a metal plate was the setting in which Fourier developed the theory of Fourier series, and solving it ‘fast’ is a reference to the fact that Gauss had discovered some form of the fast Fourier transform. The rest of the clues are a little less obvious, but in the first paragraph, there are references to a load on the neck, webbering and a burnt wick. The first two are supposed to hint at the magnets (also known as lodestones) and Gauss’s work with them, and Gauss was born in Brunswick (I couldn’t help a pun, could I?)</p>
+
+<blockquote>
+  <p>The friend who solved this suggested that Riemann is probably a more natural fit in this question, and he has good reason to recommend that. In hindsight, I think so too.</p>
+</blockquote>
+
+<h2 id="question-3-1">Question 3</h2>
+
+<p>Here I couldn’t help dropping references to my hometown of Kolkata. However, the answer has nothing to do with Kolkata. The reason why I got to Kolkata was because of the existence of St. Paul’s Cathedral in the city. The answer is however linked to the cathedral of the same name in London, which replaced an earlier cathedral that was destroyed in the Great Fire of London. The architect was Sir Christopher Wren, which will be important later.</p>
+
+<p>Mark Twain was shoved in to relate to Halley’s Comet. Mark Twain’s year of birth and death are both years during which the Halley’s Comet made an appearance. He also has a quote regarding this issue, a garbled version of which forms the title of the question. Halley will also be important in the solution.</p>
+
+<p>The last reference is a little more veiled. The person being spoken to leaves with a ‘spring in his step’ and is ‘hooked’ by the architecture of the cathedral. These are oblique references to Robert Hooke, of Hooke’s law fame.</p>
+
+<p>The three people above - Christopher Wren, Edmond Halley and Robert Hooke, met at a coffeehouse in London in January of 1684 and had a discussion regarding the nature of gravity. The things they discussed during the meeting prompted Halley to meet Sir Isaac Newton, who hadn’t yet published the Principia Mathematica and had no intention to do so. Halley soon found out that Newton had formulated a full theory of motion and gravity and then pushed him to publish the Principia. In retrospect, the meeting in the coffeehouse was vitally important in the history of science. The answer to the question, then, is <strong>coffeehouse</strong>!</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#science-coffeehouse" class="page__taxonomy-item" rel="tag">science-coffeehouse</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#puzzles" class="page__taxonomy-item" rel="tag">puzzles</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-09-03T14:52:00-04:00">September 03, 2017</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=A+Night+Full+of+Questions%20http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FA-Night-Full-of-Questions%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FA-Night-Full-of-Questions%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <!--<a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblogposts%2FA-Night-Full-of-Questions%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>-->
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blogposts/A-Quantum-Semester/" class="pagination--pager" title="A Quantum Semester
+">Previous</a>
+    
+    
+      <a href="/blogposts/rajasthan/" class="pagination--pager" title="Travelogue – Rajasthan, on the Feluda Trail
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/ishaan-kon/" rel="permalink">Ishaan Kon
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Coming to terms with the Sushant Singh Rajput story
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/isolation-giants/" rel="permalink">Isolation on the shoulders of giants
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Another person was once isolated. This is a day in his life.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/hong-kong-teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Hong_Kong/" rel="permalink">Travelogue - To the bit of my heart I left in Hong Kong
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">My stay in the city, more than a year on
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "/assets/images/teaser.svg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/blogposts/Fourier/" rel="permalink">The Four Year Transform
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">An essay with random fundae on college life packaged in a giant pun
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><input type="search" id="search" aria-placeholder="Enter your search term..." class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+    <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/TheSag66" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2020 Sagnik Bhattacharya. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+
+
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/blogposts/A-Night-Full-of-Questions/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/blogposts/A-Night-Full-of-Questions"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://sagnikb.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
