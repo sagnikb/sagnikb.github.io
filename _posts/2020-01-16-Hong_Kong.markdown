@@ -1,6 +1,6 @@
 ---
 layout: single
-title: Travelogue - To the bit of my heart I left in Hong Kong
+title: To the bit of my heart I left in Hong Kong
 date: 2020-01-15 22:00:00 +0530
 excerpt: My stay in the city, more than a year on
 tags: Hong-Kong

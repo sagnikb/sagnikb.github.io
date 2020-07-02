@@ -1,5 +1,5 @@
 ---
-title: "Travelogue – Rajasthan, on the Feluda Trail"
+title: "Rajasthan on the Feluda Trail"
 date: 2017-12-30 14:00:00 +0530
 header:
   overlay_image: https://lh3.googleusercontent.com/y027gR952ZrwZIlAeVdK-cYbpTZpj-bIhSilmTS85xeX9icjjoKyriV_lnMzSV89cKBbBiceEhd4SaNXIZ9wgXG11qTnO7uud9hyGjxLYSXWnOi3aqadG5dm_tHGlImWm6n-_xMAejY=w2400

@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Thoughts, Quantized"
 title_separator          : "|"
 name                     : "Sagnik Bhattacharya"
-description              : "Homepage for Sagnik Bhattacharya, Electrical Engineering PhD Student at UMD"
+description              : "Homepage for Sagnik Bhattacharya, ECE PhD Student at UMD"
 url                      : "https://sagnikb.github.io/"
 baseurl                  : ""
 repository               : "sagnikb/sagnikb.github.io"
@@ -98,9 +98,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google" # false (default), "google", "google-universal", "custom"
+  provider               : #"google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : UA-93691622-1
+    tracking_id          : #UA-93691622-1
     anonymize_ip         : # true, false (default)
 
 
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Sagnik Bhattacharya"
   avatar           : "/assets/images/profilepic.jpg"
-  bio              : "Electrical Engineering PhD Student, UMD"
+  bio              : "ECE PhD Student, UMD"
   location         : "College Park, Maryland, USA"
   email            :  sagnikb@umd.edu
   linkedin         :  sagnik66

@@ -1,5 +1,5 @@
 ---
-title: "Travelogue – Old Bangkok"
+title: "Bangkok Old Town"
 date: 2018-06-25 14:00:00 +0530
 header:
   overlay_image: https://lh3.googleusercontent.com/r-L6poumybRYs_LwlvPhIb-fUGLHNesCXOC2n8kAaZOR3_biaffKmjGooylTFY_RX_iBvQ7j8NTCtQLu2GCMf57zQ6ryN7FLhrtXNQapeQV6E7AffU05zqU_f1KeYgxixzvrKfDmgnM=w2400

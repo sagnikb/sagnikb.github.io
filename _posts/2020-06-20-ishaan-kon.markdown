@@ -1,10 +1,10 @@
 ---
-title: Ishaan Kon
+title: Ishaan Kon - The Sushant Singh Rajput Story
 date: 2020-06-20 10:00:00 -0400
 tags:
 categories: thoughts
 comments: true
-header.image: /assets/images/teaser.svg
+classes: wide
 excerpt: "Coming to terms with the Sushant Singh Rajput story"
 ---
 
