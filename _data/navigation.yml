@@ -1,9 +1,11 @@
 main:
-  #- title: "Blog"
-    #url: /blog
-  # - title: "All Posts"
-    # url: /posts
-  #- title: "About"
-  #  url: /about
+  - title: "Blog"
+    url: /blog
+  - title: "Stories"
+    url: /categories/stories
+  - title: "Travel"
+    url: /categories/travel
   - title: "Categorised Posts"
     url: /categories
+  - title: "About"
+    url: /about
