@@ -7,7 +7,7 @@ tags: Hong-Kong
 categories: travel
 comments: true
 header:
-  teaser: '/assets/images/hong-kong-teaser.svg'
+  teaser: 'https://lh3.googleusercontent.com/FuAI3Uqs7URQT6rj-3xfMelfV9TptKINUFrXqmPrkTFG19BqL3dMhUAstdEecuhluNecc7-zBy8XMjsMhuj_3O7VchDBa9k6QG6WnWmSImhAE8sqKGWa8P_BhK_22Qtr17fQvzRJ3XA=w2400'
 
 ---
 
