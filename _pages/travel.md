@@ -5,21 +5,21 @@ layout: splash
 author_profile: true
 comments: false
 feature_row:
-  - image_path: /assets/images/hong-kong-teaser.svg
+  - image_path: https://lh3.googleusercontent.com/HzYHffuHa9Xt8_Ye480bg3rQrCeC4mlPlmswoZWbENkjjoBxQZEuim7my7zY1HtvYqfrEFCknk_EmzudbQ5xOY-85_JbpLvtww4gMQjt3Dl-1IRtZntsLXEn3kXrfirMFcd7zbBhUOw=w2400
     alt: "placeholder image 1"
     title: "To the bit of my heart I left in Hong Kong"
     excerpt: "My stay in the city, more than a year on"
     url: "/blogposts/Hong_Kong"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/bangkok-teaser.svg
+  - image_path: https://lh3.googleusercontent.com/sVdrx9HpJ7sdKujkvHpXpFS2-rzPvPF5XJoQtuBBAHLHRQy8xHMmSBgATfcVUxCr7JaO9FmkVCHoOwTOWWm1HpeyetT1ZyFhIAwOiMXIg1u7YvEemX234vc7M1rW__4_POwE0buNV84=w2400
     alt: "placeholder image 2"
     title: "Bangkok Old Town"
     excerpt: "Adventures in the old city of Bangkok"
     url: "/blogposts/bangkok"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/rajasthan-teaser.svg
+  - image_path: https://lh3.googleusercontent.com/X_PacZ3khsc-S_GG2txmxwESRJ6sTw4ZLa-qbGs7LP3eDX-7uQcfUCmkmaxkG48mOopcbb-EwsoDZR14qP4By6B7PZt6w9cR_CYHcycBBl36MWHCbYuCdZvt9xpTyHWPSh262JABcE0=w2400
     alt: "placeholder image 2"
     title: "Rajasthan on the Feluda Trail"
     excerpt: "Satyajit Ray’s film Sonar Kella and how we ended up following the journey by the protagonists of the film during our trip to Rajasthan"
@@ -28,4 +28,5 @@ feature_row:
     btn_class: "btn--primary"
 ---
 <br>
+<h1> Travel </h1>
 {% include feature_row id="feature_row" %}

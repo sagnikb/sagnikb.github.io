@@ -7,7 +7,7 @@ tags: quantum quantum-computation
 categories: academic
 comments: true
 header:
-  teaser: '/assets/images/quantum-comp-teaser.svg'
+  teaser: 'https://lh3.googleusercontent.com/I2r1_pwkfliNAV6ukjNsZKZo9ts6WnTstHF3ywBAy_cw_Y_v5Xh2mPVsbzRabr9CzHzUK43lmponOZ9YAjgpkG16BCV9_UgOEzP5ES0BirSammg6cc69G8uRukime7Xj7E2tWGVKeDY=w2400'
 ---
 I am currently working on quantum complexity, with a working title of 'adversarial and polynomial methods in quantum query complexity'. If I come across something interesting, I plan to write on it as I guess it will sharpen my understanding of things, and maybe you, the reader, will find it cool too. This is meant as an introduction to the field itself.
 

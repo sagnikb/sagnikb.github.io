@@ -9,8 +9,9 @@ comments: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: '/assets/images/20190414_183537.jpg'
+  overlay_image: 'https://lh3.googleusercontent.com/f8H2QDz7rB9BiJvN_6JfclBHTPNmVnHzRQqBj3WohbgjlXNHISUyWmayKtPyJliASANTX3HCpSL1zEfxWeDlbwvaIdhhm8BPhjY5Y9u_kYrbzR2XQxeHHVod5XKtRe2Dti-35knX8vE=w2400'
   caption: "In front of the PK Kelkar Library, April 2019"
+  teaser: 'https://lh3.googleusercontent.com/bZQ4Ko5nw4pdURLvx3YSFA83XdlGoipkk7-oB5ENcewybwAxkEihFIjq9NQL_kLIML0WVL_7T-ljdeUdHy1zttBPOtlK9FZSEH7TpEcsJWc5bP0pOb-oY_b84a_HCttX9syz_s9SLrI=w2400'
 ---
 
 *This [first appeared](http://voxiitk.com/as-we-leave-9/) on Vox Populi, the campus journalism body of IIT Kanpur. They deserve credit for getting me to beat my procrastination and write what follows (no mean feat), and for editing this and stopping me from rambling. In particular, credit for that last bit goes to Ayush Agarwal.*

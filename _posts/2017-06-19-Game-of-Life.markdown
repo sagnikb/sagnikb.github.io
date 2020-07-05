@@ -7,7 +7,7 @@ tags: game-of-life
 categories: academic
 comments: true
 header:
-  teaser: /assets/images/conway-teaser.svg
+  teaser: https://lh3.googleusercontent.com/yQ8ObYsYyB3HICwomrUSND_08Bek_bje215uaTSA1Myb2iYT-UNyBpexUvUxDTS6gmp4VEuOXO3pIrrjupLqDpez__cQXxA8n2FejUHlD3Sn_RqAe3XpkmNQ8-vAlqAjrI5s-knz8bY=w2400
 ---
 I read Richard Dawkins' amazing book called 'The Greatest Show on Earth'
 some time back. Recently, while doing a course in Linguistics, I came

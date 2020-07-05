@@ -5,7 +5,7 @@ header:
   overlay_image: https://lh3.googleusercontent.com/y027gR952ZrwZIlAeVdK-cYbpTZpj-bIhSilmTS85xeX9icjjoKyriV_lnMzSV89cKBbBiceEhd4SaNXIZ9wgXG11qTnO7uud9hyGjxLYSXWnOi3aqadG5dm_tHGlImWm6n-_xMAejY=w2400
   overlay_filter: 0.30
   caption: "Mehrangarh Fort, Jodhpur, Rajasthan"
-  teaser: /assets/images/rajasthan-teaser.svg
+  teaser: https://lh3.googleusercontent.com/X_PacZ3khsc-S_GG2txmxwESRJ6sTw4ZLa-qbGs7LP3eDX-7uQcfUCmkmaxkG48mOopcbb-EwsoDZR14qP4By6B7PZt6w9cR_CYHcycBBl36MWHCbYuCdZvt9xpTyHWPSh262JABcE0=w2400
 categories:
   - travel
 tags:

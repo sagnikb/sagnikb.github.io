@@ -3,7 +3,7 @@ title: French Duels
 date: 2019-11-27 20:00:00 -0400
 excerpt: Mathematics, aliens, history, time-travel rolled into one story based on true events.
 tags: writing science-fiction 
-categories: writing
+categories: stories
 comments: true
 classes: wide
 header:
@@ -11,6 +11,7 @@ header:
   overlay_filter: "0.5"
   overlay_image: https://upload.wikimedia.org/wikipedia/commons/5/53/Evariste_galois.jpg
   caption: "Photo credit: [**Wikimedia Commons**](https://commons.wikimedia.org/wiki/File:Evariste_galois.jpg)"
+  teaser: https://lh3.googleusercontent.com/0VG4PfPvL3Bw5elLgzGQFFUenM1IJp7n22QSpXSYratOaWdhQsdR0r__A2pSeJnYHcAoopx35ndQlGCYj0V7gtcnA4aQz9v-A5olYLmk3npNmrQt4ttdji1WG-LeKx7eMG7uYNb0zIQ=w2400
 excerpt: "Mathematics, aliens, history, time-travel rolled into one story based on true events."
 ---
 There was a man sitting at the desk in front of me. It was night and the room was dark, a darkness only broken by a ray of moonlight that found its way through the open window and a candle that was lighting whatever the man was doing. A glance outside said that I was in a room overlooking a deserted street in a city that was in deep sleep. Other than the occasional cry of some bird and some far away drunken song that sometimes wafted in through the window, there was scarcely a sound other than the sleepless scratching of pen on paper emanating from the man hard at work in front of me.

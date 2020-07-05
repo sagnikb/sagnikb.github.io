@@ -2,13 +2,14 @@
 title: Isolation on the shoulders of giants
 date: 2020-03-26 10:00:00 -0400
 tags: historical-fiction science
-categories: writing
+categories: stories
 classes: wide
 comments: true
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
   overlay_image: https://lh3.googleusercontent.com/d3ZjTRJy9kmA4b9wjvlsoroFQzaH_lSTBR1ShOayC-5cG4DNCvLls7ZBuelyE_n8n-ow6EVwEy8xnolXnQ1tkhCVnHWNfcpkcAikToJZSvLg9d9s_UPfmyV0SyY4AG2NakWbH8tAORc=w2400
+  teaser: https://lh3.googleusercontent.com/p1TEvr6ueqVrMwB6qfo60QvV_R5K7l3Cd6uoKZRAuOQLW8YWTukPK1wpCCNzBqSco8m_aY9R4wdevj6WE5w1SyeSoYBY5kTT4lMGIHPoQnmTXJRfZE6MciqQlbeq1i77OYdRnqXtUKs=w2400
 excerpt: "Another person was once isolated. This is a day in his life."
 
 ---

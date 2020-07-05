@@ -7,7 +7,7 @@ tags: quantum IITK
 categories: thoughts
 comments: true
 header:
-  teaser: '/assets/images/quantum-semester-teaser.svg'
+  teaser: 'https://lh3.googleusercontent.com/Ru6PG64UsDrjbeK5MAfMue9uCqSrWBL5g8PFOOOosQ37redt5LzxgHpvzJYNgvs-6WkdWjBXcGEn6JjuJKM8sI_d7594OzZik3az-dPILe5TcH9PlOKsdAZsm5aSYV26_VsgHhDHBUk=w2400'
 ---
 I have not written anything in a long, long time, and I shall claim that
 it is just because I was trying to make this blog live up to its

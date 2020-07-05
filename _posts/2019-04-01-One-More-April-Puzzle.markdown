@@ -7,7 +7,7 @@ tags: science-coffeehouse April-puzzles
 categories: puzzles
 comments: true
 header:
-  teaser: /assets/images/april-2019-teaser.svg
+  teaser: https://lh3.googleusercontent.com/XdgzglMnGLjJ4RMBlCX1S4gmCBt3nlqcJ9s3Wvq4zxMacm8kd_3fXMlVBuPCicm-Dr8EO_dbYlZwK4XHk2sEv1bflyCBOjThj0t10oeaXplAk12y_Ns4J8jAZu9gK9evIdS0KRLos6U=w2400
 ---
 On a *melancholy* spring evening, you doze off. When you wake up, you find yourself in mathematical utopia - every plane surface is perfectly plane, and ever sphere perfect. In front of you is a perfectly vertical wall that is exactly perpendicular to the infinite plane that you are standing on. On the wall, there is a strange shelf, and lying around are exactly <del>six</del> seven spherical balls of lead. You pick up the one on the ground and ponder about what you're seeing. The wall is shown in the diagram below.
 

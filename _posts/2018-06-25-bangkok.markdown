@@ -4,7 +4,7 @@ date: 2018-06-25 14:00:00 +0530
 header:
   overlay_image: https://lh3.googleusercontent.com/r-L6poumybRYs_LwlvPhIb-fUGLHNesCXOC2n8kAaZOR3_biaffKmjGooylTFY_RX_iBvQ7j8NTCtQLu2GCMf57zQ6ryN7FLhrtXNQapeQV6E7AffU05zqU_f1KeYgxixzvrKfDmgnM=w2400
   caption: "Reclining Buddha, Wat Arun"
-  teaser: '/assets/images/bangkok-teaser.svg'
+  teaser: 'https://lh3.googleusercontent.com/sVdrx9HpJ7sdKujkvHpXpFS2-rzPvPF5XJoQtuBBAHLHRQy8xHMmSBgATfcVUxCr7JaO9FmkVCHoOwTOWWm1HpeyetT1ZyFhIAwOiMXIg1u7YvEemX234vc7M1rW__4_POwE0buNV84=w2400'
 categories:
   - travel
 tags:

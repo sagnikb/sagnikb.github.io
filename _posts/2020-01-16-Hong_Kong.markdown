@@ -7,7 +7,7 @@ tags: Hong-Kong
 categories: travel
 comments: true
 header:
-  teaser: 'https://lh3.googleusercontent.com/FuAI3Uqs7URQT6rj-3xfMelfV9TptKINUFrXqmPrkTFG19BqL3dMhUAstdEecuhluNecc7-zBy8XMjsMhuj_3O7VchDBa9k6QG6WnWmSImhAE8sqKGWa8P_BhK_22Qtr17fQvzRJ3XA=w2400'
+  teaser: 'https://lh3.googleusercontent.com/HzYHffuHa9Xt8_Ye480bg3rQrCeC4mlPlmswoZWbENkjjoBxQZEuim7my7zY1HtvYqfrEFCknk_EmzudbQ5xOY-85_JbpLvtww4gMQjt3Dl-1IRtZntsLXEn3kXrfirMFcd7zbBhUOw=w2400'
 
 ---
 
