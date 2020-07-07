@@ -11,4 +11,4 @@ Broadly interested in classical and quantum information theory
 
 BTech in Electrical Engineering from IIT Kanpur. Previously worked on and maintain an interest in algebraic coding theory, adversarial channels and quantum query complexity
 
-I like <a href="/blog">blogging</a>, <a href="/categories/writing">writing stories</a> and <a href="/categories/travel">travelling</a>.
+I like <a href="/blog">blogging</a>, <a href="/categories/stories">writing stories</a> and <a href="/categories/travel">travelling</a>.
