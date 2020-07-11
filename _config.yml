@@ -11,12 +11,12 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes@4.16.0"
+remote_theme             : "mmistakes/minimal-mistakes@4.19.3"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Thoughts, Quantized"
+title                    : "Sagnik Bhattacharya"
 title_separator          : "|"
 name                     : "Sagnik Bhattacharya"
 description              : "Homepage for Sagnik Bhattacharya, ECE PhD Student at UMD"
@@ -119,7 +119,7 @@ author:
       # url: mailto:sagnikb@iitk.ac.in
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://sagnikb.github.io"
+      #url: "https://sagnikb.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/TheSag66"
@@ -128,7 +128,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/sagnikb/"
+      # url: "https://github.com/sagnikb/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://www.instagram.com/thesag66/"
@@ -138,7 +138,7 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/TheSag66"
+      # url: "https://twitter.com/TheSag66"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:

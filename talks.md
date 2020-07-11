@@ -1,5 +1,5 @@
 ---
-layout: 1single
+layout: single
 title: Talks
 author_profile: true
 ---

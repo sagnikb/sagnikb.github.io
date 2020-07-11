@@ -1,14 +1,26 @@
 ---
-layout: 1single
+layout: single
 author_profile: true
 comments: false
-title: Sagnik Bhattacharya
+title: About Me
+classes: wide
 ---
-<h1 style="font-family:'Atma'"> সাগ্নিক ভট্টাচার্য্য </h1> 
-ECE PhD student at University of Maryland, College Park, working on sampling/rate-distortion problems, advised by <a href="https://user.eng.umd.edu/~prakash/index.html">Prof Prakash Narayan</a>
+I am a second year ECE PhD student at the University of Maryland, College Park, working on sampling/rate-distortion problems, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html).
 
-Broadly interested in classical and quantum information theory 
+I am broadly interested in classical and quantum information theory. I have previously worked on and maintain an interest in algebraic coding theory, adversarial channels and quantum query complexity.
 
-BTech in Electrical Engineering from IIT Kanpur. Previously worked on and maintain an interest in algebraic coding theory, adversarial channels and quantum query complexity
+I graduated with a Bachelor of Technology in Electrical Engineering from the Indian Institute of Technology Kanpur in June 2019. I was advised by [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/) during this time, and also spent a summer at CUHK, working with [Prof Sidharth Jaggi](https://staff.ie.cuhk.edu.hk/~sjaggi/).
 
-I like <a href="/blog">blogging</a>, <a href="/categories/stories">writing stories</a> and <a href="/categories/travel">travelling</a>.
+# Publications
+
+### A method to find the volume of a sphere in the Lee metric, and its applications
+Sagnik Bhattacharya and Adrish Banerjee <br>
+ISIT 2019 <br>
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/8849817)
+[pdf](/assets/pdfs/Lee_metric.pdf)
+
+### Shared Randomness in Arbitrarily Varying Channels
+Sagnik Bhattacharya, Amitalok J. Budkuley and Sidharth Jaggi<br>
+ISIT 2019 <br>
+[IEEE Xplore](https://ieeexplore.ieee.org/document/8849801)
+[pdf](/assets/pdfs/Shared_randomness.pdf)

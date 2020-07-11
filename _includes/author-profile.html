@@ -56,8 +56,7 @@
           </a>
         </li>
       {% endif %}
-      <li><a href="/" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i>&nbsp; Website</a></li>
-      <!--
+ 
       {% if author.links %}
         {% for link in author.links %}
           {% if link.label and link.url %}
@@ -257,7 +256,6 @@
           </a>
         </li>
       {% endif %}
--->
       {% include author-profile-custom-links.html %}
     </ul>
   </div>

@@ -1,9 +1,15 @@
 ---
 layout: splash
+title: Thoughts, Quantized
 author_profile: true
 comments: false
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.8"
+  overlay_image: /assets/images/wordcloud.jpg
+excerpt: "Sagnik (sometimes) blogs here"
 feature_row1:
-  - image_path: /assets/images/teaser.png
+  - image_path: https://lh3.googleusercontent.com/cdMxkGJq0Zxq7087QNZHCu41ro3f5boLVrEIWQbGItSScHNbyKmDOsTpw11n_QRosTgZ4GHFaV1YDU--WAoHJV3anFChOaYH699dTIJzU--I1kzhDNpTb7GU1X5MQ_AV3yBXr4yS85I=w2400
     alt: "placeholder image 2"
     title: "Ishaan Kon - The Sushant Singh Rajput story"
     excerpt: 'How he lived in the intersection of two worlds, and what he meant to me as I was growing up'
@@ -34,7 +40,7 @@ feature_row:
     btn_class: "btn--primary"
 ---
 <br>
-{% include feature_row id="feature_row1" type="left" %}
+{% include feature_row id="feature_row1" type="right" %}
 
 {% include feature_row id="feature_row" %}
 

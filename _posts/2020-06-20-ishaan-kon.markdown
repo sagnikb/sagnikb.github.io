@@ -6,6 +6,8 @@ categories: thoughts
 comments: true
 classes: wide
 excerpt: "Coming to terms with the Sushant Singh Rajput story"
+header:
+  teaser: 'https://lh3.googleusercontent.com/cdMxkGJq0Zxq7087QNZHCu41ro3f5boLVrEIWQbGItSScHNbyKmDOsTpw11n_QRosTgZ4GHFaV1YDU--WAoHJV3anFChOaYH699dTIJzU--I1kzhDNpTb7GU1X5MQ_AV3yBXr4yS85I=w2400'
 ---
 
 Let me start off with a couple of reminiscences. 

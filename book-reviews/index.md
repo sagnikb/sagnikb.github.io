@@ -1,5 +1,5 @@
 ---
-layout: 1single
+layout: single
 title: 2020 books
 author_profile: true
 comments: false

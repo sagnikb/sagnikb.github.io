@@ -1,5 +1,5 @@
 ---
-layout: 1single
+layout: single
 title: The Trove
 author_profile: true
 toc: true

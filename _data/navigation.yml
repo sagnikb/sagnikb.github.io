@@ -5,7 +5,3 @@ main:
     url: /categories/stories
   - title: "Travel"
     url: /categories/travel
-  - title: "Categorised Posts"
-    url: /categories
-  - title: "About"
-    url: /about
