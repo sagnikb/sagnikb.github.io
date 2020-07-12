@@ -1,13 +1,16 @@
 ---
 layout: splash
-title: Thoughts, Quantized
+title: <span style='background-color:#000;'>Thoughts, Quantized</span>
 author_profile: true
 comments: false
 header:
   overlay_color: "#000"
   overlay_filter: "0.8"
   overlay_image: /assets/images/wordcloud.jpg
-excerpt: "Sagnik (sometimes) blogs here"
+  actions:
+    - label: "Categorised Posts"
+      url: "/categories"  
+excerpt: <span style='background-color:#000;'>Sagnik (sometimes) blogs here</span>
 feature_row1:
   - image_path: https://lh3.googleusercontent.com/cdMxkGJq0Zxq7087QNZHCu41ro3f5boLVrEIWQbGItSScHNbyKmDOsTpw11n_QRosTgZ4GHFaV1YDU--WAoHJV3anFChOaYH699dTIJzU--I1kzhDNpTb7GU1X5MQ_AV3yBXr4yS85I=w2400
     alt: "placeholder image 2"
