@@ -11,15 +11,15 @@ I am broadly interested in classical and quantum information theory. I have prev
 
 I graduated with a Bachelor of Technology in Electrical Engineering from the Indian Institute of Technology Kanpur in June 2019. I was advised by [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/) during this time, and also spent a summer at CUHK, working with [Prof Sidharth Jaggi](https://staff.ie.cuhk.edu.hk/~sjaggi/).
 
-# Publications
+## Publications
 
-### A method to find the volume of a sphere in the Lee metric, and its applications
+<span style="font-family: Source Sans Pro;">**A method to find the volume of a sphere in the Lee metric, and its applications**</span><br>
 Sagnik Bhattacharya and Adrish Banerjee <br>
 ISIT 2019 <br>
 [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/8849817)
 [pdf](/assets/pdfs/Lee_metric.pdf)
 
-### Shared Randomness in Arbitrarily Varying Channels
+<span style="font-family: Source Sans Pro;">**Shared Randomness in Arbitrarily Varying Channels**</span><br>
 Sagnik Bhattacharya, Amitalok J. Budkuley and Sidharth Jaggi<br>
 ISIT 2019 <br>
 [IEEE Xplore](https://ieeexplore.ieee.org/document/8849801)
