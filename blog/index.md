@@ -43,13 +43,9 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
-<br>
 {% include feature_row id="feature_row1" type="right" %}
-
 {% include feature_row id="feature_row" %}
-
 # Older Posts
-
 {% assign counter = 0 %}
 
 {% for post in site.posts %}
