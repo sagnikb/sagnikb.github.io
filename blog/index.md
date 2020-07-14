@@ -1,5 +1,6 @@
 ---
-layout: splash
+layout: single
+classes: wide
 title: <span style='background-color:#000;'>Thoughts, Quantized</span>
 author_profile: true
 comments: false
