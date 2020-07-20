@@ -19,6 +19,22 @@
   }
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.initial-content,
+.search-content {
+  flex: 1 0 auto;
+}
+
 .page {
   @include breakpoint($large) {
     float: right;
@@ -72,19 +88,28 @@
     border-bottom: 1px solid $border-color;
   }
 
-  p {
-    font-size: 1em;
-  }
+	h1, h2, h3, h4, h5, h6 {
+		.header-link {
+			position: relative;
+			left: 0.5em;
+			opacity: 0;
+			font-size: 0.8em;
+			-webkit-transition: opacity 0.2s ease-in-out 0.1s;
+			-moz-transition: opacity 0.2s ease-in-out 0.1s;
+			-o-transition: opacity 0.2s ease-in-out 0.1s;
+			transition: opacity 0.2s ease-in-out 0.1s;
+		}
 
-  li {
-    font-size: 1em;
-  } 
+		&:hover .header-link {
+			opacity: 1;
+		}
+	}
 
+  p,
+  li,
   dl {
     font-size: 1em;
   }
-
-
 
   /* paragraph indents */
   p {
@@ -313,10 +338,7 @@
 
   .archive__item-title {
     margin-top: 0;
-  }
-
-  .archive__item-excerpt {
-    margin-top: 0;
+    text-decoration: none;
   }
 
   .archive__subtitle {
@@ -331,11 +353,11 @@
 
 .taxonomy__title {
   margin-bottom: 0.5em;
-  color: lighten($text-color, 60%);
+  color: $muted-text-color;
 }
 
 .taxonomy__count {
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
 }
 
 .taxonomy__index {
@@ -368,7 +390,7 @@
 .back-to-top {
   display: block;
   clear: both;
-  color: lighten($text-color, 50%);
+  color: $muted-text-color;
   font-size: 0.6em;
   text-transform: uppercase;
   text-align: right;

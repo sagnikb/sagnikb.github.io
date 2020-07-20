@@ -20,6 +20,15 @@
 
 .archive__item {
   position: relative;
+
+  a {
+    position: relative;
+    z-index: 10;
+  }
+
+  a[rel="permalink"] {
+    position: static;
+  }
 }
 
 .archive__subtitle {
@@ -40,8 +49,9 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-decoration: none;
 
-  a::before {
+  a[rel="permalink"]::before {
     content: '';
     color: $text-color;
     position: absolute;
@@ -66,7 +76,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-5;
+  font-size: $type-size-6;
 
   & + p {
     text-indent: 0;
@@ -436,4 +446,12 @@
       padding-right: 0;
     }
   }
+}
+
+/* Place inside a single layout */
+
+.layout--single {
+	.feature__wrapper {
+		display: inline-block;
+	}
 }

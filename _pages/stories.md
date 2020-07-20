@@ -7,7 +7,7 @@ comments: false
 feature_row:
   - image_path: https://lh3.googleusercontent.com/p1TEvr6ueqVrMwB6qfo60QvV_R5K7l3Cd6uoKZRAuOQLW8YWTukPK1wpCCNzBqSco8m_aY9R4wdevj6WE5w1SyeSoYBY5kTT4lMGIHPoQnmTXJRfZE6MciqQlbeq1i77OYdRnqXtUKs=w2400
     alt: "placeholder image 1"
-    title: "Isolation on the shoulders of giants"
+    title: "An Isolated Giant"
     excerpt: "Another person was once isolated due to an epidemic. This is a day in his life."
     url: "/blogposts/isolation-giants"
     btn_label: "Read More"
