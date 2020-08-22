@@ -1,0 +1,52 @@
+---
+title: Friends / Distance = Drift?
+date: 2020-08-21 10:00:00 -0400
+tags:
+categories: essays
+comments: true
+classes: wide
+excerpt: "How to maintain long distance friendships?"
+header:
+  teaser: 'https://lh3.googleusercontent.com/kCOkqtqRGhf_etkDFoPT5UWUxrSqvPRmeW3HGfvkithBZtGuAUj03qTHr6ioBymhR8Mb7s-FtGe85qPwr4LMb9mcHMlgjDIF3AsUPTFrHxl6JjixljGAlZanHbJjqhIpiFinArqY0yo=w2400'
+---
+*Much of this post has its roots in conversations (fittingly, screen-mediated) with several friends but those fleshed out and solidified ideas that originated from a conversation with Sims - especially the key point about the importance of communication. Also, while I tried to keep this as general as possible, much of this was me trying to make sense of my own thoughts and I might be overestimating the extent to which these ideas generalise.*
+
+It has been about a year since I received my undergraduate degree, which was also my last in-person meeting with all but one of my college friends. Many of us are now scattered all over the world, and our lives have changed massively over the course of the past year. Much of our social interaction is now mediated purely through screens and texts, even before the pandemic increased the extent. I don’t have to travel to and from my workplace now, and I have used some of the free time to wonder about how friendship interacts with distance. [^1]
+
+There are two ways to interpret that question, of which one is the subject of this essay. I will not consider here if friendships can happen over distance, but rather what happens when previously co-located friends now have to worry about the literal distance between them, and whether that translates to figurative distance too.
+
+The first thing to realise is that change is inevitable. If the friendship grew at a common location, when the people involved saw each other every day, it inevitably gets tied to the prevailing circumstances. When we do not need to work for it, we tend to underestimate things like non-verbal communication or interactions happening by accident and not needing to be explicitly set up. The shared location itself is a ready source of conversation that is of interest to both people, and there’s also the effective information transfer that comes from being part of the same social network.
+
+{% include figure image_path="https://lh3.googleusercontent.com/kCOkqtqRGhf_etkDFoPT5UWUxrSqvPRmeW3HGfvkithBZtGuAUj03qTHr6ioBymhR8Mb7s-FtGe85qPwr4LMb9mcHMlgjDIF3AsUPTFrHxl6JjixljGAlZanHbJjqhIpiFinArqY0yo=w2400" caption="A possible co-located conversation." alt="A possible co-located conversation." %}
+
+Consciously making time for a friendship and taking into account personal schedules and time zones feels very different from the relative spontaneity of the past. Finding topics to talk about can also become hard - because small talk about mundane details might not be interesting to both people any more. 
+
+Without belabouring the point further - maintaining exactly the same kind of relationship with a friend that existed in the past when both people were co-located might not logistically feasible, and, if not, we need to find a new equilibrium. That’s what will concern us for the rest of this essay.
+
+The first thing is to define a realistic goal. This may vary from person to person, but we can find some general guidelines. Talking every day, for example, might not be a realistic goal because of the logistical issues involved, but maintaining the same level of comfort might be. This comfort level is a more abstract notion that is not easily described by easy metrics like how often two people talk. As an often reshared post on social media reads, the best friends are those with whom you may not have talked for a month and yet when you do talk it feels like nothing has changed. What this is talking about is that the comfort level hasn’t changed in that month, and frequency of interaction might be a lousy metric to judge this.
+
+It is also important to recognise that people themselves change, not just the friendship. The person you’re interacting with now may be quite different from the person from a year or two back - adjusting to a new location and its challenges can  have its effect. In case two people are spending the effort to actually maintain a long distance friendship, it is safe to assume that they are invested in it; if so, living out a version that one has grown out of just for the sake of the friendship not only discredits the investment but also puts an unnecessary strain on the friendship, and should be avoided.
+
+Now that we have some idea of what a new equilibrium might look like, the question becomes how we reach it.
+
+A stable equilibrium is one that both people are okay with, an ideal situation which might not be easy to reach. But the only hope of reaching anywhere close is a deliberate commitment to clear communication.
+
+Interacting via texts means missing important information from tone of voice and body language that provides context, and therefore our words must be taken at face value in such interactions. This makes misunderstandings easier, and demands more work from both people to avoid them - which can eat into the already limited time for interaction or worse, start feeling like a chore.
+
+Misunderstandings happen even when people are face-to-face, and a medium like texting makes them worse. Letting misunderstandings remain is a sure-shot way of ensuring people will drift apart, and so we must talk about them to the other person. Even when they didn’t exist before and now do, by themselves grievances are not a sign that the friendship is weakening; if anything, it shows that you still care enough. Being able to discuss grievances reflects the strength of the relationship and feeling afraid of voicing them does just the opposite. It is important to have enough trust in the relationship to know that one hard conversation will not kill it. 
+
+> The question of whether two people have drifted apart is complicated by the simple fact that we don’t perceive our feelings on a continuum. As an example, take any one of your closest friends, and ask yourself when it was that you became close friends. In most cases, even if you can point to a specific time, it will be a time when you realized that you were then close friends, but that doesn’t mean the friendship only became close from that moment on but rather that the continuous process of getting close has been discretized by our minds. I propose that the same holds true for drifting apart - suddenly you’ll wake up one day and think that things aren’t the same as they were before. Also since no one likes drifting apart from people one wants to keep in touch with, one tends to ignore the signs that it is happening, which also results in late detection.
+
+I like to use an analogy here. Issues in a close friendship are like grains of sand in a very fine machine. Their presence is easily noticed, and can easily strain the machine because one is so used to everything running smoothly. The smart thing to do is to recognise the presence of a sand grain and get rid of it. Ignoring it is just going to fray the machine more over time. 
+
+This isn’t easy to do, and requires the investment of time and effort, which is a big change from not having to work very hard when co-located. The difficulty isn’t surprising, though - it is never easy to have something change from a point that we are comfortable with.
+
+One other thing to keep in mind is that it is not possible to maintain relationships with everyone we once knew, because the [number of close relationships we can maintain is limited](https://www.wikiwand.com/en/Dunbar%27s_number). So, some people are bound to drift apart. Agonising over this doesn’t help, and trying way too hard might put an unnecessary strain on that and other relationships. It might help to ask if the relationship with the person is important to you and to be as objective as possible in answering it. If the person is indeed important, and you don’t mind a possibly difficult conversation, then lead it. Speak out about your expectations and grievances. If the other person reciprocates, well and good. If not, you save yourself a lot of long-term heartburn.
+
+Reaching out also has a different kind of utility - sometimes a friend may just be going through a hard time themselves, and might not be in the mood to initiate a conversation. Maybe they’ll appreciate you reaching out. 
+
+For the sake of completeness, it is possible that you are much more invested in a friendship than a friend is, or that you are able/willing to expend much more effort than your friend. Asymmetries of this kind can be hard to deal with. At some point the only remaining thing is to let go and find a way to be okay with it. Maybe while you do so, also mentally thank the friend for teaching you a valuable life lesson - that after all, change is the one inevitable thing.
+
+I hope this has been useful to some of you who are in a similar boat as I am. Every friendship is unique, but I hope these are abstract principles that generalise well.  
+
+[^1]: “Your brain relaxes in different ways during socials and during self-times. During socials, it mostly forgets. During me-times, it mostly reflects.” [source](https://qr.ae/pNKbYA)
