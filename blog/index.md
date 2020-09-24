@@ -42,7 +42,7 @@ feature_row:
 ---
 {% assign counter = 0 %}
 
-# Research
+# Academics, research etc
 
 {% for post in site.posts %}
 	{% if post.categories contains "academic" %}
@@ -55,9 +55,7 @@ feature_row:
 # Other stuff
 
 {% for post in site.posts %}
-	{% if post.categories contains "travel" %}
-	{% elsif post.categories contains "stories" %}
-	{% elsif post.categories contains "academic" %}
+	{% if post.categories contains "academic" %}
 	{% else %}
         {% assign counter = counter | plus: 1 %}
         {% if counter > 0 %}
