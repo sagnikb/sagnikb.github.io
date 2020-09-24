@@ -2,7 +2,7 @@
 layout: single
 title: One More April Puzzle
 date: 2019-04-01 12:00:00 +0530
-excerpt: One more special puzzle to celebrate April Fools Day
+excerpt: A special puzzle to celebrate April Fools Day 2019
 tags: science-coffeehouse April-puzzles
 categories: puzzles
 comments: true

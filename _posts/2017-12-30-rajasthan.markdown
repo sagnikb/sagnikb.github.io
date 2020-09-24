@@ -12,7 +12,7 @@ tags:
   - Rajasthan
   - Feluda
   - Satyajit Ray
-excerpt: "Satyajit Ray’s film Sonar Kella and how we ended up following the journey by the protagonists of the film during our trip to Rajasthan"
+excerpt: "How our Rajasthan trip followed a beloved fictional journey"
 gallery:
   - image_path: https://lh3.googleusercontent.com/y027gR952ZrwZIlAeVdK-cYbpTZpj-bIhSilmTS85xeX9icjjoKyriV_lnMzSV89cKBbBiceEhd4SaNXIZ9wgXG11qTnO7uud9hyGjxLYSXWnOi3aqadG5dm_tHGlImWm6n-_xMAejY=w2400
     alt: "Stonework in Mehrangarh Fort"

@@ -8,9 +8,6 @@ header:
   overlay_color: "#000"
   overlay_filter: "0.8"
   overlay_image: /assets/images/wordcloud.jpg
-  actions:
-    - label: "Categorised Posts"
-      url: "/categories"  
 excerpt: <span style='background-color:#000;'>Sagnik (sometimes) blogs here</span>
 feature_row1:
   - image_path: https://lh3.googleusercontent.com/kCOkqtqRGhf_etkDFoPT5UWUxrSqvPRmeW3HGfvkithBZtGuAUj03qTHr6ioBymhR8Mb7s-FtGe85qPwr4LMb9mcHMlgjDIF3AsUPTFrHxl6JjixljGAlZanHbJjqhIpiFinArqY0yo=w2400
@@ -43,17 +40,27 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
-{% include feature_row id="feature_row1" type="right" %}
-{% include feature_row id="feature_row" %}
-# Older Posts
 {% assign counter = 0 %}
+
+# Research
+
+{% for post in site.posts %}
+	{% if post.categories contains "academic" %}
+  		{% include archive-single.html %}
+	{% endif %}
+{% endfor %}
+
+<br>
+
+# Other stuff
 
 {% for post in site.posts %}
 	{% if post.categories contains "travel" %}
 	{% elsif post.categories contains "stories" %}
+	{% elsif post.categories contains "academic" %}
 	{% else %}
         {% assign counter = counter | plus: 1 %}
-        {% if counter > 5 %}
+        {% if counter > 0 %}
   		    {% include archive-single.html %}
         {% endif %}
 	{% endif %}

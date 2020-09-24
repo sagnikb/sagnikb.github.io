@@ -2,7 +2,7 @@
 layout: single
 author_profile: true
 comments: false
-title: About Me
+title: About
 classes: wide
 ---
 I am a second year ECE PhD student at the University of Maryland, College Park, working on sampling/rate-distortion problems, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html).

@@ -1,8 +1,8 @@
 ---
 layout: single
-title: Volumes of spheres in discrete metrics
+title: Volumes of spheres in more general discrete metrics
 date: 2019-04-20 14:00:00 +0530
-excerpt: On the paper 'A method to find the volume of a sphere in the Lee metric, and its applications'
+excerpt: On our ISIT 2019 paper on a new technique to find said volume
 tags: coding-theory information-theory
 categories: academic
 comments: true

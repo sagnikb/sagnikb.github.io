@@ -2,7 +2,7 @@
 layout: single
 title: "A Night Full of Questions"
 date: 2017-09-04 00:22:00 +0530
-excerpt: QnA for SnT Code in Takneek, the technical fest of IIT Kanpur. 
+excerpt: QnA for SnT Code in Takneek 2017, the technical fest of IIT Kanpur. 
 tags: science-coffeehouse
 categories: puzzles
 comments: true

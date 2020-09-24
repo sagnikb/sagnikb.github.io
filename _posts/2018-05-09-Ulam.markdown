@@ -2,7 +2,7 @@
 layout: single
 title: "Binary Search, the Ulam game and Coding Theory"
 date: 2018-05-07 14:00:00 +0530
-excerpt: Binary search with lies allowed and adaptive block codes
+excerpt: On the connection between 20 questions with allowed lies and adaptive block codes
 tags: game-theory coding-theory
 categories: academic
 comments: true

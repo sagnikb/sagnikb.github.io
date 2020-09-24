@@ -22,7 +22,7 @@ feature_row:
   - image_path: https://lh3.googleusercontent.com/X_PacZ3khsc-S_GG2txmxwESRJ6sTw4ZLa-qbGs7LP3eDX-7uQcfUCmkmaxkG48mOopcbb-EwsoDZR14qP4By6B7PZt6w9cR_CYHcycBBl36MWHCbYuCdZvt9xpTyHWPSh262JABcE0=w2400
     alt: "placeholder image 2"
     title: "Rajasthan on the Feluda Trail"
-    excerpt: "Satyajit Ray’s film Sonar Kella and how we ended up following the journey by the protagonists of the film during our trip to Rajasthan"
+    excerpt: "How our Rajasthan trip followed a beloved fictional journey"
     url: "/blogposts/rajasthan"
     btn_label: "Read More"
     btn_class: "btn--primary"
