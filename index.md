@@ -5,11 +5,11 @@ comments: false
 title: About
 classes: wide
 ---
-I am a second year ECE PhD student at the University of Maryland, College Park, working on sampling/rate-distortion problems, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html).
+I am a graduate student in the Department of Electrical and Computer Engineering at the University of Maryland, College Park, working on sampling/rate-distortion problems, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). I am broadly interested in classical and quantum information theory. I graduated with a Bachelor of Technology in Electrical Engineering from IIT Kanpur in 2019, where I was advised by [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/). I also spent a summer at CUHK, working with [Prof Sidharth Jaggi](http://jaggi.name/).
 
-I am broadly interested in classical and quantum information theory. I have previously worked on and maintain an interest in algebraic coding theory, adversarial channels and quantum query complexity.
+I have previously worked on and maintain an interest in algebraic coding theory, adversarial channels and quantum query complexity.
 
-I graduated with a Bachelor of Technology in Electrical Engineering from the Indian Institute of Technology Kanpur in June 2019. I was advised by [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/) during this time, and also spent a summer at CUHK, working with [Prof Sidharth Jaggi](https://staff.ie.cuhk.edu.hk/~sjaggi/).
+I co-organize the [Communication, Control and Signal Processing Seminar](http://ccsp.ece.umd.edu/).
 
 ## Publications
 

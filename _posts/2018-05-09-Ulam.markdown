@@ -6,8 +6,8 @@ excerpt: On the connection between 20 questions with allowed lies and adaptive b
 tags: game-theory coding-theory
 categories: academic
 comments: true
+classes: wide
 toc: true
-toc_sticky: true
 header:
   teaser: 'https://lh3.googleusercontent.com/5Cjrm-Pg-RhpCDNJ3C25V2NDfVGMlJxatttenTZKBc9wVA5kb8Sq2zBTSxx8dS6Ng_x98lxiic-mhIfrW0vPvEhuKl_dvKx0oVunCejxmImrGuO_-B-426aITB8VAtPsTjHvdMVLqmo=w2400'
 ---

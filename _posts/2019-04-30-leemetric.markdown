@@ -6,8 +6,8 @@ excerpt: On our ISIT 2019 paper on a new technique to find said volume
 tags: coding-theory information-theory
 categories: academic
 comments: true
+classes: wide
 toc: true
-toc_sticky: true
 header:
   teaser: 'https://lh3.googleusercontent.com/kk18j989Eiks_OrirayG6o2MY6XMKLJ6VjqW3p1od0tJnn9_Vut3BHepPhbNKFxyi90Tty1Ji3tgMitM8_3PNlElGt38BGcI49B2aQa9_7auSEuh9qWfFNc9o8N5CmEeDYoo_teOcLA=w2400'
 ---

@@ -5,6 +5,7 @@ date: 2018-07-27 14:00:00 +0530
 excerpt: The (highly) non-trivial content of Shannon's Channel Coding theorem
 tags: coding-theory information-theory
 categories: academic
+classes: wide
 comments: true
 header:
   teaser: 'https://lh3.googleusercontent.com/5Cjrm-Pg-RhpCDNJ3C25V2NDfVGMlJxatttenTZKBc9wVA5kb8Sq2zBTSxx8dS6Ng_x98lxiic-mhIfrW0vPvEhuKl_dvKx0oVunCejxmImrGuO_-B-426aITB8VAtPsTjHvdMVLqmo=w2400'

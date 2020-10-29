@@ -5,6 +5,7 @@ date: 2018-01-22 00:22:00 +0530
 excerpt: A short(ish) introduction to quantum complexity
 tags: quantum quantum-computation
 categories: academic
+classes: wide
 comments: true
 header:
   teaser: 'https://lh3.googleusercontent.com/I2r1_pwkfliNAV6ukjNsZKZo9ts6WnTstHF3ywBAy_cw_Y_v5Xh2mPVsbzRabr9CzHzUK43lmponOZ9YAjgpkG16BCV9_UgOEzP5ES0BirSammg6cc69G8uRukime7Xj7E2tWGVKeDY=w2400'

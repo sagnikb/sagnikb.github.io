@@ -5,7 +5,7 @@ tags:
 categories: essays
 comments: true
 classes: wide
-excerpt: "How to maintain long distance friendships?"
+excerpt: "How to maintain long distance friendships"
 header:
   teaser: 'https://lh3.googleusercontent.com/kCOkqtqRGhf_etkDFoPT5UWUxrSqvPRmeW3HGfvkithBZtGuAUj03qTHr6ioBymhR8Mb7s-FtGe85qPwr4LMb9mcHMlgjDIF3AsUPTFrHxl6JjixljGAlZanHbJjqhIpiFinArqY0yo=w2400'
 ---

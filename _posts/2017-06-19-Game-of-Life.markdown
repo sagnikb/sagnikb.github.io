@@ -6,6 +6,7 @@ excerpt: Interesting things about a cellular automaton
 tags: game-of-life 
 categories: academic
 comments: true
+classes: wide
 header:
   teaser: https://lh3.googleusercontent.com/yQ8ObYsYyB3HICwomrUSND_08Bek_bje215uaTSA1Myb2iYT-UNyBpexUvUxDTS6gmp4VEuOXO3pIrrjupLqDpez__cQXxA8n2FejUHlD3Sn_RqAe3XpkmNQ8-vAlqAjrI5s-knz8bY=w2400
 ---
