@@ -47,9 +47,6 @@ feature_row:
 {% for post in site.posts %}
 	{% if post.categories contains "academic" %}
   		{% include archive-single.html %}
-      {% if post.header.teaser %}
-<a href="{{ post.url | relative_url }}"><img src="{{ post.header.teaser }}" width="25%" alt="post teaser image"></a>
-      {% endif %}
 	{% endif %}
 {% endfor %}
 
@@ -63,9 +60,6 @@ feature_row:
         {% assign counter = counter | plus: 1 %}
         {% if counter > 0 %}
   		    {% include archive-single.html %}
-          {% if post.header.teaser %}
-<a href="{{ post.url | relative_url }}"><img src="{{ post.header.teaser }}" width="25%" alt="post teaser image"></a>
-        {% endif %}
         {% endif %}
 	{% endif %}
 {% endfor %}    
