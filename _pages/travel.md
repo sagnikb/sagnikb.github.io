@@ -9,7 +9,7 @@ feature_row:
     alt: "placeholder image 1"
     title: "To the bit of my heart I left in Hong Kong"
     excerpt: "My stay in the city, more than a year on"
-    url: "/blogposts/Hong_Kong"
+    url: "/blogposts/hong-kong"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: https://lh3.googleusercontent.com/sVdrx9HpJ7sdKujkvHpXpFS2-rzPvPF5XJoQtuBBAHLHRQy8xHMmSBgATfcVUxCr7JaO9FmkVCHoOwTOWWm1HpeyetT1ZyFhIAwOiMXIg1u7YvEemX234vc7M1rW__4_POwE0buNV84=w2400

@@ -16,7 +16,7 @@ feature_row:
     alt: "placeholder image 2"
     title: "French Duels"
     excerpt: "Mathematics, aliens, history, time-travel rolled into one story based on true events."
-    url: "/blogposts/French_Duels"
+    url: "/blogposts/french-duels"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
