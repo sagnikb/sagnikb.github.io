@@ -5,13 +5,17 @@ comments: false
 title: About
 classes: wide
 ---
-I am a third-year PhD student in the Department of Electrical and Computer Engineering at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). Before coming to UMD, I graduated with a Bachelor of Technology in Electrical Engineering from IIT Kanpur in 2019, where I was advised by [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/). During this time, I also spent a summer at CUHK, working with [Prof Sidharth Jaggi](https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi) on adversarial channels, and a semester working with [Prof Rajat Mittal](https://www.cse.iitk.ac.in/users/rmittal/) on quantum query complexity.
+I am a third-year PhD student in the Department of Electrical and Computer Engineering at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). My recent work has been on analyzing the tradeoff between sampling and lossy compression in randon fields.
+
+Before joining UMD, I obtained my BTech in Electrical Engineering from the Indian Institute of Technology, Kanpur in 2019. There I worked with [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/) on classical coding theory bounds in discrete metrics. I also spent a summer at CUHK, working with [Prof Sidharth Jaggi](https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi) on adversarial channels, and a semester working with [Prof Rajat Mittal](https://www.cse.iitk.ac.in/users/rmittal/) on quantum query complexity.
 
 I co-organize the [Communication, Control and Signal Processing Seminar](http://ccsp.ece.umd.edu/).
 
-<span style="font-family: Source Sans Pro;">**Research Interests:**</span><br> Information and coding theory, data compression, random field models, quantum information theory
+<span style="font-family: Source Sans Pro;">**Research Interests:**</span><br>Information and coding theory, data compression, random field models, quantum information theory
 
-<span style="font-family: Source Sans Pro;"><b>[CV](/assets/sagnik-cv.pdf)</b></span>
+<span style="font-family: Source Sans Pro;"><b><!--<i class="far fa-file-pdf" aria-hidden="true"></i> -->[CV](/assets/sagnik-cv.pdf) &nbsp; [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/sagnikb) &nbsp; [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/sagnik66/) &nbsp; [<i class="fab fa-twitter"></i>](https://twitter.com/saghantik)</b></span>
+
+
 
 ## Publications
 <span style="font-family: Source Sans Pro;">**Universal Single-Shot Sampling Rate Distortion**</span><br>

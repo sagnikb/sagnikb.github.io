@@ -95,11 +95,11 @@ analytics:
 author:
   name             : "Sagnik Bhattacharya"
   avatar           : "/assets/images/profilepic.jpg"
-  bio              : "ECE PhD Student, UMD"
+  bio              : "PhD Student, University of Maryland"
   location         : "College Park, MD, USA"
   email            :  sagnikb@umd.edu
-  linkedin         :  sagnik66
-  github           :  sagnikb
+  linkedin         :  #sagnik66
+  github           :  #sagnikb
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -109,7 +109,7 @@ author:
       #url: "https://sagnikb.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/saghantik"
+      #url: "https://twitter.com/saghantik"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
