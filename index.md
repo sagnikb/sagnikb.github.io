@@ -13,7 +13,9 @@ I co-organize the [Communication, Control and Signal Processing Seminar](http://
 
 <span style="font-family: Source Sans Pro;">**Research Interests:**</span><br>Information and coding theory, data compression, random field models, quantum information theory
 
-<span style="font-family: Source Sans Pro;"><b><!--<i class="far fa-file-pdf" aria-hidden="true"></i> -->[CV](/assets/sagnik-cv.pdf) &nbsp; [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/sagnikb) &nbsp; [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/sagnik66/) &nbsp; [<i class="fab fa-twitter"></i>](https://twitter.com/saghantik)</b></span>
+<span style="font-family: Source Sans Pro;"><b><!--<i class="far fa-file-pdf" aria-hidden="true"></i> -->[CV](/assets/sagnik-cv.pdf) 
+
+[<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/sagnikb) &nbsp; [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/sagnik66/) &nbsp; [<i class="fab fa-twitter"></i>](https://twitter.com/saghantik)</b></span>
 
 
 
