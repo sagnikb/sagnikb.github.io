@@ -17,8 +17,6 @@ I co-organize the [Communication, Control and Signal Processing Seminar](http://
 
 [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/sagnikb) &nbsp; [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/sagnik66/) &nbsp; [<i class="fab fa-twitter"></i>](https://twitter.com/saghantik)
 
-
-
 ## Publications
 <span style="font-family: Source Sans Pro;">**Universal Single-Shot Sampling Rate Distortion**</span><br>
 S. Bhattacharya and P. Narayan <br>
