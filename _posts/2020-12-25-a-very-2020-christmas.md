@@ -23,8 +23,8 @@ Over the past few weeks I have realised that even though 2020 has been a soggy-t
 
 {% include figure image_path="https://lh3.googleusercontent.com/n_oas-xLsj9Tv-dung_tq_Ziqi-_7abFhwuPAH-gU-ZJWiAjS0N69EtcTvY9szEJSb0rhBjiYXUdf7O_XbbO9MIHLP_xZFYIS02813NncpLaNatuYUYBdEL7fLiRRU_1603oFLKM-K4=w2400" caption="Stream, path, trees, all in one." alt="Stream, path, trees, all in one." %}
 
-{% include figure image_path="https://lh3.googleusercontent.com/Q-NQhUq-2R4i7SdXNvRw4e85oxRJc5lhBRtS1Hp8Ow1FQNrsbq_--EydI9sONRFRSNiLEuiHYuHuTeQIcN8msl8rWrfN3Ku6PnXPIR-3rX6ZFolZfvyaPVZBc1vRBVQAhdd1BuvC4D8=w2400" caption="Deer-ie me!" alt="Deer-ie me!" %}
+{% include figure image_path="https://lh3.googleusercontent.com/_k6tzk3A_W06-d4Pbsg8-W2ianF8lcKuaau2e3Bm6jbEIEgwm4UbptQy13iZS-TYdBjM2zN7tVYfFQ-ADoHv5cZLoPX1N77GINhMzyRkVAwboQLChqc_6YA_O4V3EJ-8nWCWbyCQikM=w2400" caption="Deer-ie me!" alt="Deer-ie me!" %}
 
 I imagine this won't be the last time I need to do something like this, but thanks to this word-you-get-if-you-say-sheet-quickly year I believe I will know how. Thanks but no thanks.
 
-{% include figure image_path="https://lh3.googleusercontent.com/U0deU5jjl8ruqIQ_Q9-zFI-vbTG83vBx2CWf0dP4-D-jUgBfPV2056weBRHv-9GlodTatq9G4ZgYuWuLd-zbmmBT0f4tV4mXkjQ3w7x2LkVcSbFCwdd302vcP3CtxXKEzcrIbLGrBzY=w2400" alt="Merry Christmas" %}
+{% include figure image_path="https://lh3.googleusercontent.com/KvSfBUkPAqE-UNwxtRHnlk-qakjti4nuYE4K0rCBKgwgfvRovcj7kmEpCb40l3tFRDcrLu97-okOB3nSsw0wObbyV6kcUNRQScnSkPIOmWOcxEF3yJwJGoH__yUgY018lVwbRzrzI7c=w2400" alt="Merry Christmas" %}
