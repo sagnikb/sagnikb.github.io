@@ -21,7 +21,9 @@ I co-organize the [Communication, Control and Signal Processing Seminar](http://
 <span style="font-family: Source Sans Pro;">**Shared Information for a Markov Chain on a Tree**</span><br>
 S. Bhattacharya and P. Narayan <br>
 ISIT 2022 <br>
-<!--[IEEE Xplore](https://ieeexplore.ieee.org/document/9518150) · [PDF](https://umd0-my.sharepoint.com/:b:/g/personal/sagnikb_umd_edu/EXG_J5TXeJVFtCTb8Vy_vtcBPImrrM9sxCjmLaDPmOzpHg?e=LaTME1)--> *To appear*
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9834365) · [PDF](https://drive.google.com/file/d/1F2xEsfWS2Hva3xQnSkkrlJnJTVDDmrSq/view?usp=sharing) · [Slides](https://drive.google.com/file/d/1RBT4Us8jtezDa1o2f7a4sPemThV_tEaj/view?usp=sharing) <br>
+Full version to be submitted to IEEE Transactions on Information Theory.
+<!--*To appear*-->
 
 <span style="font-family: Source Sans Pro;">**Universal Single-Shot Sampling Rate Distortion**</span><br>
 S. Bhattacharya and P. Narayan <br>
