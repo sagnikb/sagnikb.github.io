@@ -5,7 +5,7 @@ comments: false
 title: About
 classes: wide
 ---
-I am a third-year PhD student in the Department of Electrical and Computer Engineering at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). My recent work has been on analyzing the tradeoff between sampling and lossy compression in random fields. I am also interested in quantum property testing and variational quantum algorithms.
+I am a PhD candidate in the Department of Electrical and Computer Engineering at the University of Maryland, College Park, advised by [Prof Prakash Narayan](https://user.eng.umd.edu/~prakash/index.html). My recent work has been on analyzing the tradeoff between sampling and lossy compression in random fields. I am also interested in quantum property testing and variational quantum algorithms.
 
 Before joining UMD, I obtained my BTech in Electrical Engineering from the Indian Institute of Technology, Kanpur in 2019. There I worked with [Prof Adrish Banerjee](http://home.iitk.ac.in/~adrish/) on classical coding theory bounds in discrete metrics. I also spent a summer at CUHK, working with [Prof Sidharth Jaggi](https://research-information.bris.ac.uk/en/persons/sidharth-sid-jaggi) on adversarial channels, and a semester working with [Prof Rajat Mittal](https://www.cse.iitk.ac.in/users/rmittal/) on quantum query complexity.
 
