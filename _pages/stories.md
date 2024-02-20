@@ -22,4 +22,8 @@ feature_row:
 ---
 <br>
 <h1> Stories </h1>
-{% include feature_row id="feature_row" %}
+{% for post in site.posts %}
+	{% if post.categories contains "stories" %}
+  		{% include archive-single.html %}
+	{% endif %}
+{% endfor %}

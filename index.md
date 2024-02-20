@@ -18,11 +18,17 @@ I co-organize the [Communication, Control and Signal Processing Seminar](http://
 [<i class="fab fa-fw fa-github" aria-hidden="true"></i>](https://github.com/sagnikb) &nbsp; [<i class="fab fa-linkedin"></i>](https://www.linkedin.com/in/sagnik66/) &nbsp; [<i class="fab fa-twitter"></i>](https://twitter.com/saghantik)
 
 ## Publications
+<span style="font-family: Source Sans Pro;">**Shared Information for the Cliqueylon Graph**</span><br>
+S. Bhattacharya and P. Narayan <br>
+ISIT 2023 <br>
+[IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10206503) · [PDF](https://umd0-my.sharepoint.com/:b:/g/personal/sagnikb_umd_edu/EdjYBxZKT7FKuB2j7Oze4t8BoD9JCUg-lWYZrbIcG8ma6w?e=tj5kLP) · [Slides](https://drive.google.com/file/d/1qoFyWSkvpL1_3I5F9kcyuPPwHZtdeRVQ/view?usp=drive_link) 
+
+
 <span style="font-family: Source Sans Pro;">**Shared Information for a Markov Chain on a Tree**</span><br>
 S. Bhattacharya and P. Narayan <br>
 ISIT 2022 <br>
 [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/9834365) · [PDF](https://drive.google.com/file/d/1F2xEsfWS2Hva3xQnSkkrlJnJTVDDmrSq/view?usp=sharing) · [Slides](https://drive.google.com/file/d/1RBT4Us8jtezDa1o2f7a4sPemThV_tEaj/view?usp=sharing) <br>
-Full version to be submitted to IEEE Transactions on Information Theory.
+Full version to appear in IEEE Transactions on Information Theory [link](https://ieeexplore.ieee.org/abstract/document/10399895).
 <!--*To appear*-->
 
 <span style="font-family: Source Sans Pro;">**Universal Single-Shot Sampling Rate Distortion**</span><br>

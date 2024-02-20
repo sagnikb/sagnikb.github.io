@@ -42,24 +42,10 @@ feature_row:
 ---
 {% assign counter = 0 %}
 
-# Academics, research etc
+<!--- # Academics, research etc -->
 
 {% for post in site.posts %}
 	{% if post.categories contains "academic" %}
   		{% include archive-single.html %}
 	{% endif %}
 {% endfor %}
-
-<br>
-
-# Other stuff
-
-{% for post in site.posts %}
-	{% if post.categories contains "academic" %}
-	{% else %}
-        {% assign counter = counter | plus: 1 %}
-        {% if counter > 0 %}
-  		    {% include archive-single.html %}
-        {% endif %}
-	{% endif %}
-{% endfor %}    

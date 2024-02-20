@@ -1,7 +1,3 @@
 main:
   - title: "Blog"
     url: /blog
-  - title: "Stories"
-    url: /categories/stories
-  - title: "Travel"
-    url: /categories/travel
