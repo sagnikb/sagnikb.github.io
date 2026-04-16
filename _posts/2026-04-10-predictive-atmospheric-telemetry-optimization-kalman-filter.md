@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Telemetric Compression using Kalman Filters"
+title: "Predictive Atmospheric Telemetry Optimization using Kalman Filters"
 date: 2026-04-15
 categories: academic
 excerpt: "Using Kalman Filters to reduce telemetry transmission bandwidth"
